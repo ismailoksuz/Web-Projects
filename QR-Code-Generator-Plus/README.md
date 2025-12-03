@@ -22,7 +22,7 @@ A comprehensive QR code generator built with Vue.js supporting multiple data typ
 10. Payment Information
 
 ## Live Demo
-[View Live Demo](#) <!-- Buraya canlı linkini ekle -->
+[View Live Demo](https://qr-code-generator-plus.vercel.app)
 
 ## Dependencies
 - Vue.js 3
