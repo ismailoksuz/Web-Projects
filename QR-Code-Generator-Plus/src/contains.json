@@ -1,0 +1,19 @@
+{
+    "qrTypes": {
+      "text": "Text (Free Text)",
+      "url": "URL (Website Link)",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "sms": "SMS",
+      "vcard": "V-Card (Contact Card)",
+      "wifi": "Wi-Fi Login",
+      "location": "Location (Coordinates)",
+      "event": "Event (Calendar Item)",
+      "payment": "Payment Information"
+    },
+    "encryptionTypes": ["WPA", "WEP", "nopass"],
+    "paymentTypes": ["paypal", "bitcoin", "ethereum", "other"],
+    "defaultCurrency": "USD",
+    "defaultEncryption": "WPA",
+    "defaultPaymentType": "paypal"
+  }
