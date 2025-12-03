@@ -12,7 +12,7 @@ function showMessage(message,type='error'){
     if(!appContainer.contains(messageBox)){document.querySelector('.card-area')?.appendChild(messageBox);}
 }
 
-const tools=[
+const tools = [
     {id:'unit-converter',title:'UNIT CONVERTER',description:'Convert between common units of length, weight, and temperature.',render:renderUnitConverter},
     {id:'text-case-converter',title:'TEXT CASE CONVERTER',description:'Convert text between different casing styles (lower, UPPER, Title, kebab-case).',render:renderTextCaseConverter},
     {id:'base64-converter',title:'BASE64 ENCODER / DECODER',description:'Convert text to Base64 and vice versa.',render:renderBase64Converter},
@@ -20,7 +20,464 @@ const tools=[
     {id:'json-xml-formatter',title:'JSON/XML VIEWER & FORMATTER',description:'Validate and beautifully format JSON and XML data.',render:renderJsonXmlFormatter},
     {id:'color-palette',title:'COLOR PALETTE GENERATOR',description:'Generate complementary, analogous, and triadic color schemes from a base color.',render:renderColorPalette},
     {id:'image-compressor',title:'IMAGE RESIZER & COMPRESSOR',description:'Resize and compress JPG/PNG images in the browser.',render:renderImageCompressor},
+    {id:'password-tester',title:'PASSWORD STRENGTH TESTER',description:'Check password security in real-time with visual feedback.',render:renderPasswordTester},
+    {id:'code-formatter',title:'CODE FORMATTER / BEAUTIFIER',description:'Format and beautify HTML, CSS, and JavaScript code.',render:renderCodeFormatter},
+    {id:'password-generator',title:'RANDOM PASSWORD GENERATOR',description:'Generate secure random passwords with custom length and character sets.',render:renderPasswordGenerator},
+    {id:'qr-generator',title:'QR CODE GENERATOR',description:'Generate QR codes for URLs, text, or upload images/PDFs to create QR codes.',render:renderQRGenerator},
+    {id:'vcard-generator',title:'VCARD QR GENERATOR',description:'Create contact QR codes that can be scanned to save information to phone contacts.',render:renderVCardGenerator},
 ];
+
+function renderPasswordGenerator() {
+    const tool = tools.find(t => t.id === 'password-generator');
+    renderToolLayout(tool.title, tool.description, `
+        <div class="space-y-6">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <label for="passwordLength" class="label-text">Password Length: <span id="passwordLengthLabel">13</span></label>
+                    <input type="range" class="form-range w-full" min="6" max="32" value="13" id="passwordLength">
+                </div>
+            </div>
+            
+            <div class="space-y-3">
+                <div class="flex items-center">
+                    <input class="form-check-input mr-3" type="checkbox" id="numbers" checked>
+                    <label class="form-check-label" for="numbers">Numbers (0-9)</label>
+                </div>
+                <div class="flex items-center">
+                    <input class="form-check-input mr-3" type="checkbox" id="symbols" checked>
+                    <label class="form-check-label" for="symbols">Symbols (!@#$%^&*)</label>
+                </div>
+                <div class="flex items-center">
+                    <input class="form-check-input mr-3" type="checkbox" id="uppercase" checked>
+                    <label class="form-check-label" for="uppercase">Uppercase Letters (A-Z)</label>
+                </div>
+                <div class="flex items-center">
+                    <input class="form-check-input mr-3" type="checkbox" id="lowercase" checked>
+                    <label class="form-check-label" for="lowercase">Lowercase Letters (a-z)</label>
+                </div>
+            </div>
+            
+            <button id="generateButton" class="primary-button text-white font-bold py-3 px-6 rounded-lg w-full text-lg uppercase shadow-lg shadow-[#00A389]/30">
+                GENERATE PASSWORD
+            </button>
+            
+            <div class="pt-4 border-t border-slate-700/50">
+                <label for="generatedPassword" class="label-text">Generated Password:</label>
+                <div id="generatedPassword" class="input-style w-full p-4 rounded-lg text-center text-lg font-mono bg-slate-700/50 min-h-[60px] flex items-center justify-center">
+                    Your password will appear here
+                </div>
+                <button id="copyButton" class="mt-3 primary-button text-white font-bold py-2 px-4 rounded-lg w-full text-base" disabled>
+                    Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    `);
+    
+    const passwordLengthInput = document.getElementById('passwordLength');
+    const passwordLengthLabel = document.getElementById('passwordLengthLabel');
+    const generateButton = document.getElementById('generateButton');
+    const copyButton = document.getElementById('copyButton');
+    const generatedPasswordElement = document.getElementById('generatedPassword');
+    
+    passwordLengthInput.addEventListener('input', function() {
+        passwordLengthLabel.textContent = passwordLengthInput.value;
+    });
+    
+    generateButton.addEventListener('click', function() {
+        const length = parseInt(passwordLengthInput.value);
+        const includeNumbers = document.getElementById('numbers').checked;
+        const includeSymbols = document.getElementById('symbols').checked;
+        const includeUppercase = document.getElementById('uppercase').checked;
+        const includeLowercase = document.getElementById('lowercase').checked;
+        
+        let charset = "";
+        if (includeLowercase) charset += "abcdefghijklmnopqrstuvwxyz";
+        if (includeUppercase) charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        if (includeNumbers) charset += "0123456789";
+        if (includeSymbols) charset += "!@#$%^&*()-_+=<>?/[]{}|";
+        
+        if (charset === "") {
+            showMessage('Please select at least one character set.', 'error');
+            return;
+        }
+        
+        let password = "";
+        for (let i = 0; i < length; i++) {
+            const randomIndex = Math.floor(Math.random() * charset.length);
+            password += charset.charAt(randomIndex);
+        }
+        
+        generatedPasswordElement.textContent = password;
+        copyButton.disabled = false;
+        showMessage('Password generated successfully!', 'success');
+    });
+    
+    copyButton.addEventListener('click', function() {
+        const password = generatedPasswordElement.textContent;
+        if (password && password !== 'Your password will appear here') {
+            navigator.clipboard.writeText(password).then(() => {
+                showMessage('Password copied to clipboard!', 'success');
+            }).catch(err => {
+                showMessage('Failed to copy password.', 'error');
+            });
+        }
+    });
+}
+
+function renderQRGenerator() {
+    const tool = tools.find(t => t.id === 'qr-generator');
+    renderToolLayout(tool.title, tool.description, `
+        <div class="space-y-6">
+            <div>
+                <label for="qr-data" class="label-text">Data Input (Text, URL, etc.):</label>
+                <textarea id="qr-data" class="input-style w-full p-3 rounded-lg resize-y" rows="3" placeholder="Enter text, URL, or any data for QR code..."></textarea>
+            </div>
+            
+            <div class="pt-2">
+                <label class="label-text">Or Upload File (Image/PDF - Optional):</label>
+                <div id="file-upload-box" class="file-upload-box flex flex-col justify-center items-center h-32 rounded-lg cursor-pointer">
+                    <p id="file-status" class="text-slate-400 text-center">
+                        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                        </svg>
+                        Drag & drop or click to upload file (Image/PDF)
+                    </p>
+                </div>
+                <input type="file" id="file-input" accept="image/*,.pdf" class="hidden">
+                <p id="file-info" class="text-slate-400 text-sm mt-2 hidden"></p>
+            </div>
+            
+            <button id="generate-button" class="primary-button text-white font-bold py-3 px-6 rounded-lg w-full text-lg uppercase shadow-lg shadow-[#00A389]/30">
+                GENERATE QR CODE
+            </button>
+            
+            <div class="pt-4 border-t border-slate-700/50">
+                <h3 class="text-lg font-semibold text-white mb-3">QR Code Preview:</h3>
+                <div id="qrcode-container" class="min-h-[200px] flex justify-center items-center bg-slate-800/50 rounded-lg p-4">
+                    <p id="placeholder-text" class="text-slate-400">QR code will appear here</p>
+                </div>
+                
+                <div class="mt-4 flex gap-3">
+                    <button id="download-button" class="primary-button text-white font-bold py-2 px-4 rounded-lg flex-1" disabled>
+                        Download PNG
+                    </button>
+                    <button id="clear-button" class="bg-slate-700 text-white font-bold py-2 px-4 rounded-lg flex-1 hover:bg-slate-600">
+                        Clear
+                    </button>
+                </div>
+            </div>
+        </div>
+    `);
+    
+    const qrDataInput = document.getElementById('qr-data');
+    const fileInput = document.getElementById('file-input');
+    const fileUploadBox = document.getElementById('file-upload-box');
+    const fileStatus = document.getElementById('file-status');
+    const fileInfo = document.getElementById('file-info');
+    const generateButton = document.getElementById('generate-button');
+    const downloadButton = document.getElementById('download-button');
+    const clearButton = document.getElementById('clear-button');
+    const qrcodeContainer = document.getElementById('qrcode-container');
+    const placeholderText = document.getElementById('placeholder-text');
+    let qrCanvas = null;
+    let currentFile = null;
+    
+    fileUploadBox.addEventListener('click', () => fileInput.click());
+    fileUploadBox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        fileUploadBox.classList.add('border-[#00A389]');
+    });
+    fileUploadBox.addEventListener('dragleave', () => {
+        fileUploadBox.classList.remove('border-[#00A389]');
+    });
+    fileUploadBox.addEventListener('drop', (e) => {
+        e.preventDefault();
+        fileUploadBox.classList.remove('border-[#00A389]');
+        if (e.dataTransfer.files.length) {
+            handleFileSelect(e.dataTransfer.files[0]);
+        }
+    });
+    
+    fileInput.addEventListener('change', (e) => {
+        if (e.target.files.length) {
+            handleFileSelect(e.target.files[0]);
+        }
+    });
+    
+    function handleFileSelect(file) {
+        currentFile = file;
+        fileInfo.textContent = `Selected file: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+        fileInfo.classList.remove('hidden');
+        showMessage('File selected. Enter text/URL and generate QR code.', 'success');
+    }
+    
+    function generateQRCode() {
+        const textData = qrDataInput.value.trim();
+        let dataToEncode = textData;
+        
+        if (!textData && !currentFile) {
+            showMessage('Please enter text/URL or upload a file.', 'error');
+            return;
+        }
+        
+        if (currentFile) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                dataToEncode = textData || `File: ${currentFile.name}`;
+                createQRCanvas(dataToEncode);
+            };
+            reader.readAsDataURL(currentFile);
+        } else {
+            createQRCanvas(dataToEncode);
+        }
+    }
+    
+    function createQRCanvas(data) {
+        qrcodeContainer.innerHTML = '';
+
+        if (!qrCanvas) {
+            qrCanvas = document.createElement('canvas');
+        }
+
+        qrCanvas.classList.add('qr-canvas-fade');
+        qrcodeContainer.appendChild(qrCanvas);
+
+        const options = {
+            errorCorrectionLevel: 'H',
+            margin: 2,
+            scale: 6,
+            color: {
+                dark: "#ffffff",
+                light: "#1E293B"
+            }
+        };
+
+        QRCode.toCanvas(qrCanvas, data, options, (error) => {
+            if (error) {
+                showMessage('Error generating QR code.', 'error');
+                downloadButton.disabled = true;
+            } else {
+                qrcodeContainer.classList.add("qrcode-ready"); 
+                downloadButton.disabled = false;
+                showMessage('QR code generated successfully!', 'success');
+            }
+        });
+    }
+
+    
+    function downloadQRCode() {
+        if (qrCanvas && !downloadButton.disabled) {
+            try {
+                const imageURL = qrCanvas.toDataURL("image/png");
+                const link = document.createElement('a');
+                link.href = imageURL;
+                link.download = `qr-code-${Date.now()}.png`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                showMessage('Download started!', 'success');
+            } catch (e) {
+                showMessage('Download failed.', 'error');
+            }
+        }
+    }
+    
+    function clearAll() {
+        qrDataInput.value = '';
+        fileInput.value = '';
+        currentFile = null;
+        fileInfo.classList.add('hidden');
+        fileInfo.textContent = '';
+        qrcodeContainer.innerHTML = '<p id="placeholder-text" class="text-slate-400">QR code will appear here</p>';
+        downloadButton.disabled = true;
+        showMessage('Cleared all inputs.', 'success');
+    }
+    
+    generateButton.addEventListener('click', generateQRCode);
+    downloadButton.addEventListener('click', downloadQRCode);
+    clearButton.addEventListener('click', clearAll);
+}
+
+function renderVCardGenerator() {
+    const tool = tools.find(t => t.id === 'vcard-generator');
+    renderToolLayout(tool.title, tool.description, `
+        <div class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="name-input" class="label-text">First Name:</label>
+                    <input type="text" id="name-input" class="input-style w-full p-3 rounded-lg" placeholder="John">
+                </div>
+                <div>
+                    <label for="surname-input" class="label-text">Last Name:</label>
+                    <input type="text" id="surname-input" class="input-style w-full p-3 rounded-lg" placeholder="Doe">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="title-input" class="label-text">Title/Job:</label>
+                    <input type="text" id="title-input" class="input-style w-full p-3 rounded-lg" placeholder="Software Developer">
+                </div>
+                <div>
+                    <label for="company-input" class="label-text">Company:</label>
+                    <input type="text" id="company-input" class="input-style w-full p-3 rounded-lg" placeholder="Tech Corp">
+                </div>
+            </div>
+            
+            <div>
+                <label for="phone-input" class="label-text">Phone Number:</label>
+                <input type="tel" id="phone-input" class="input-style w-full p-3 rounded-lg" placeholder="+15551234567">
+            </div>
+            
+            <div>
+                <label for="email-input" class="label-text">Email Address:</label>
+                <input type="email" id="email-input" class="input-style w-full p-3 rounded-lg" placeholder="john@example.com">
+            </div>
+            
+            <div>
+                <label for="url-input" class="label-text">Website/Social URL:</label>
+                <input type="url" id="url-input" class="input-style w-full p-3 rounded-lg" placeholder="https://linkedin.com/in/johndoe">
+            </div>
+            
+            <button id="generate-button" class="primary-button text-white font-bold py-3 px-6 rounded-lg w-full text-lg uppercase shadow-lg shadow-[#00A389]/30">
+                GENERATE VCARD QR
+            </button>
+            
+            <div class="pt-4 border-t border-slate-700/50">
+                <h3 class="text-lg font-semibold text-white mb-3">VCard QR Code:</h3>
+                <div id="qrcode-container" class="min-h-[200px] flex justify-center items-center bg-slate-800/50 rounded-lg p-4">
+                    <p id="placeholder-text" class="text-slate-400">VCard QR will appear here</p>
+                </div>
+                
+                <div class="mt-4">
+                    <button id="download-button" class="primary-button text-white font-bold py-2 px-4 rounded-lg w-full" disabled>
+                        Download VCard QR
+                    </button>
+                </div>
+                
+                <div class="mt-4 p-3 bg-slate-800/30 rounded-lg">
+                    <p class="text-sm text-slate-300">
+                        <strong>Note:</strong> This QR code contains VCard (v3.0) format. When scanned, it will prompt to save the contact information to phone contacts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    `);
+    
+    const nameInput = document.getElementById('name-input');
+    const surnameInput = document.getElementById('surname-input');
+    const titleInput = document.getElementById('title-input');
+    const companyInput = document.getElementById('company-input');
+    const phoneInput = document.getElementById('phone-input');
+    const emailInput = document.getElementById('email-input');
+    const urlInput = document.getElementById('url-input');
+    const generateButton = document.getElementById('generate-button');
+    const downloadButton = document.getElementById('download-button');
+    const qrcodeContainer = document.getElementById('qrcode-container');
+    const placeholderText = document.getElementById('placeholder-text');
+    
+    let qrCanvas = null;
+    
+    function createVCardData(data) {
+        let vCard = 'BEGIN:VCARD\nVERSION:3.0\n';
+        
+        if (data.name || data.surname) {
+            vCard += `N:${data.surname || ''};${data.name || ''};;;\n`;
+            vCard += `FN:${data.name || ''} ${data.surname || ''}\n`;
+        }
+        
+        if (data.title) vCard += `TITLE:${data.title}\n`;
+        if (data.company) vCard += `ORG:${data.company}\n`;
+        if (data.phone) vCard += `TEL;TYPE=WORK,CELL:${data.phone}\n`;
+        if (data.email) vCard += `EMAIL:${data.email}\n`;
+        if (data.url) vCard += `URL:${data.url}\n`;
+        
+        vCard += 'END:VCARD';
+        return vCard;
+    }
+
+    function generateVCardQR() {
+        const data = {
+            name: nameInput.value.trim(),
+            surname: surnameInput.value.trim(),
+            title: titleInput.value.trim(),
+            company: companyInput.value.trim(),
+            phone: phoneInput.value.trim().replace(/[^0-9+]/g, ''),
+            email: emailInput.value.trim(),
+            url: urlInput.value.trim()
+        };
+        
+        const isAnyFieldFilled = Object.values(data).some(val => val.length > 0);
+        if (!isAnyFieldFilled) {
+            showMessage('Please fill in at least one field.', 'error');
+            return;
+        }
+        
+        if (data.email && !/\S+@\S+\.\S+/.test(data.email)) {
+            showMessage('Please enter a valid email address.', 'error');
+            return;
+        }
+        
+        const vCardData = createVCardData(data);
+        
+        qrcodeContainer.innerHTML = '';
+        
+        if (!qrCanvas) {
+            qrCanvas = document.createElement('canvas');
+        }
+        
+        qrCanvas.classList.add('qr-canvas-fade');
+        qrcodeContainer.appendChild(qrCanvas);
+        
+        const options = {
+            errorCorrectionLevel: 'H',
+            margin: 2,
+            scale: 6,
+            color: {
+                dark: "#ffffff",
+                light: "#1E293B"
+            }
+        };
+        
+        try {
+            QRCode.toCanvas(qrCanvas, vCardData, options, (error) => {
+                if (error) {
+                    showMessage('Error generating VCard QR code.', 'error');
+                    downloadButton.disabled = true;
+                } else {
+                    qrcodeContainer.classList.add("qrcode-ready");  
+                    downloadButton.disabled = false;
+                    showMessage('VCard QR code generated! Scan to save contact.', 'success');
+                }
+            });
+        } catch (e) {
+            showMessage('Error generating QR code.', 'error');
+            downloadButton.disabled = true;
+        }
+    }
+    
+    
+    function downloadVCardQR() {
+        if (qrCanvas && !downloadButton.disabled) {
+            try {
+                const imageURL = qrCanvas.toDataURL("image/png");
+                const link = document.createElement('a');
+                link.href = imageURL;
+                link.download = `vcard-qr-${Date.now()}.png`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                showMessage('VCard QR downloaded!', 'success');
+            } catch (e) {
+                showMessage('Download failed.', 'error');
+            }
+        }
+    }
+    
+    generateButton.addEventListener('click', generateVCardQR);
+    downloadButton.addEventListener('click', downloadVCardQR);
+}
+
 
 function navigate(toolId){
     if(toolId){
@@ -57,23 +514,27 @@ function renderToolLayout(title,description,content){
 
 function renderHomePage(){
     let content=`
-        <header class="text-center mb-6">
-        <h1 class="text-4xl font-extrabold text-white tracking-wide">DEVELOPER TOOLKIT</h1>
-        <h3>by <a href="https://www.github.com/ismailoksuz" style="color: yellow" target="_blank">İsmail ÖKSÜZ</a></h3>
+        <header class="text-center mb-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-wide">DEVELOPER TOOLKIT</h1>
+        <h3 class="text-lg md:text-xl text-slate-300 mt-2">by <a href="https://www.github.com/ismailoksuz" style="color: #00A389" target="_blank">İsmail ÖKSÜZ</a></h3>
+        <p class="text-slate-400 mt-4 max-w-2xl mx-auto">A collection of essential web development tools for everyday use. Click on any tool to get started.</p>
         </header>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
     `;
     tools.forEach(tool=>{
         content+=`
-            <div onclick="navigate('${tool.id}')" class="card-area cursor-pointer hover:border-[#00A389] transition duration-200">
-                <h3 class="text-xl font-bold text-white">${tool.title}</h3>
+            <div onclick="navigate('${tool.id}')" class="card-area cursor-pointer hover:border-[#00A389] hover:shadow-lg hover:shadow-[#00A389]/20 transition-all duration-300 transform hover:-translate-y-1 h-full">
+                <h3 class="text-xl font-bold text-white mb-3">${tool.title}</h3>
                 <p class="text-slate-400 text-sm">${tool.description}</p>
+                <div class="mt-4 pt-3 border-t border-slate-700/50">
+                    <span class="text-[#00A389] text-sm font-medium">Click to use →</span>
+                </div>
             </div>
         `;
     });
     content+=`</div>`;
     appContainer.innerHTML=`
-        <div class="main-container max-w-xl">
+        <div class="main-container">
             ${content}
             <div class="footer-attribution">
                 CREATED BY <a href="https://www.github.com/ismailoksuz" target="_blank">ISMAILOKSUZ</a>
@@ -82,6 +543,7 @@ function renderHomePage(){
     `;
 }
 
+// Unit Converter Functions
 const Units={length:{m:{name:'Meter',factor:1},km:{name:'Kilometer',factor:1000},mi:{name:'Mile',factor:1609.34},ft:{name:'Foot',factor:0.3048},in:{name:'Inch',factor:0.0254}},weight:{kg:{name:'Kilogram',factor:1},g:{name:'Gram',factor:0.001},lb:{name:'Pound',factor:0.453592},oz:{name:'Ounce',factor:0.0283495}},temperature:{C:{name:'Celsius',factor:1},F:{name:'Fahrenheit',factor:1},K:{name:'Kelvin',factor:1}}};
 function updateUnitOptions(category,inputSelect,outputSelect){
     inputSelect.innerHTML='';
@@ -153,6 +615,7 @@ function renderUnitConverter(){
     convert();
 }
 
+// Text Case Converter Functions
 function toTitleCase(str){return str.toLowerCase().split(' ').map(word => {return word.charAt(0).toUpperCase() + word.slice(1);}).join(' ');}
 function toSentenceCase(str){if(!str)return"";str=str.toLowerCase();return str.charAt(0).toUpperCase()+str.slice(1);}
 function toSlugCase(str,separator='-'){return str.toLowerCase().replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,separator).replace(new RegExp(`[${separator}]{2,}`, 'g'),separator);}
@@ -217,6 +680,7 @@ function renderTextCaseConverter(){
     inputTextarea.value=`This is a sample text for case conversion.`;
 }
 
+// Base64 Converter
 function renderBase64Converter(){
     const tool=tools.find(t=>t.id==='base64-converter');
     renderToolLayout(tool.title,tool.description,`
@@ -262,6 +726,7 @@ function renderBase64Converter(){
     inputTextarea.value=`Bu metin Base64 ile kodlanacaktır.`;
 }
 
+// URL Encoder
 function renderURLEncoder(){
     const tool=tools.find(t=>t.id==='url-encoder');
     renderToolLayout(tool.title,tool.description,`
@@ -307,6 +772,7 @@ function renderURLEncoder(){
     inputTextarea.value=`https://example.com/arama?q=merhaba dünya & kullanıcı=İsmail Öksüz`;
 }
 
+// JSON/XML Formatter
 function renderJsonXmlFormatter(){
     const tool=tools.find(t=>t.id==='json-xml-formatter');
     renderToolLayout(tool.title,tool.description,`
@@ -362,6 +828,7 @@ function renderJsonXmlFormatter(){
     dataInput.value=`{"name":"ProductX","price":19.99,"features":["durable","portable","stylish"],"inStock":true}`;
 }
 
+// Image Compressor
 function renderImageCompressor(){
     const tool=tools.find(t=>t.id==='image-compressor');
     renderToolLayout(tool.title,tool.description,`
@@ -485,6 +952,7 @@ function renderImageCompressor(){
     }
 }
 
+// Color Palette Generator
 function hexToRgb(hex){const shorthandRegex=/^#?([a-f\d])([a-f\d])([a-f\d])$/i;hex=hex.replace(shorthandRegex,(m,r,g,b) => r+r+g+g+b+b);const result=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);return result?{r:parseInt(result[1],16),g:parseInt(result[2],16),b:parseInt(result[3],16)}:null;}
 function rgbToHex(r,g,b){return "#"+((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1);}
 function rgbToHsl(r,g,b){r/=255,g/=255,b/=255;let max=Math.max(r,g,b),min=Math.min(r,g,b);let h,s,l=(max+min)/2;if(max===min){h=s=0;}else{let d=max-min;s=l>0.5?d/(2-max-min):d/(max+min);switch(max){case r:h=(g-b)/d+(g<b?6:0);break;case g:h=(b-r)/d+2;break;case b:h=(r-g)/d+4;break;}h/=6;}return [h,s,l];}
@@ -577,6 +1045,223 @@ function renderColorPalette(){
     updateUI(baseColorInput.value);
 }
 
+// Password Strength Tester - YENİ EKLENDİ
+function renderPasswordTester(){
+    const tool=tools.find(t=>t.id==='password-tester');
+    renderToolLayout(tool.title,tool.description,`
+        <div>
+            <label for="password-input" class="label-text">Enter Password:</label>
+            <div class="relative">
+                <input type="password" id="password-input" class="input-style w-full p-3 rounded-lg" placeholder="Type your password here..." autocomplete="off">
+                <button id="toggle-visibility" class="absolute inset-y-0 right-0 px-3 flex items-center text-slate-400 hover:text-white" title="Toggle Visibility">
+                    <svg id="eye-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                    </svg>
+                    <svg id="eye-closed" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.477 0-8.268-2.943-9.542-7 1.274-4.057 5.065-7 9.542-7 1.258 0 2.483.21 3.637.616M17.5 12a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12h.01M16 12h.01"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="space-y-4 pt-2">
+            <div class="flex items-center justify-between">
+                <span class="text-sm font-medium">Strength:</span>
+                <span id="strength-status" class="text-xl font-bold text-slate-400">---</span>
+            </div>
+            <div id="strength-bar-container" class="w-full bg-slate-700 rounded-full">
+                <div id="strength-bar"></div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-700/50">
+                <h3 class="text-lg font-semibold text-white mb-2">Security Criteria:</h3>
+                <ul id="criteria-list" class="space-y-1 text-sm text-slate-400">
+                    <li><span id="len-check" class="text-red-400">✖</span> Minimum 8 characters long</li>
+                    <li><span id="lower-check" class="text-red-400">✖</span> Contains lowercase letters (a-z)</li>
+                    <li><span id="upper-check" class="text-red-400">✖</span> Contains uppercase letters (A-Z)</li>
+                    <li><span id="num-check" class="text-red-400">✖</span> Contains numbers (0-9)</li>
+                    <li><span id="sym-check" class="text-red-400">✖</span> Contains symbols (!@#$...)</li>
+                </ul>
+            </div>
+        </div>
+    `);
+    
+    const passwordInput=document.getElementById('password-input');
+    const strengthBar=document.getElementById('strength-bar');
+    const strengthStatus=document.getElementById('strength-status');
+    const toggleButton=document.getElementById('toggle-visibility');
+    const eyeOpen=document.getElementById('eye-open');
+    const eyeClosed=document.getElementById('eye-closed');
+
+    const checks={
+        len:document.getElementById('len-check'),
+        lower:document.getElementById('lower-check'),
+        upper:document.getElementById('upper-check'),
+        num:document.getElementById('num-check'),
+        sym:document.getElementById('sym-check')
+    };
+
+    function updateCheck(element,isValid){
+        element.textContent=isValid?'✔':'✖';
+        element.classList.toggle('text-green-400',isValid);
+        element.classList.toggle('text-red-400',!isValid);
+    }
+
+    function checkStrength(password){
+        const minLength=8;
+        const hasLower=/[a-z]/.test(password);
+        const hasUpper=/[A-Z]/.test(password);
+        const hasNumber=/[0-9]/.test(password);
+        const hasSymbol=/[$&+,:;=?@#|'<>.^*()%!-]/.test(password);
+        const isLongEnough=password.length>=minLength;
+
+        updateCheck(checks.len,isLongEnough);
+        updateCheck(checks.lower,hasLower);
+        updateCheck(checks.upper,hasUpper);
+        updateCheck(checks.num,hasNumber);
+        updateCheck(checks.sym,hasSymbol);
+
+        let score=0;
+        if(isLongEnough)score+=1;
+        if(hasLower)score+=1;
+        if(hasUpper)score+=1;
+        if(hasNumber)score+=1;
+        if(hasSymbol)score+=1;
+
+        if(password.length>12)score+=0.5;
+        if(password.length>16)score+=0.5;
+
+        let percent=Math.min(100,Math.round((score/6)*100));
+        let statusText='Too Weak';
+        let statusColor='bg-red-500';
+        let statusTextColor='text-red-400';
+
+        if(score>=2 && score<3){
+            statusText='Weak';
+            statusColor='bg-yellow-500';
+            statusTextColor='text-yellow-400';
+        }else if(score>=3 && score<4){
+            statusText='Moderate';
+            statusColor='bg-blue-500';
+            statusTextColor='text-blue-400';
+        }else if(score>=4){
+            statusText='Strong';
+            statusColor='bg-green-500';
+            statusTextColor='text-green-400';
+        }
+
+        strengthBar.style.width=`${percent}%`;
+        strengthBar.className=statusColor;
+
+        strengthStatus.textContent=statusText;
+        strengthStatus.className=`text-xl font-bold ${statusTextColor}`;
+
+        if(password.length===0){
+            strengthBar.style.width='0%';
+            strengthStatus.textContent='---';
+            strengthStatus.className='text-xl font-bold text-slate-400';
+            Object.values(checks).forEach(c => updateCheck(c,false));
+        }
+    }
+
+    passwordInput.addEventListener('input',(e) => {
+        checkStrength(e.target.value);
+    });
+
+    toggleButton.addEventListener('click',() => {
+        const isVisible=passwordInput.type==='text';
+        passwordInput.type=isVisible?'password':'text';
+        eyeOpen.classList.toggle('hidden',!isVisible);
+        eyeClosed.classList.toggle('hidden',isVisible);
+    });
+
+    checkStrength('');
+}
+
+// Code Formatter - YENİ EKLENDİ
+function renderCodeFormatter(){
+    const tool=tools.find(t=>t.id==='code-formatter');
+    renderToolLayout(tool.title,tool.description,`
+        <div>
+            <label for="code-input" class="label-text">Input Code:</label>
+            <textarea id="code-input" class="input-style w-full p-3 rounded-lg resize-y" rows="12" placeholder="Paste your code here... (e.g., HTML, CSS, JS)" data-code="true"></textarea>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4 items-end">
+            <div class="flex-1 w-full">
+                <label for="language-select" class="label-text">Select Language:</label>
+                <select id="language-select" class="select-style w-full p-3 rounded-lg text-base">
+                    <option value="js">JavaScript / TypeScript</option>
+                    <option value="css">CSS / SCSS / LESS</option>
+                    <option value="html">HTML / XML</option>
+                </select>
+            </div>
+            <div class="w-full sm:w-auto">
+                <button id="format-button" class="primary-button text-white font-bold py-3 px-6 rounded-lg w-full text-lg uppercase shadow-lg shadow-[#00A389]/30">
+                    FORMAT CODE
+                </button>
+            </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-700/50">
+            <label for="code-output" class="label-text">Formatted Code:</label>
+            <textarea id="code-output" class="input-style w-full p-3 rounded-lg resize-y bg-slate-700/50" rows="12" readonly placeholder="Formatted code will appear here." data-code="true"></textarea>
+        </div>
+    `);
+    
+    const codeInput=document.getElementById('code-input');
+    const codeOutput=document.getElementById('code-output');
+    const languageSelect=document.getElementById('language-select');
+    const formatButton=document.getElementById('format-button');
+    
+    formatButton.addEventListener('click', () => {
+        const code = codeInput.value.trim();
+        const language = languageSelect.value;
+        let formattedCode = '';
+        
+        if (code === '') {
+            showMessage('Please enter a code to be formatted.', 'error');
+            codeOutput.value = '';
+            return;
+        }
+
+        try {
+            const options = {
+                indent_size: 4,
+                space_in_empty_paren: true,
+            };
+
+            switch (language) {
+                case 'js':
+                    formattedCode = window.js_beautify(code, options);
+                    break;
+                case 'css':
+                    formattedCode = window.css_beautify(code, options);
+                    break;
+                case 'html':
+                    formattedCode = window.html_beautify(code, options);
+                    break;
+                default:
+                    formattedCode = 'Error: Unsupported language selection.';
+                    break;
+            }
+
+            codeOutput.value = formattedCode;
+            showMessage('Code was successfully formatted.', 'success');
+
+        } catch (e) {
+            console.error('Formatting error:', e);
+            codeOutput.value = 'An error occurred during formatting. Please check your code syntax.';
+            showMessage('Code could not be formatted.', 'error');
+        }
+    });
+
+    codeInput.value = `function (x) {if(x>0){console.log('Positive');}else{console.log('Negative');}}`;
+}
+
+// Navigation and Initialization
 window.addEventListener('popstate',(event) => {
     const toolId=event.state?.toolId;
     if(toolId){tools.find(t=>t.id===toolId)?.render();}
