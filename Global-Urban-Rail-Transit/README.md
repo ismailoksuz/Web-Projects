@@ -30,6 +30,12 @@ The application uses a custom dataset containing information about:
 - Special trams
 - Streetcars
 
+## Live Demo
+
+The application is live and accessible at: [https://ismailoksuz.github.io/Global-Urban-Rail-Transit-Data-UI/](https://ismailoksuz.github.io/Global-Urban-Rail-Transit-Data-UI/)
+
+Try it now to explore global urban rail transit systems interactively!
+
 ## Installation
 
 1. Clone the repository:
