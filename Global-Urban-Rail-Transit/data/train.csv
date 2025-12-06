@@ -1,0 +1,257 @@
+CITY,COUNTRY,STATION NUMBER,LINES,TOTAL LENGTH
+Algiers,Algeria,33,4,126.5
+Buenos Aires,Argentina,224,8,815.0
+Córdoba,Argentina,17,1,150.8
+La Plata,Argentina,7,1,4.6
+Neuquén,Argentina,5,1,21.0
+Posadas,Argentina,2,1,8.0
+Salta,Argentina,8,1,87.0
+Santiago del Estero,Argentina,4,1,8.0
+Adelaide,Australia,89,6,132.0
+Brisbane,Australia,153,12,689.0
+Melbourne,Australia,221,17,1047.0
+Perth,Australia,74,7,253.0
+Sydney,Australia,170,8,813.0
+Graz,Austria,112,11,450.0
+Innsbruck,Austria,68,6,271.0
+Klagenfurt,Austria,82,4,325.0
+Linz,Austria,62,5,172.0
+Salzburg,Austria,64,5,130.0
+Vienna,Austria,181,10,475.0
+Vorarlberg,Austria,46,6,80.0
+Baku,Azerbaijan,15,2,91.0
+Antwerp,Belgium,0,4,0.0
+Brussels,Belgium,120,12,350.0
+Charleroi,Belgium,63,4,0.0
+Ghent,Belgium,0,3,0.0
+Liège,Belgium,35,4,0.0
+Gaborone,Botswana,3,1,0.0
+Crato,Brazil,9,0,0.0
+Fortaleza,Brazil,28,2,43.0
+João Pessoa,Brazil,12,1,30.0
+Maceió,Brazil,15,1,34.3
+Natal,Brazil,23,2,56.0
+Rio de Janeiro,Brazil,104,8,270.0
+Sobral,Brazil,12,2,13.9
+São Paulo,Brazil,96,7,278.0
+Teresina,Brazil,9,1,13.5
+Montreal,Canada,61,5,224.6
+Toronto,Canada,72,8,549.3
+Vancouver,Canada,8,1,69.0
+Concepción,Chile,39,3,135.3
+Santiago,Chile,18,1,133.8
+Talca,Chile,11,1,88.0
+Valparaíso,Chile,20,1,43.0
+Victoria,Chile,8,1,65.0
+Beijing,China,22,4,364.7
+Changsha,China,21,1,97.6
+Chengdu,China,33,2,194.3
+Guangzhou,China,80,7,379.034
+Guiyang,China,17,1,113.0
+Haikou,China,7,1,51.4
+Lanzhou,China,6,1,61.0
+Ningbo,China,3,1,48.7
+Shanghai,China,15,2,114.978
+Shaoxing,China,5,1,80.2
+Taizhou,China,5,2,104.338
+San José,Costa Rica,32,3,72.0
+Split,Croatia,7,1,17.8
+Zagreb,Croatia,19,1,47.0
+Havana,Cuba,0,8,0.0
+Ostrava,Czech Republic,0,10,0.0
+Prague,Czech Republic,295,33,933.0
+Aalborg,Denmark,7,1,27.0
+Copenhagen,Denmark,85,7,170.0
+Cairo,Egypt,12,1,70.0
+Tallinn,Estonia,37,4,132.0
+Helsinki,Finland,55,14,236.0
+Tampere,Finland,20,2,0.0
+Lille,France,363,12,0.0
+Paris,France,640,20,1901.0
+Toulouse,France,10,2,0.0
+Berlin,Germany,166,15,335.2
+Bremen,Germany,56,4,270.0
+Cologne,Germany,124,13,676.0
+Dresden,Germany,46,3,166.0
+Frankfurt,Germany,108,9,303.0
+Freiburg,Germany,0,8,190.0
+Hamburg,Germany,68,6,144.0
+Hanover,Germany,74,8,385.0
+Leipzig,Germany,104,7,839.0
+Magdeburg,Germany,22,1,130.0
+Mannheim,Germany,77,5,437.0
+Munich,Germany,148,8,434.0
+Nuremberg,Germany,78,4,320.0
+Rostock,Germany,24,3,90.7
+Strasbourg,France,0,4,170.0
+Stuttgart,Germany,75,6,215.0
+Ulm,Germany,55,7,388.0
+Villingen-Schwenningen,Germany,46,6,194.0
+Athens,Greece,45,4,292.0
+Patras,Greece,16,2,29.0
+Thessaloniki,Greece,25,2,248.9
+Hong Kong,Hong Kong,58,5,119.7
+Budapest,Hungary,412,19,101.0
+Chennai,India,300,8,1174.21
+Delhi,India,0,0,35.0
+Hyderabad,India,29,3,50.0
+Kolkata,India,458,24,1501.0
+Lucknow,India,16,2,72.0
+Mumbai,India,140,5,465.0
+Pune,India,29,2,64.0
+Bandung,Indonesia,47,2,42.0
+Jakarta,Indonesia,116,9,517.1999999999999
+Medan,Indonesia,9,2,61.0
+Padang,Indonesia,8,1,23.0
+Semarang,Indonesia,8,1,60.0
+Surabaya,Indonesia,0,8,0.0
+Yogyakarta,Indonesia,27,4,142.9
+Tehran,Iran,11,1,41.5
+Cork,Ireland,10,3,0.0
+Dublin,Ireland,109,7,53.0
+Galway,Ireland,3,1,0.0
+Limerick,Ireland,7,3,0.0
+Tel Aviv,Israel,69,11,1221.0
+Bari,Italy,13,2,0.0
+Bologna,Italy,82,8,350.0
+Milan,Italy,123,11,403.0
+Naples,Italy,129,8,184.2
+Palermo,Italy,17,2,39.0
+Rome,Italy,149,10,712.77
+Salerno,Italy,6,1,6.0
+Turin,Italy,85,7,0.0
+Fukui,Japan,44,2,53.0
+Fukuoka,Japan,293,19,633.3
+Hiroshima,Japan,76,4,247.8
+Kanazawa,Japan,29,2,20.6
+Matsuyama,Japan,35,3,33.9
+Nagano,Japan,24,1,33.2
+Nagoya,Japan,587,42,1215.1
+Niigata,Japan,58,6,177.9
+Okayama,Japan,127,9,428.7
+Osaka,Japan,997,79,1884.9
+Sapporo,Japan,55,3,168.7
+Sendai,Japan,90,6,259.1
+Shizuoka,Japan,70,3,268.4
+Takamatsu,Japan,52,3,60.0
+Tokyo,Japan,1437,106,3714.8
+Toyama,Japan,66,3,93.2
+Almaty,Kazakhstan,0,0,0.0
+Nairobi,Kenya,23,4,160.0
+Riga,Latvia,80,4,248.5
+Kaunas,Lithuania,0,0,0.0
+Vilnius,Lithuania,0,0,0.0
+Kota Kinabalu,Malaysia,15,1,134.0
+Kuala Lumpur,Malaysia,61,5,326.0
+Penang,Malaysia,20,2,272.0
+Mexico City,Mexico,11,2,84.7
+Casablanca,Morocco,11,2,32.0
+Yangon,Myanmar,39,1,45.9
+Auckland,New Zealand,46,5,267.47
+Wellington,New Zealand,53,6,290.0
+Bergen,Norway,28,2,135.0
+Oslo,Norway,48,2,92.0
+Stavanger,Norway,18,1,75.0
+Trondheim,Norway,35,2,290.0
+Manila,Philippines,32,1,75.7
+Naga,Philippines,0,1,0.0
+Bydgoszcz,Poland,13,1,0.0
+Gdańsk,Poland,38,2,19.5
+Katowice,Poland,13,1,29.0
+Kraków,Poland,9,4,14.0
+Poznań,Poland,0,5,0.0
+Warsaw,Poland,74,14,1266.0
+Wrocław,Poland,23,1,0.0
+Łódź,Poland,61,4,0.0
+Coimbra,Portugal,20,1,0.0
+Lisbon,Portugal,81,5,54.0
+Porto,Portugal,78,4,0.0
+Bucharest,Romania,4,1,20.0
+Moscow,Russia,824,18,2516.7
+Nizhny Novgorod,Russia,27,3,71.2
+Yekaterinburg,Russia,14,2,70.0
+Dakar,Senegal,14,2,55.0
+Belgrade,Serbia,21,2,31.3
+Cape Town,South Africa,122,4,423.0
+Durban,South Africa,99,8,0.0
+East London,South Africa,18,1,0.0
+Johannesburg,South Africa,10,14,80.0
+Port Elizabeth,South Africa,10,1,0.0
+Busan,South Korea,23,1,65.7
+Seoul,South Korea,283,10,736.3
+Alicante,Spain,26,3,202.0
+Barcelona,Spain,228,19,615.0
+Bilbao,Spain,142,12,100.0
+Cartagena,Spain,83,3,186.1
+Cádiz,Spain,13,2,61.0
+Madrid,Spain,90,10,370.0
+Málaga,Spain,26,2,70.0
+Oviedo,Spain,0,9,0.0
+Palma de Mallorca,Spain,29,3,85.0
+San Sebastián,Spain,30,1,80.5
+Santander,Spain,27,3,92.0
+Seville,Spain,37,5,251.0
+Valencia,Spain,66,6,252.0
+Zaragoza,Spain,6,1,16.6
+Colombo,Sri Lanka,201,18,1436.0
+Gothenburg,Sweden,25,3,104.0
+Linköping,Sweden,11,1,115.0
+Malmö,Sweden,78,6,388.0
+Stockholm,Sweden,109,9,324.0
+Aarau,Switzerland,78,6,0.0
+Basel,Switzerland,72,5,250.0
+Bern,Switzerland,134,13,0.0
+Chur,Switzerland,22,2,53.0
+Fribourg,Switzerland,0,7,0.0
+Geneva,Switzerland,45,6,230.0
+Lausanne,Switzerland,75,10,0.0
+Lucerne,Switzerland,0,9,0.0
+Schaffhausen,Switzerland,16,3,0.0
+St. Gallen,Switzerland,188,23,0.0
+Zug,Switzerland,0,2,0.0
+Zurich,Switzerland,171,28,380.0
+Greater Taipei,Taiwan,0,4,0.0
+Taichung,Taiwan,0,2,0.0
+Tainan,Taiwan,0,1,0.0
+Dar es Salaam,Tanzania,23,2,45.0
+Bangkok,Thailand,39,8,692.86
+Sousse,Tunisia,29,1,73.0
+Tunis,Tunisia,32,4,60.099999999999994
+Adapazarı,Turkey,7,1,8.4
+Ankara,Turkey,26,1,37.0
+Gaziantep,Turkey,16,1,25.5
+Istanbul,Turkey,43,1,76.6
+İzmir,Turkey,41,2,136.0
+Kyiv,Ukraine,15,1,50.0
+Belfast,United Kingdom,44,4,0.0
+Birmingham,United Kingdom,146,9,867.4
+Bristol,United Kingdom,0,0,0.0
+Cardiff,United Kingdom,81,0,169.0
+Edinburgh,United Kingdom,0,0,0.0
+Glasgow,United Kingdom,341,0,3032.0
+Leeds,United Kingdom,0,0,0.0
+Liverpool,United Kingdom,68,2,120.7
+London,United Kingdom,1023,57,3599.2
+Manchester,United Kingdom,98,0,229.0
+Albuquerque,United States,11,1,156.0
+Austin,United States,9,1,51.0
+Boston,United States,141,12,641.0
+Chicago,United States,262,12,925.0
+Dallas,United States,35,4,174.14
+Denver,United States,21,4,85.29
+Los Angeles,United States,62,7,859.0
+Miami,United States,18,1,114.1
+Minneapolis,United States,6,1,64.0
+Nashville,United States,6,1,51.5
+New Haven,United States,22,2,194.5
+New York,United States,408,28,3897.0
+Orlando,United States,16,1,78.7
+Philadelphia,United States,153,13,450.0
+Portland,United States,5,1,23.7
+Salt Lake City,United States,16,1,142.0
+San Diego,United States,8,1,66.0
+San Francisco,United States,54,3,307.6
+Seattle,United States,9,2,132.0
+Washington,United States,61,5,446.0
+Montevideo,Uruguay,5,1,80.0
+Caracas,Venezuela,4,1,41.4

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Urban Rail Transit UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <div id="app">
+        <div id="sidebar">
+            <div class="header">
+                <h1>Global Urban Rail Transit UI</h1>
+                <p>Urban transportation systems worldwide</p>
+            </div>
+            
+            <div class="creator">
+                Created by <a href="https://www.github.com/ismailoksuz" target="_blank">İsmail ÖKSÜZ</a>
+            </div>
+            
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-tab="map">Map</button>
+                <button class="nav-tab" data-tab="ranking">Rankings</button>
+                <button class="nav-tab" data-tab="compare">Compare</button>
+                <button class="nav-tab" data-tab="dashboard">Stats</button>
+            </div>
+            
+            <div id="mapTab" class="tab-content active">
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-number" id="totalCitiesCount">0</div>
+                        <div class="stat-label">Cities</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" id="totalSystemsCount">0</div>
+                        <div class="stat-label">Systems</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" id="visibleCitiesCount">0</div>
+                        <div class="stat-label">Visible</div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>System Types:</label>
+                        <div class="filter-checks">
+                            <label><input type="checkbox" class="system-filter" value="Metro" checked> Metro</label>
+                            <label><input type="checkbox" class="system-filter" value="Tram" checked> Tram</label>
+                            <label><input type="checkbox" class="system-filter" value="Light Rail" checked> Light Rail</label>
+                            <label><input type="checkbox" class="system-filter" value="Monorail" checked> Monorail</label>
+                            <label><input type="checkbox" class="system-filter" value="Maglev" checked> Maglev</label>
+                            <label><input type="checkbox" class="system-filter" value="Train" checked> Train</label>
+                            <label><input type="checkbox" class="system-filter" value="People Mover" checked> People Mover</label>
+                            <label><input type="checkbox" class="system-filter" value="Airport Shuttle" checked> Airport Shuttle</label>
+                            <label><input type="checkbox" class="system-filter" value="Amusement Park" checked> Amusement Park</label>
+                            <label><input type="checkbox" class="system-filter" value="Heritage Tram" checked> Heritage Tram</label>
+                            <label><input type="checkbox" class="system-filter" value="Tram Train" checked> Tram Train</label>
+                            <label><input type="checkbox" class="system-filter" value="Interurban" checked> Interurban</label>
+                            <label><input type="checkbox" class="system-filter" value="Special" checked> Special</label>
+                            <label><input type="checkbox" class="system-filter" value="Streetcar" checked> Streetcar</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Min Systems: <span class="range-value" id="minSystemsValue">0+</span></label>
+                        <input type="range" class="range-input" id="minSystems" min="0" max="10" value="0">
+                    </div>
+                    <div class="filter-group">
+                        <label>Min Lines: <span class="range-value" id="minLinesValue">0+</span></label>
+                        <input type="range" class="range-input" id="minLines" min="0" max="20" value="0">
+                    </div>
+                    <div class="filter-group">
+                        <label>Length Range (km): <span class="range-value" id="lengthRangeValue">0-5000</span></label>
+                        <input type="range" class="range-input" id="minLength" min="0" max="5000" step="50" value="0">
+                        <input type="range" class="range-input" id="maxLength" min="0" max="5000" step="50" value="5000">
+                    </div>
+                </div>
+                 
+                <div class="search-box">
+                    <input type="text" id="citySearch" placeholder="Search city or country..." autocomplete="off">
+                </div>
+                <div class="city-details" id="cityDetails">
+                    <div class="no-data">Select a city from the map</div>
+                </div>
+                
+                <div class="footer">
+                    Created by <a href="https://www.github.com/ismailoksuz" target="_blank">İsmail ÖKSÜZ</a>
+                </div>
+            </div>
+            
+            <div id="rankingTab" class="tab-content">
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Rank By:</label>
+                        <select id="rankingType" style="width: 100%; padding: 8px; background: #222; border: 1px solid #333; border-radius: 6px; color: #fff;">
+                            <option value="length">Total Length</option>
+                            <option value="stations">Total Stations</option>
+                            <option value="lines">Total Lines</option>
+                            <option value="systems">Number of Systems</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ranking-list" id="rankingList"></div>
+                
+                <div class="footer">
+                    Created by <a href="https://www.github.com/ismailoksuz" target="_blank">İsmail ÖKSÜZ</a>
+                </div>
+            </div>
+            
+            <div id="compareTab" class="tab-content">
+                <div class="compare-container">
+                    <div class="compare-selector">
+                        <label style="color: #ccc; font-size: 0.85rem; margin-bottom: 8px; display: block;">Select Cities to Compare:</label>
+                        <select id="compareCity1"></select>
+                        <select id="compareCity2"></select>
+                    </div>
+                    <div class="compare-table" id="compareTable"></div>
+                    <button class="export-btn" onclick="exportComparison()">Export Comparison (CSV)</button>
+                </div>
+                
+                <div class="footer">
+                    Created by <a href="https://www.github.com/ismailoksuz" target="_blank">İsmail ÖKSÜZ</a>
+                </div>
+            </div>
+            
+            <div id="dashboardTab" class="tab-content">
+                <div class="dashboard">
+                    <div class="chart-container">
+                        <div class="chart-title">System Type Distribution</div>
+                        <canvas id="systemChart" height="200"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-title">Top 10 Cities by Total Length</div>
+                        <canvas id="lengthChart" height="250"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-title">Top 10 Cities by Stations</div>
+                        <canvas id="stationsChart" height="250"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-title">Top 10 Cities by Lines</div>
+                        <canvas id="linesChart" height="250"></canvas>
+                    </div>
+                    <button class="export-btn" onclick="exportData()">Export All Data (CSV)</button>
+                </div>
+                
+                <div class="footer">
+                    Created by <a href="https://www.github.com/ismailoksuz" target="_blank">İsmail ÖKSÜZ</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="toggle-sidebar" onclick="toggleSidebar()" id="showSidebarBtn">☰ Show Panel</button>
+        
+        <button class="map-overlay-btn" id="viewStatsBtn" onclick="document.getElementById('statsModal').classList.add('active')">View Stats</button>
+        <button class="map-overlay-btn" id="viewRankingBtn" onclick="showRankingModal()">Select Ranking</button>
+        
+        <div id="cityCardPopup" class="city-card-popup">
+            <div class="city-card-header">
+                <div>
+                    <div class="city-card-title" id="popupCityName"></div>
+                    <div class="city-card-country" id="popupCityCountry"></div>
+                </div>
+                <button class="close-popup" onclick="closeCityPopup()">×</button>
+            </div>
+            <div class="city-card-content" id="popupCityContent">
+            </div>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+
+    <div class="compare-modal" id="compareModal">
+        <div class="compare-modal-content">
+            <h3 id="compareModalTitle">Compare City with:</h3>
+            <input type="hidden" id="city1Data">
+            <select id="city2Select"></select>
+            <div class="modal-actions">
+                <button class="modal-btn secondary" onclick="closeCompareModal()">Cancel</button>
+                <button class="modal-btn primary" onclick="confirmCompare()">Compare</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="compare-modal" id="rankingModal">
+        <div class="compare-modal-content">
+            <h3>Select Ranking Type</h3>
+            <select id="rankingModalSelect">
+                <option value="">Select Ranking Type</option>
+                <option value="length">Total Length</option>
+                <option value="stations">Total Stations</option>
+                <option value="lines">Total Lines</option>
+                <option value="systems">Number of Systems</option>
+            </select>
+            <div class="modal-actions">
+                <button class="modal-btn secondary" onclick="closeRankingModal()">Cancel</button>
+                <button class="modal-btn primary" onclick="showRankingOverlay()">Show Ranking</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-chart" id="overlayChart">
+        <button class="close-chart" onclick="closeOverlayChart()">×</button>
+        <div class="chart-header" id="chartHeader"></div>
+        <canvas id="overlayChartCanvas"></canvas>
+    </div>
+
+    <div class="compare-modal" id="statsModal">
+        <div class="compare-modal-content">
+            <h3>Select Stat to View</h3>
+            <select id="statSelect" onchange="showOverlayChart(this.value)">
+                <option value="">Select Stat Type</option>
+                <option value="system">System Type Distribution</option>
+                <option value="length">Top 10 Cities by Length</option>
+                <option value="stations">Top 10 Cities by Stations</option>
+                <option value="lines">Top 10 Cities by Lines</option>
+            </select>
+            <div class="modal-actions">
+                <button class="modal-btn secondary" onclick="document.getElementById('statsModal').classList.remove('active')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function checkSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const showBtn = document.getElementById('showSidebarBtn');
+            if (window.innerWidth <= 768) {
+                sidebar.classList.add('sidebar-hidden');
+                showBtn.style.display = 'block';
+            } else {
+                sidebar.classList.remove('sidebar-hidden');
+                showBtn.style.display = 'none';
+            }
+        }
+        
+        window.addEventListener('resize', checkSidebar);
+        checkSidebar();
+        
+        document.getElementById('showSidebarBtn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('sidebar-hidden');
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
