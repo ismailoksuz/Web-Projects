@@ -75,7 +75,7 @@ The src/ directory contains Python scripts for processing the dataset:
 
 ## Dataset Source
 
-The dataset is also available on Kaggle: [Global Urban Rail Transit Dataset](https://www.kaggle.com/datasets/ismailoksuz/global-urban-rail-transit-dataset)
+The dataset used in this application was created and compiled by the author. It is also available on Kaggle: [Global Urban Rail Transit Dataset](https://www.kaggle.com/datasets/ismailoksuz/global-urban-rail-transit-dataset)
 
 ## Author
 
