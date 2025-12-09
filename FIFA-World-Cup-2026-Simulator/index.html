@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIFA World Cup 2026 Predictor (Sequential)</title>
+    <title>FIFA World Cup 2026 Predictor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,12 +25,15 @@
     
         <div id="groupStageSection" style="display:none;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                <h2 style="margin: 0;">2. Predict Group Stage Scores</h2>
-                <button id="fillRandomBtn" style="background-color: #004d40; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">
-                    🎲 Fill Random Scores
-                </button>
+                <h2 style="margin: 0;">2. Group Stage</h2>
+                <div style="display: flex; gap: 10px;">
+                    <button id="modeToggleBtn" style="background-color: #555; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+                        🔢 Switch to Score Mode
+                    </button>
+                    <button id="fillRandomBtn">🎲 Fill Random Scores</button>
+                </div>
             </div>
-            <p style="color:red; font-weight:bold; margin-top: 0;">Predict all matches in order to see knockout stage.</p>
+            <p style="color:red; font-weight:bold; margin-top: 0;">Complete this stage to see knockout stage.</p>
             <div class="group-stage-content" id="groupStage"></div>
             <hr>
         </div>
