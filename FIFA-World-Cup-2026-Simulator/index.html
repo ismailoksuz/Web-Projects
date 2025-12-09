@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup 2026 Predictor (Sequential)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>FIFA World Cup 2026 Predictor</h1>
+    </div>
+    <div class="container">
+        <h2>1. Select Play-off Path Winners</h2>
+        <div class="paths-selection">
+            <div class="path-box"><label>UEFA Path A</label><select id="pathA_winner" onchange="updateGroupTeams()"></select></div>
+            <div class="path-box"><label>UEFA Path B</label><select id="pathB_winner" onchange="updateGroupTeams()"></select></div>
+            <div class="path-box"><label>UEFA Path C</label><select id="pathC_winner" onchange="updateGroupTeams()"></select></div>
+            <div class="path-box"><label>UEFA Path D</label><select id="pathD_winner" onchange="updateGroupTeams()"></select></div>
+            <div class="path-box"><label>IC Pathway 1</label><select id="pathFIFA1_winner" onchange="updateGroupTeams()"></select></div>
+            <div class="path-box"><label>IC Pathway 2</label><select id="pathFIFA2_winner" onchange="updateGroupTeams()"></select></div>
+        </div>
+        
+        <hr>
+    
+        <div id="groupStageSection" style="display:none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h2 style="margin: 0;">2. Predict Group Stage Scores</h2>
+                <button id="fillRandomBtn" style="background-color: #004d40; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                    🎲 Fill Random Scores
+                </button>
+            </div>
+            <p style="color:red; font-weight:bold; margin-top: 0;">Predict all matches in order to see knockout stage.</p>
+            <div class="group-stage-content" id="groupStage"></div>
+            <hr>
+        </div>
+    
+        <div id="knockoutSection" style="display:none;">
+            <h2>3. Knockout Phase Matches</h2>
+            <p>Selected team will promote to next round.</p>
+            <div id="knockoutBracket"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by <a href="https://www.github.com/ismailoksuz" target="_blank">İsmail ÖKSÜZ</a>
+    </div>
+
+    <script src="best3-data.js"></script>
+    <script src="fifarank.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

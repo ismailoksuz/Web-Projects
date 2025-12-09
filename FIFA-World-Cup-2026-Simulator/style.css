@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: white;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer a {
+    color: #caf700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto 80px auto; 
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-height: calc(100vh - 150px); 
+}
+
+h1,
+h2,
+h3 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.credit {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+    text-align: center;
+    color: #777;
+}
+
+.paths-selection,
+.group-stage-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.group-box,
+.path-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    flex: 1 1 calc(30% - 20px);
+    min-width: 300px;
+    background-color: #e8f5e9;
+}
+
+.path-box {
+    background-color: #f0f4f7;
+    flex: 1 1 calc(32% - 20px);
+    min-width: 250px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 0.85em;
+}
+
+.team-name {
+    width: 40%;
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.score-input {
+    width: 25px;
+    margin: 0 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.team-display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.team-display.left {
+    justify-content: flex-start;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.75em;
+}
+
+.standings-table th,
+.standings-table td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+.standings-table th {
+    background-color: #004d40;
+    color: white;
+}
+
+.standings-table tr:nth-child(1) td {
+    background-color: #a5d6a7;
+    font-weight: bold;
+}
+
+.standings-table tr:nth-child(2) td {
+    background-color: #c8e6c9;
+    font-weight: bold;
+}
+
+.standings-table tr:nth-child(3) td {
+    background-color: #ffcc80;
+}
+
+.knockout-phase-container {
+    padding: 20px 0;
+}
+
+.round-section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.round-matches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.match-node {
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.team-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.team-option:hover:not(.tbd) {
+    background-color: #e0f2f1;
+}
+
+.team-option.winner {
+    background-color: #a5d6a7;
+    font-weight: bold;
+}
+
+.team-option.loser {
+    color: #777;
+}
+
+.team-option+.team-option {
+    border-top: 1px dashed #eee;
+}
+
+.team-option.tbd {
+    color: #aaa;
+    cursor: default;
+    font-weight: normal;
+}
+
+.final-matches-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.third-place-section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.final-section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 2px solid #d32f2f;
+    border-radius: 8px;
+    background-color: #fff3e0;
+    text-align: center;
+}
+
+.final-match-node,
+.third-place-node {
+    width: 300px;
+    border: 1px solid #004d40;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0f2f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.champion-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 3px solid #d32f2f;
+    border-radius: 10px;
+    background-color: #ffebee;
+    text-align: center;
+}
+
+.champion-text {
+    font-size: 1.8em;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#fillRandomBtn {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#fillRandomBtn:hover {
+    background-color: #00796b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#fillRandomBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    #groupStageSection > div:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    #fillRandomBtn {
+        align-self: stretch;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+        padding: 0 10px;
+    }
+    
+    .footer {
+        font-size: 0.8em;
+        padding: 10px 5px;
+    }
+    
+    .container {
+        padding: 15px;
+        margin: 0 auto 15px auto;
+        min-height: calc(100vh - 140px); 
+    }
+}
