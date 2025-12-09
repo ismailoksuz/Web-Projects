@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.draggable-team {
+    user-select: none;
+}
+.draggable-team:active {
+    transform: scale(1.03) !important;
+}
 .header {
     background: black;
     color: white;
