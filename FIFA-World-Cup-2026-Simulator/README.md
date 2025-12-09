@@ -2,6 +2,10 @@
 
 A web-based interactive simulator for predicting the 2026 FIFA World Cup tournament. This tool allows users to simulate group stage results, playoff matches, and the entire knockout bracket based on real FIFA rules and rankings.
 
+**Live Demo**
+
+Try the live version at: https://ismailoksuz.github.io/FIFA-World-Cup-2026-Predictor/
+
 **Features**
 
 - **Playoff Path Selection**: Choose winners for UEFA and Intercontinental playoff paths
