@@ -501,101 +501,146 @@ function activateCustomDragDrop() {
     let draggedItem = null;
     let placeholder = null;
     let dragClone = null;
+    let shiftX = 0;
+    let shiftY = 0;
+
+    function startDrag(item, clientX, clientY) {
+        draggedItem = item;
+        const parent = item.parentNode;
+        
+        placeholder = item.cloneNode(true);
+        placeholder.className = 'drag-placeholder';
+        placeholder.style.opacity = '0.5';
+        placeholder.style.pointerEvents = 'none';
+        placeholder.style.listStyle = 'none';
+        parent.insertBefore(placeholder, item);
+        
+        item.style.display = 'none';
+
+        dragClone = item.cloneNode(true);
+        const rect = item.getBoundingClientRect();
+        
+        dragClone.style.position = 'fixed';
+        dragClone.style.zIndex = '9999';
+        dragClone.style.left = rect.left + 'px';
+        dragClone.style.top = rect.top + 'px';
+        dragClone.style.width = rect.width + 'px';
+        dragClone.style.height = rect.height + 'px';
+        dragClone.style.opacity = '0.9';
+        dragClone.style.boxShadow = '0 8px 16px rgba(0,0,0,0.3)';
+        dragClone.style.pointerEvents = 'none';
+        dragClone.style.listStyle = 'none';
+        dragClone.style.touchAction = 'none';
+        
+        document.body.appendChild(dragClone);
+
+        shiftX = clientX - rect.left;
+        shiftY = clientY - rect.top;
+    }
+
+    function handleMove(e) {
+        if (!draggedItem) return;
+        
+        let clientX, clientY;
+        if (e.type.includes('touch')) {
+            if (e.touches.length !== 1) return;
+            e.preventDefault();
+            clientX = e.touches[0].clientX;
+            clientY = e.touches[0].clientY;
+        } else {
+            clientX = e.clientX;
+            clientY = e.clientY;
+        }
+        
+        const x = clientX - shiftX;
+        const y = clientY - shiftY;
+        dragClone.style.left = x + 'px';
+        dragClone.style.top = y + 'px';
+
+        const elements = document.elementsFromPoint(clientX, clientY);
+        for (const el of elements) {
+            if (el !== placeholder && 
+                el.classList.contains('draggable-team') && 
+                el.parentNode === draggedItem.parentNode) {
+                
+                const rect = el.getBoundingClientRect();
+                const mid = rect.top + rect.height / 2;
+                
+                if (clientY < mid) {
+                    draggedItem.parentNode.insertBefore(placeholder, el);
+                } else {
+                    draggedItem.parentNode.insertBefore(placeholder, el.nextSibling);
+                }
+                break;
+            }
+        }
+    }
+
+    function handleEnd() {
+        if (!draggedItem) return;
+        
+        const placeholderRect = placeholder.getBoundingClientRect();
+        dragClone.style.transition = 'all 0.3s ease';
+        dragClone.style.left = placeholderRect.left + 'px';
+        dragClone.style.top = placeholderRect.top + 'px';
+        dragClone.style.opacity = '0.5';
+        
+        setTimeout(() => {
+            if (dragClone && dragClone.parentNode) {
+                dragClone.parentNode.removeChild(dragClone);
+            }
+            
+            draggedItem.style.display = '';
+            draggedItem.parentNode.insertBefore(draggedItem, placeholder);
+            draggedItem.parentNode.removeChild(placeholder);
+            
+            draggedItem = null;
+            placeholder = null;
+            dragClone = null;
+            
+            if (typeof checkAllGroupsRanked === 'function') {
+                checkAllGroupsRanked();
+            }
+        }, 300);
+    }
+
+    function cleanup() {
+        document.removeEventListener('mousemove', handleMove);
+        document.removeEventListener('mouseup', handleEnd);
+        document.removeEventListener('touchmove', handleMove);
+        document.removeEventListener('touchend', handleEnd);
+        document.removeEventListener('touchcancel', handleEnd);
+    }
 
     draggables.forEach(item => {
         item.addEventListener('mousedown', (e) => {
             if (e.button !== 0) return;
-            draggedItem = item;
-            const parent = item.parentNode;            
-            placeholder = item.cloneNode(true);
-            placeholder.className = 'drag-placeholder';
-            placeholder.style.opacity = '0.5';
-            placeholder.style.pointerEvents = 'none';
-            placeholder.style.listStyle = 'none';            
-            parent.insertBefore(placeholder, item);            
-            item.style.display = 'none';
-            dragClone = item.cloneNode(true);
-            const originalRect = item.getBoundingClientRect();
-            dragClone.style.position = 'fixed';
-            dragClone.style.zIndex = '9999';
-            dragClone.style.left = originalRect.left + 'px';
-            dragClone.style.top = originalRect.top + 'px';
-            dragClone.style.width = originalRect.width + 'px';
-            dragClone.style.height = originalRect.height + 'px';
-            dragClone.style.opacity = '0.9';
-            dragClone.style.cursor = 'grabbing';
-            dragClone.style.boxShadow = '0 8px 16px rgba(0,0,0,0.3)';
-            dragClone.style.pointerEvents = 'none';
-            dragClone.style.listStyle = 'none';
+            startDrag(item, e.clientX, e.clientY);
             
-            const computedStyle = window.getComputedStyle(item);
-            ['backgroundColor', 'color', 'border', 'borderRadius', 
-             'padding', 'fontSize', 'fontWeight', 'display',
-             'alignItems', 'justifyContent'].forEach(prop => {
-                dragClone.style[prop] = computedStyle[prop];
-            });
-            
-            document.body.appendChild(dragClone);
-
-            const shiftX = e.clientX - originalRect.left;
-            const shiftY = e.clientY - originalRect.top;
-
-            const onMouseMove = (e) => {
-                const x = e.clientX - shiftX;
-                const y = e.clientY - shiftY;
-                dragClone.style.left = x + 'px';
-                dragClone.style.top = y + 'px';
-
-                const elements = document.elementsFromPoint(e.clientX, e.clientY);
-                for (const el of elements) {
-                    if (el !== placeholder && 
-                        el.classList.contains('draggable-team') && 
-                        el.parentNode === parent) {
-                        
-                        const rect = el.getBoundingClientRect();
-                        const mid = rect.top + rect.height / 2;
-                        
-                        if (e.clientY < mid) {
-                            parent.insertBefore(placeholder, el);
-                        } else {
-                            parent.insertBefore(placeholder, el.nextSibling);
-                        }
-                        break;
-                    }
-                }
-            };
-
-            const onMouseUp = () => {
-                if (!draggedItem) return;                
-                const placeholderRect = placeholder.getBoundingClientRect();
-                dragClone.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-                dragClone.style.left = placeholderRect.left + 'px';
-                dragClone.style.top = placeholderRect.top + 'px';
-                dragClone.style.opacity = '0.5';
-                
-                setTimeout(() => {
-                    if (dragClone && dragClone.parentNode) {
-                        dragClone.parentNode.removeChild(dragClone);
-                    }
-                    
-                    draggedItem.style.display = '';
-                    parent.insertBefore(draggedItem, placeholder);
-                    parent.removeChild(placeholder);
-                    
-                    draggedItem = null;
-                    placeholder = null;
-                    dragClone = null;
-                    checkAllGroupsRanked();
-                }, 300);
-                
-                document.removeEventListener('mousemove', onMouseMove);
-                document.removeEventListener('mouseup', onMouseUp);
-            };
-
-            document.addEventListener('mousemove', onMouseMove);
-            document.addEventListener('mouseup', onMouseUp);
+            document.addEventListener('mousemove', handleMove);
+            document.addEventListener('mouseup', handleEnd);
         });
+
+        item.addEventListener('touchstart', (e) => {
+            if (e.touches.length !== 1) return;
+            e.preventDefault();
+            startDrag(item, e.touches[0].clientX, e.touches[0].clientY);
+            
+            document.addEventListener('touchmove', handleMove, { passive: false });
+            document.addEventListener('touchend', handleEnd);
+            document.addEventListener('touchcancel', handleEnd);
+        });
+
+        item.style.touchAction = 'none';
+        item.style.webkitUserSelect = 'none';
+        item.style.userSelect = 'none';
     });
+
+    document.addEventListener('touchmove', (e) => {
+        if (draggedItem) {
+            e.preventDefault();
+        }
+    }, { passive: false });
 }
 
 function checkAllGroupsRanked() {
