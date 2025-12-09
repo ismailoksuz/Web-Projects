@@ -35,7 +35,7 @@ A web-based interactive simulator for predicting the 2026 FIFA World Cup tournam
 
 **Project Structure**
 
-- `testo2.html` - Main HTML file
+- `index.html` - Main HTML file
 - `style.css` - All styling
 - `script.js` - Core application logic
 - `best3-data.js` - Third-place qualification scenarios
@@ -43,7 +43,7 @@ A web-based interactive simulator for predicting the 2026 FIFA World Cup tournam
 
 **Usage Instructions**
 
-1. Open `testo2.html` in a modern web browser
+1. Open `index.html` in a modern web browser
 2. Select winners for all playoff paths
 3. Enter scores for all group matches (or use "Fill Random Scores")
 4. Click teams in the knockout bracket to advance them
