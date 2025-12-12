@@ -2,6 +2,10 @@
 
 A static, high-performance web application for exploring and comparing detailed specifications of over 13,289 mobile phones. Built with vanilla HTML, CSS, and JavaScript, and designed to run entirely on GitHub Pages with no backend required.
 
+## Live Demo
+
+https://phone-compare-eight.vercel.app
+
 ## Data Source
 
 This project uses the [Mobile Phone Specifications Dataset](https://www.kaggle.com/datasets/sulthonaqthoris/mobile-phone-specifications-dataset) from Kaggle as its primary data source. The original dataset contains 13,727 devices but was provided in a malformed JSON format with missing or inconsistent fields. After cleaning and validation, 438 entries were excluded due to invalid or completely empty specifications, resulting in a final dataset of 13,289 valid devices.
@@ -58,7 +62,8 @@ No build step is required — the site runs entirely from static assets.
 
 - All data processing is performed client-side after initial JSON load
 - The comparison view is intentionally optimized for landscape/desktop viewing
-- The original phone.json file was excluded from the repository due to its large size; only the cleaned and filtered versions (phones_fixed.json and missedInfo.json) are included
+- The original phone.json file was excluded from the repository due to its large size
+- Only the cleaned dataset (phones_fixed.json) is included; auxiliary outputs like missedInfo.json and common_features.json were omitted to reduce repo size
 
 ---
 
