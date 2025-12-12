@@ -1,0 +1,521 @@
+  :root {
+    --bg-primary: #f0f4f8;
+    --bg-card: #ffffff;
+    --text-primary: #1a3a4a;
+    --text-secondary: #4a6b7c;
+    --accent: #008080;
+    --accent-light: #26a69a;
+    --border: #dbe2e8;
+    --footer-bg: #005f5f;
+    --footer-text: #e0f7fa;
+  }
+  
+  [data-theme="dark"] {
+    --bg-primary: #0d1b2a;
+    --bg-card: #1b263b;
+    --text-primary: #e0f7fa;
+    --text-secondary: #a9d6e5;
+    --accent: #26c6c6;
+    --accent-light: #4dd0e1;
+    --border: #2d4059;
+    --footer-bg: #003b3b;
+    --footer-text: #b2ebf2;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Geomanist', system-ui, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+  
+  header {
+    background: var(--bg-card);
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin: 0 auto 24px;
+    max-width: 1400px;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-left h1 {
+    font-size: 2rem;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .search-box input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 16px;
+  }
+  
+  .search-box input::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .theme-toggle {
+    background: var(--accent);
+    color: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .main-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .filter-sidebar {
+    width: 260px;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 16px;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .filter-sidebar h3 {
+    margin-bottom: 16px;
+    color: var(--accent);
+  }
+  
+  .filter-sidebar label {
+    display: block;
+    margin: 10px 0 6px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  .filter-sidebar select,
+  .filter-sidebar input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  .filter-sidebar button {
+    width: 100%;
+    padding: 10px;
+    background: var(--accent);
+    color: rgb(4, 46, 46);
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  
+  .filter-sidebar button:hover {
+    background: var(--accent-light);
+  }
+  
+  .feature-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 10px 0 16px;
+  }
+  
+  .feature-filters label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+  }
+  
+  .content-area {
+    flex: 1;
+  }
+  
+  .phone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+  
+  .phone-card,
+  .modal-content {
+    background: #ffffff !important;
+  }
+  
+  .phone-card *,
+  .modal-content * {
+    color: rgb(4, 46, 46) !important;
+    border-color: rgb(4, 46, 46) !important;
+  }
+  
+  .phone-card {
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .phone-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  }
+  
+  #compareSearchInput {
+    padding: 12px 24px;
+    background: #ffffff;
+    color: rgb(4, 46, 46);
+    border: 1px solid rgb(4, 46, 46);
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  #compareSearchInput:hover,
+  #compareSearchInput:focus{
+    background: var(--accent-light);
+    transition: 0.2s ease-in-out;
+  }
+
+  .phone-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+  
+  .phone-card h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .compare-btn {
+    display: block;
+    width: 80%;
+    margin: 12px auto 0;
+    padding: 8px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  
+  .compare-btn:hover {
+    background: var(--accent-light);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 2000;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px 20px;
+    overflow-y: auto;
+  }
+  
+  .modal-content {
+    border-radius: 20px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    animation: modalIn 0.3s ease-out;
+  }
+  
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .modal-image img {
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  
+  .modal-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  
+  .specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .spec-category h3 {
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .spec-item {
+    display: flex;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+  
+  .spec-key {
+    min-width: 120px;
+    font-weight: 600;
+  }
+  
+  .compare-modal-content {
+    max-width: 1200px;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .compare-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .compare-section h3 {
+    margin-bottom: 16px;
+    color: var(--accent);
+  }
+  
+  .compare-divider {
+    width: 1px;
+    background: var(--border);
+    margin: 0 20px;
+  }
+  
+  .compare-search-box {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .compare-search-box input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  .compare-search-box button {
+    padding: 10px 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .compare-results {
+    margin-top: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #ffffff !important;
+    color: rgb(4, 46, 46) !important;
+    border-radius: 12px;
+    padding: 12px;
+  }
+  
+  .compare-result-item {
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    color: rgb(4, 46, 46) !important;
+    border-color: var(--border) !important;
+  }
+  
+  .compare-result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .compare-result-item:hover {
+    background: #f0f8f8 !important;
+  }
+  
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .fixed-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .fixed-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+
+  .search-box button {
+    padding: 12px 24px;
+    background: var(--accent);
+    color: rgb(4, 46, 46);
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .search-box button:hover {
+    background: var(--accent-light);
+  }
+  
+  .compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 16px;
+  }
+  
+  .compare-table th,
+  .compare-table td {
+    padding: 14px 16px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.4;
+    background: #ffffff !important;
+    color: rgb(4, 46, 46) !important;
+    border-color: var(--border) !important;
+    border-radius: 8px;
+    margin: 0 4px;
+    flex: 1;
+  }
+  
+  .compare-table th {
+    font-weight: 600;
+    color: var(--accent);
+    background-color: #f0f8f8;
+  }
+  
+  .compare-table tr {
+    display: flex;
+    width: 100%;
+  }
+
+  .compare-table-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+  }
+  
+  .rotate-message {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--accent);
+    padding: 40px 20px;
+    font-weight: 600;
+  }
+  
+  .compare-table-wrapper {
+    display: none;
+  }
+
+  @media (min-width: 768px), (orientation: landscape) {
+    .rotate-message {
+      display: none !important;
+    }
+    .compare-table-wrapper {
+      display: block !important;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .main-layout {
+      flex-direction: column;
+    }
+    .filter-sidebar {
+      width: 100%;
+    }
+    .specs-grid {
+      grid-template-columns: 1fr;
+    }
+    .compare-modal-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .compare-divider {
+      display: none;
+    }
+  }
+

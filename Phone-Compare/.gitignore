@@ -1,0 +1,42 @@
+data/phone.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# System
+.DS_Store
+Thumbs.db
+.DS_Store?
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.venv/
+venv/
