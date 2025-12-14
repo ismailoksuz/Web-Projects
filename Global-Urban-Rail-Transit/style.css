@@ -187,12 +187,79 @@ body {
     color: #666;
     font-size: 0.95rem;
 }
+
+.preset-filters {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.preset-group {
+    margin-bottom: 12px;
+}
+
+.preset-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ccc;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.preset-select {
+    width: 100%;
+    padding: 8px 10px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.preset-select:focus {
+    outline: none;
+    border-color: #4a9eff;
+}
+
+.checkbox-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checkbox-filter input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #4a9eff;
+}
+
+.checkbox-filter label {
+    margin: 0;
+    color: #ccc;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.filter-group select.preset-select option {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 8px;
+}
+
+.filter-group select.preset-select option:checked {
+    background: #4a9eff;
+    color: #fff;
+}
+
 .system-box[data-system="Metro"] { border-left-color: #ff4757; }
 .system-box[data-system="Tram"] { border-left-color: #2ed573; }
 .system-box[data-system="Light Rail"] { border-left-color: #1e90ff; }
 .system-box[data-system="Monorail"] { border-left-color: #ffa502; }
 .system-box[data-system="Maglev"] { border-left-color: #9c88ff; }
-.system-box[data-system="Train"] { border-left-color: #ff6b81; }
+/* .system-box[data-system="Train"] { border-left-color: #ff6b81; } */
 .system-box[data-system="People Mover"] { border-left-color: #00d2d3; }
 .system-box[data-system="Airport Shuttle"] { border-left-color: #54a0ff; }
 .system-box[data-system="Amusement Park"] { border-left-color: #f368e0; }

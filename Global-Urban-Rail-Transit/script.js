@@ -14,7 +14,6 @@ let dragOffset = { x: 0, y: 0 };
 
 const systemFiles = {
     'Metro': 'metro.csv',
-    'Train': 'train.csv',
     'Tram': 'tram.csv',
     'Light Rail': 'light_rail.csv',
     'Monorail': 'Monorail.csv',
@@ -28,6 +27,52 @@ const systemFiles = {
     'Special': 'specialTram.csv',
     'Streetcar': 'streetcar.csv'
 };
+
+const continentMapping = {
+    'europe': ['Germany', 'France', 'Italy', 'Spain', 'United Kingdom', 'Netherlands', 'Belgium', 'Switzerland', 'Austria', 'Sweden', 'Norway', 'Denmark', 'Finland', 'Poland', 'Czech Republic', 'Hungary', 'Romania', 'Greece', 'Portugal', 'Ireland', 'Croatia', 'Serbia', 'Bulgaria', 'Slovakia', 'Latvia', 'Estonia', 'Lithuania', 'Luxembourg', 'Bosnia and Herzegovina', 'Russia', 'Ukraine', 'Belarus', 'Georgia', 'Armenia', 'Azerbaijan', 'Turkey'],
+    'asia': ['China', 'Japan', 'South Korea', 'India', 'Turkey', 'Thailand', 'Malaysia', 'Singapore', 'Indonesia', 'Philippines', 'Vietnam', 'Taiwan', 'Hong Kong', 'Iran', 'Saudi Arabia', 'United Arab Emirates', 'Qatar', 'Kazakhstan', 'Uzbekistan', 'Georgia', 'Armenia', 'Azerbaijan', 'Bangladesh', 'Pakistan', 'Myanmar', 'North Korea', 'Israel'],
+    'north_america': ['United States', 'Canada', 'Mexico', 'Panama', 'Costa Rica', 'Cuba', 'Dominican Republic'],
+    'south_america': ['Brazil', 'Argentina', 'Chile', 'Colombia', 'Peru', 'Venezuela', 'Ecuador', 'Bolivia', 'Uruguay'],
+    'africa': ['Egypt', 'South Africa', 'Morocco', 'Algeria', 'Nigeria', 'Kenya', 'Ethiopia', 'Tanzania', 'Tunisia'],
+    'oceania': ['Australia', 'New Zealand']
+};
+
+let allCountries = [];
+
+function updateCountryList() {
+    const countries = [...new Set(allCities.map(city => city.country))].sort();
+    allCountries = countries;
+    
+    const countrySelect = document.getElementById('countrySelect');
+    if (countrySelect) {
+        const currentValue = countrySelect.value;
+        countrySelect.innerHTML = '<option value="">All Countries</option>' +
+            countries.map(country => `<option value="${country}">${country}</option>`).join('');
+        
+        if (currentValue && countries.includes(currentValue)) {
+            countrySelect.value = currentValue;
+        }
+    }
+}
+
+function updateCountryListByContinent() {
+    const continent = document.getElementById('continentFilter').value;
+    const countrySelect = document.getElementById('countrySelect');
+    
+    if (!continent) {
+        countrySelect.innerHTML = '<option value="">All Countries</option>' +
+            allCountries.map(country => `<option value="${country}">${country}</option>`).join('');
+    } else {
+        const countriesInContinent = continentMapping[continent] || [];
+        const availableCountries = allCountries.filter(country => countriesInContinent.includes(country));
+        
+        let continentName = continent.charAt(0).toUpperCase() + continent.slice(1).replace('_', ' ');
+        countrySelect.innerHTML = '<option value="">All Countries in ' + continentName + '</option>' +
+            availableCountries.map(country => `<option value="${country}">${country}</option>`).join('');
+    }
+    
+    applyFilters();
+}
 
 function showLoading(show) {
     const loader = document.getElementById('loadingScreen');
@@ -119,6 +164,7 @@ async function loadAllData() {
         };
     }).filter(city => city !== null);
     
+    updateCountryList();
     applyFilters();
     updateStats();
     updateRankings();
@@ -140,6 +186,23 @@ function applyFilters() {
         });
     }
     
+    const multiSystem = document.getElementById('multiSystemFilter').checked;
+    if (multiSystem) {
+        filteredCities = filteredCities.filter(city => city.systemCount > 1);
+    }
+    
+    const continentFilter = document.getElementById('continentFilter').value;
+    const countryFilter = document.getElementById('countrySelect').value;
+    
+    if (continentFilter) {
+        const countriesInContinent = continentMapping[continentFilter] || [];
+        filteredCities = filteredCities.filter(city => countriesInContinent.includes(city.country));
+    }
+    
+    if (countryFilter) {
+        filteredCities = filteredCities.filter(city => city.country === countryFilter);
+    }
+    
     const minSystems = parseInt(document.getElementById('minSystems').value);
     if (minSystems > 0) {
         filteredCities = filteredCities.filter(city => city.systemCount >= minSystems);
@@ -153,6 +216,28 @@ function applyFilters() {
     const minLength = parseInt(document.getElementById('minLength').value);
     const maxLength = parseInt(document.getElementById('maxLength').value);
     filteredCities = filteredCities.filter(city => city.totalLength >= minLength && city.totalLength <= maxLength);
+    
+    const lengthPreset = document.getElementById('lengthPreset').value;
+    if (lengthPreset) {
+        if (lengthPreset === 'short') {
+            filteredCities = filteredCities.filter(city => city.totalLength <= 50);
+        } else if (lengthPreset === 'medium') {
+            filteredCities = filteredCities.filter(city => city.totalLength > 50 && city.totalLength <= 200);
+        } else if (lengthPreset === 'long') {
+            filteredCities = filteredCities.filter(city => city.totalLength > 200);
+        }
+    }
+    
+    const systemCountPreset = document.getElementById('systemCountPreset').value;
+    if (systemCountPreset) {
+        if (systemCountPreset === 'single') {
+            filteredCities = filteredCities.filter(city => city.systemCount === 1);
+        } else if (systemCountPreset === 'few') {
+            filteredCities = filteredCities.filter(city => city.systemCount >= 2 && city.systemCount <= 4);
+        } else if (systemCountPreset === 'many') {
+            filteredCities = filteredCities.filter(city => city.systemCount >= 5);
+        }
+    }
     
     if (searchQuery) {
         filteredCities = filteredCities.filter(city => 
@@ -205,8 +290,22 @@ function updateMapWithCities(cities, isSearching = false) {
     map.addLayer(markers);
     updateStats();
     
-    if (isSearching && cities.length === 1) {
-        showCityCardPopup(cities[0]);
+    if (cities.length === 1) {
+        const singleCity = cities[0];
+        showCityCardPopup(singleCity);
+        map.setView([singleCity.lat, singleCity.lng], 10);
+    } else if (cities.length > 0) {
+        const continentFilter = document.getElementById('continentFilter').value;
+        const countryFilter = document.getElementById('countrySelect').value;
+        
+        if (continentFilter || countryFilter) {
+            const bounds = new L.LatLngBounds();
+            cities.forEach(city => {
+                bounds.extend([city.lat, city.lng]);
+            });
+            
+            map.fitBounds(bounds, { padding: [50, 50], maxZoom: 8 });
+        }
     }
 }
 
@@ -469,6 +568,12 @@ function initFilters() {
     document.querySelectorAll('.system-filter').forEach(cb => {
         cb.addEventListener('change', applyFilters);
     });
+    
+    document.getElementById('multiSystemFilter').addEventListener('change', applyFilters);
+    document.getElementById('continentFilter').addEventListener('change', updateCountryListByContinent);
+    document.getElementById('countrySelect').addEventListener('change', applyFilters);
+    document.getElementById('lengthPreset').addEventListener('change', applyFilters);
+    document.getElementById('systemCountPreset').addEventListener('change', applyFilters);
     
     document.getElementById('minSystems').addEventListener('input', (e) => {
         document.getElementById('minSystemsValue').textContent = e.target.value === '0' ? '0+' : e.target.value + '+';
