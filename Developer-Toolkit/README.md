@@ -1,6 +1,6 @@
 # Developer-Toolkit
 The Developer-Toolkit is a comprehensive, centralized collection of utility tools designed to assist developers, designers, and programmers with common, recurring tasks. 
-This repository consolidates **12 previously separate repositories** into a single, cohesive application, providing a unified and efficient interface for various programming, design, and data manipulation needs. The integration of these tools addresses the limitation of having individually small, scattered utilities, offering a robust and all-in-one solution.
+This repository consolidates **13 previously separate repositories** into a single, cohesive application, providing a unified and efficient interface for various programming, design, and data manipulation needs. The integration of these tools addresses the limitation of having individually small, scattered utilities, offering a robust and all-in-one solution.
 
 ## Accessing the Toolkit
 The application is hosted via GitHub Pages and can be accessed directly through the following link:
@@ -22,6 +22,7 @@ This repository combines the following utilities:
 <li>Random Password Generator</li>
 <li>QR Code Generator</li>
 <li>VCard QR Generator</li>
+<li>Comment Remover</li>
 </ul>
 
 ## Technologies Used
