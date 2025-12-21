@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Real-Time Crypto Analytics Dashboard
 
-## Getting Started
+A high-performance, responsive cryptocurrency surveillance terminal built with Next.js 15 and Tailwind CSS. This application provides institutional-grade market data visualization by interfacing directly with Binance WebSocket API for zero-latency price and order book updates.
 
-First, run the development server:
+## Live Demo
+https://real-time-crypto-dashboard-git-main-ismailoksuzs-projects.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Core Functionalities
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Market Surveillance
+* Live Price Streaming: Real-time price action monitoring with high-frequency updates.
+* Interactive Area Charts: Dynamic price history visualization utilizing Recharts for smooth data transitions.
+* Sparkline Integration: Per-asset mini trend indicators within the sidebar for immediate market sentiment analysis.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Advanced Order Flow Tools
+* Real-Time Order Book: Visualized L2 bid/ask depth with automatic spread calculation.
+* Depth Chart: Bar-based market depth visualization to identify significant support and resistance zones.
+* Whale Tracker: Automated filtering system for identifying large-scale market transactions (transactions > $50,000 USD).
+* Liquidation Monitor: Real-time tracking of forced liquidations across the futures market.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Technical Indicators & Analytics
+* Market Sentiment Engine: Dynamic buy/sell volume ratio analysis based on recent trade execution.
+* Relative Change Heatmap: A comprehensive market overview grid displaying percentage changes across all tracked assets.
+* Asset Statistics: Detailed 24-hour high, low, and volume metrics via REST API integration.
 
-## Learn More
+## Technical Architecture
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend Stack
+* Framework: Next.js 15 (App Router)
+* Styling: Tailwind CSS
+* Icons: Lucide React
+* Charts: Recharts
+* State Management: React Hooks (useState, useMemo, useEffect)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Data Sources
+* WebSocket: Binance wss://stream.binance.com:9443 for real-time trade and depth data.
+* Futures WebSocket: Binance fstream.binance.com for global liquidation event monitoring.
+* REST API: Binance v3/ticker/24hr for daily statistics and volume data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment and Optimization
+* Edge Ready: Optimized for deployment on Vercel with minimal bundle size.
+* Responsive Design: Fluid UI architecture that adapts from mobile handsets to ultra-wide desktop monitors.
+* Performance: Utilizes React useMemo to prevent unnecessary re-renders during high-frequency data updates.
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run the project locally:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   git clone https://github.com/ismailoksuz/Real-Time-Crypto-Dashboard.git
+
+2. Install dependencies:
+   npm install
+
+3. Start the development server:
+   npm run dev
+
+## Author
+İsmail ÖKSÜZ
+https://github.com/ismailoksuz
