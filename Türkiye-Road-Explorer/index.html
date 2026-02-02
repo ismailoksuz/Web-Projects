@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>ETS2 Türkiye: % Keşif Modu</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map { height: 100vh; width: 100%; background: #050505; }
+        .ui-panel {
+            position: absolute; top: 20px; left: 20px; z-index: 1000;
+            background: rgba(15, 15, 15, 0.95); color: #ffcc00; padding: 15px;
+            border-radius: 8px; border: 1px solid #333; font-family: sans-serif;
+            min-width: 200px;
+        }
+        body { margin: 0; overflow: hidden; background: #000; }
+        .toggle-btn {
+            background: #222; color: #eee; border: 1px solid #444;
+            padding: 8px; cursor: pointer; width: 100%; margin-top: 5px;
+            font-size: 12px; font-weight: bold;
+        }
+        .toggle-btn.active { background: #ffcc00; color: #000; }
+        .percentage { font-size: 24px; color: #ffcc00; font-weight: bold; display: block; margin-top: 5px; }
+        .stats-detail { font-size: 12px; color: #888; }
+        .status { color: #00ff00; font-size: 11px; }
+        .light-theme #map { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+<div class="ui-panel">
+    <h3 style="margin:0; font-size: 16px;">DISCOVER TR ETS2 STYLE</h3>
+    <span id="percentDisplay" class="percentage">%0.00</span>
+    <div id="statsDetail" class="stats-detail">Yükleniyor...</div>
+    
+    <button class="toggle-btn" onclick="haritayiKapatAc()" id="mapToggleBtn">Sadece Yolları Göster</button>
+    
+    <div style="display: flex; gap: 5px;">
+        <button class="toggle-btn" style="background:#0055aa; flex: 1;" onclick="yedekIndir()">Yedek Al</button>
+        <button class="toggle-btn" style="background:#228822; flex: 1;" onclick="document.getElementById('fileInput').click()">Yedek Yükle</button>
+    </div>
+    <input type="file" id="fileInput" style="display:none" accept=".json" onchange="yedekYukle(event)">
+    
+    <button class="theme-btn" onclick="temaDegistir()">Görünümü Değiştir</button>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map', { preferCanvas: true }).setView([39.0, 35.0], 6);
+    
+    const darkTiles = 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png';
+    const lightTiles = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
+    let currentTileLayer = L.tileLayer(darkTiles).addTo(map);
+
+    const unvisitedStyle = { color: "#333", weight: 3, opacity: 0.6 };
+    const visitedStyle = { color: "#ffcc00", weight: 5, opacity: 1 };
+    
+    let discoveredRoads = [];
+    let totalRoads = 0;
+    let isDark = true;
+    let showMap = true;
+
+    // --- IndexedDB: Cihazda Kalıcı Depolama ---
+    async function initDB() {
+        return new Promise((resolve) => {
+            const request = indexedDB.open("ETS2DiscoveryDB", 1);
+            request.onupgradeneeded = (e) => {
+                const db = e.target.result;
+                if (!db.objectStoreNames.contains("progress")) db.createObjectStore("progress");
+                if (!db.objectStoreNames.contains("cache")) db.createObjectStore("cache");
+            };
+            request.onsuccess = (e) => resolve(e.target.result);
+        });
+    }
+
+    async function kaydetCihaza() {
+        const db = await initDB();
+        const tx = db.transaction("progress", "readwrite");
+        tx.objectStore("progress").put(discoveredRoads, "user_progress");
+    }
+
+    async function yukleCihazdan() {
+        const db = await initDB();
+        return new Promise((resolve) => {
+            const tx = db.transaction("progress", "readonly");
+            const req = tx.objectStore("progress").get("user_progress");
+            req.onsuccess = () => resolve(req.result || []);
+        });
+    }
+
+    // --- Harita Fonksiyonları ---
+    function haritayiKapatAc() {
+        showMap = !showMap;
+        const btn = document.getElementById('mapToggleBtn');
+        if (!showMap) {
+            map.removeLayer(currentTileLayer);
+            btn.innerText = "Haritayı Geri Getir";
+            btn.classList.add('active');
+        } else {
+            currentTileLayer.addTo(map);
+            btn.innerText = "Sadece Yolları Göster";
+            btn.classList.remove('active');
+        }
+    }
+
+    function temaDegistir() {
+        isDark = !isDark;
+        map.removeLayer(currentTileLayer);
+        currentTileLayer = L.tileLayer(isDark ? darkTiles : lightTiles).addTo(map);
+        if (showMap) currentTileLayer.addTo(map);
+        
+        const newUnvisitedColor = isDark ? "#333" : "#bbb";
+        map.eachLayer((layer) => {
+            if (layer instanceof L.Polyline && !discoveredRoads.includes(layer.roadId)) {
+                layer.setStyle({ color: newUnvisitedColor });
+            }
+        });
+        document.body.classList.toggle('light-theme');
+    }
+
+    async function yollariYukle() {
+        discoveredRoads = await yukleCihazdan();
+        const db = await initDB();
+        
+        // Cache kontrolü
+        const tx = db.transaction("cache", "readonly");
+        let geoData = await new Promise(r => {
+            const req = tx.objectStore("cache").get("turkiye_yollari");
+            req.onsuccess = () => r(req.result);
+        });
+
+        if (!geoData) {
+            document.getElementById('statsDetail').innerText = "Veri cihazınıza indiriliyor...";
+            const query = `[out:json][timeout:90];area["name"="Türkiye"]->.tr;(way["highway"~"motorway|trunk"](area.tr););out geom;`;
+            const response = await fetch("https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query));
+            geoData = await response.json();
+            const saveTx = db.transaction("cache", "readwrite");
+            saveTx.objectStore("cache").put(geoData, "turkiye_yollari");
+        }
+
+        totalRoads = geoData.elements.filter(e => e.type === "way").length;
+        ciz(geoData);
+    }
+    // YEDEK DOSYASINI CİHAZA YÜKLEME
+function yedekYukle(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async function(e) {
+        try {
+            const data = JSON.parse(e.target.result);
+            
+            // Veri formatı kontrolü (Sadece liste mi yoksa objem mi?)
+            const yeniListe = Array.isArray(data) ? data : (data.kesif_listesi || []);
+            
+            if (yeniListe.length >= 0) {
+                discoveredRoads = yeniListe;
+                
+                // 1. Cihaz veritabanına kaydet
+                await kaydetCihaza();
+                
+                // 2. Haritadaki tüm yolların stilini güncelle
+                map.eachLayer((layer) => {
+                    if (layer instanceof L.Polyline && layer.roadId) {
+                        const isFound = discoveredRoads.includes(layer.roadId);
+                        layer.setStyle(isFound ? visitedStyle : (isDark ? unvisitedStyle : { color: "#bbb", weight: 3 }));
+                        if (isFound) layer.bringToFront();
+                    }
+                });
+
+                // 3. Arayüzü tazele
+                guncelleArayuz();
+                alert("Yedek başarıyla yüklendi! " + yeniListe.length + " yol aktarıldı.");
+            }
+        } catch (err) {
+            console.error("Yükleme hatası:", err);
+            alert("Dosya okunamadı veya hatalı format!");
+        }
+    };
+    reader.readAsText(file);
+}
+
+    function ciz(data) {
+        data.elements.forEach(element => {
+            if (element.type === "way" && element.geometry) {
+                const roadId = element.id;
+                const coords = element.geometry.map(p => [p.lat, p.lon]);
+                const isDiscovered = discoveredRoads.includes(roadId);
+
+                const polyline = L.polyline(coords, isDiscovered ? visitedStyle : unvisitedStyle).addTo(map);
+                polyline.roadId = roadId;
+
+                polyline.on('click', function() {
+                    const idx = discoveredRoads.indexOf(roadId);
+                    if (idx > -1) {
+                        // Varsa Kaldır (Gri yap)
+                        discoveredRoads.splice(idx, 1);
+                        this.setStyle(isDark ? unvisitedStyle : { color: "#bbb", weight: 3 });
+                    } else {
+                        // Yoksa Ekle (Sarı yap)
+                        discoveredRoads.push(roadId);
+                        this.setStyle(visitedStyle);
+                        this.bringToFront();
+                    }
+                    guncelleArayuz();
+                    kaydetCihaza(); // Her tıklamada otomatik cihaz veritabanına yazar
+                });
+            }
+        });
+        guncelleArayuz();
+    }
+
+    function guncelleArayuz() {
+        const percent = ((discoveredRoads.length / totalRoads) * 100).toFixed(2);
+        document.getElementById('percentDisplay').innerText = `%${percent}`;
+        document.getElementById('statsDetail').innerText = `${totalRoads} yoldan ${discoveredRoads.length} tanesi keşfedildi.`;
+    }
+
+    function yolTiklamaOlavi(polyline, roadId) {
+        polyline.on('click', function() {
+            const idx = discoveredRoads.indexOf(roadId);
+            if (idx > -1) {
+                // Eğer zaten sarıysa (keşfedilmişse) listeden sil ve gri yap
+                discoveredRoads.splice(idx, 1);
+                this.setStyle(isDark ? unvisitedStyle : { color: "#bbb", weight: 3 });
+            } else {
+                // Gri ise sarı yap
+                discoveredRoads.push(roadId);
+                this.setStyle(visitedStyle);
+                this.bringToFront();
+            }
+            guncelleArayuz();
+            kaydetCihaza(); // Otomatik olarak IndexedDB'ye yazar
+        });
+    }
+
+    function yedekIndir() {
+        const dataStr = JSON.stringify({
+            tarih: new Date().toLocaleDateString(),
+            kesif_listesi: discoveredRoads
+        });
+        const blob = new Blob([dataStr], {type: "application/json"});
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `turkiye_kesif_yedek_${new Date().getTime()}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    yollariYukle();
+</script>
+</body>
+</html>
