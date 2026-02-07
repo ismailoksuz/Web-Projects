@@ -148,10 +148,15 @@
 
     function getRank(count) {
         if (count < 50) return { title: "ACEMİ SEYYAH", icon: "fa-leaf" };
-        if (count < 150) return { title: "YOL ARKADAŞI", icon: "fa-compass" };
-        if (count < 400) return { title: "TECRÜBELİ GEZGİN", icon: "fa-map-location-dot" };
-        if (count < 750) return { title: "EVLİYA ÇELEBİ", icon: "fa-spaghetti-monster-flying" };
-        return { title: "CİHANŞÜMUL", icon: "fa-crown" };
+        if (count < 100) return { title: "YOL ARKADAŞI", icon: "fa-compass" };
+        if (count < 200) return { title: "DENEYİMLİ GEZGİN", icon: "fa-map-location-dot" };
+        if (count < 350) return { title: "YOL ERERİ", icon: "fa-route" };
+        if (count < 500) return { title: "DİYAR KEŞŞAFI", icon: "fa-mountain-sun" };
+        if (count < 650) return { title: "DURMAZ GEZER", icon: "fa-shoe-prints" };
+        if (count < 800) return { title: "EVLİYA ÇELEBİ", icon: "fa-spaghetti-monster-flying" };
+        if (count < 950) return { title: "MEMLEKET MÜHRÜ", icon: "fa-shrine-pyramid" };
+        if (count < 973) return { title: "CİHANŞÜMUL", icon: "fa-crown" };
+        return { title: "ATLAS FATİHİ", icon: "fa-earth-africa" };
     }
 
     function showDistrictName(name, isAdded) {
