@@ -23,6 +23,39 @@
         .stats-detail { font-size: 12px; color: #888; }
         .status { color: #00ff00; font-size: 11px; }
         .light-theme #map { background: #f0f0f0; }
+        /* Bilgi Butonu */
+        .info-btn {
+            background: #444; color: #fff; border: 1px solid #555;
+            padding: 8px; cursor: pointer; width: 100%; margin-top: 5px;
+            font-size: 12px; border-radius: 4px;
+        }
+        .info-btn:hover { background: #555; }
+
+        /* Modal (Pop-up) Arkaplan */
+        .modal {
+            display: none; position: fixed; z-index: 2000;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Modal İçerik Kutusu */
+        .modal-content {
+            background-color: #1a1a1a; color: #eee;
+            margin: 15% auto; padding: 20px;
+            border: 1px solid #ffcc00; width: 320px;
+            border-radius: 10px; font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        .modal-content h2 { color: #ffcc00; margin-top: 0; font-size: 18px; }
+        .modal-content ul { padding-left: 20px; font-size: 14px; }
+        .modal-content li { margin-bottom: 8px; }
+
+        /* Kapatma Butonu */
+        .close {
+            color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;
+        }
+        .close:hover { color: #fff; }
     </style>
 </head>
 <body>
@@ -41,6 +74,21 @@
     <input type="file" id="fileInput" style="display:none" accept=".json" onchange="yedekYukle(event)">
     
     <button class="theme-btn" onclick="temaDegistir()">Görünümü Değiştir</button>
+
+    <button class="info-btn" onclick="bilgiAc()">Nasıl Kullanılır?</button>
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="bilgiKapat()">&times;</span>
+            <h2>Harita Kullanım Kılavuzu</h2>
+            <hr style="border: 0; border-top: 1px solid #444;">
+            <ul>
+                <li><strong>Tek Tıklama:</strong> Yolu seçer (sarı yapar) veya seçimden kaldırır (gri yapar).</li>
+                <li><strong>Shift + Fare:</strong> Alan seçerek yolları toplu olarak <u>ekler</u> (sarı).</li>
+                <li><strong>C Tuşu + Fare:</strong> Alan seçerek yolları toplu olarak <u>siler</u> (gri).</li>
+                <li><strong>Görünümü Değiştir:</strong> Haritayı gece/gündüz moduna alır.</li>
+                <li>İlerlemeniz tarayıcı önbelleğinde saklanır. Tarayıcı temizliği (cache/site verileri silme) durumunda <u>verileriniz kaybolur</u>. Bu nedenle düzenli olarak <strong>Yedek Al</strong> butonunu kullanmanız önerilir.</li>            </ul>
+        </div>
+    </div>
 </div>
 
 <div id="map"></div>
@@ -64,6 +112,8 @@
     let totalRoads = 0;
     let isDark = true;
     let showMap = true;
+    let rect, startLatLng, selectionMode = null;
+    let isCPressed = false; // C tuşunun basılı olup olmadığını takip eder
 
     // --- IndexedDB: Cihazda Kalıcı Depolama ---
     async function initDB() {
@@ -122,7 +172,70 @@
         });
         document.body.classList.toggle('light-theme');
     }
+    // Klavyede C tuşuna basıldığını takip et
+    window.addEventListener('keydown', (e) => {
+        if (e.code === 'KeyC') isCPressed = true;
+    });
+    window.addEventListener('keyup', (e) => {
+        if (e.code === 'KeyC') isCPressed = false;
+    });
 
+    map.on('mousedown', function(e) {
+        const isShift = e.originalEvent.shiftKey;
+        
+        if (isShift || isCPressed) {
+            map.dragging.disable();
+            selectionMode = isShift ? 'ADD' : 'REMOVE'; // Shift ise EKLE, C ise SİL
+            startLatLng = e.latlng;
+            
+            rect = L.rectangle([startLatLng, startLatLng], {
+                color: selectionMode === 'ADD' ? "#ffcc00" : "#ff4444", // Ekleme sarı, silme kırmızı
+                weight: 2,
+                fillOpacity: 0.1,
+                interactive: false
+            }).addTo(map);
+        }
+    });
+
+    map.on('mousemove', function(e) {
+        if (rect) {
+            rect.setBounds([startLatLng, e.latlng]);
+        }
+    });
+
+    map.on('mouseup', function(e) {
+        if (rect) {
+            const bounds = rect.getBounds();
+            
+            map.eachLayer(layer => {
+                if (layer instanceof L.Polyline && layer.roadId) {
+                    if (bounds.contains(layer.getLatLngs()[0])) {
+                        const idx = discoveredRoads.indexOf(layer.roadId);
+                        
+                        if (selectionMode === 'ADD') {
+                            if (idx === -1) {
+                                discoveredRoads.push(layer.roadId);
+                                layer.setStyle(visitedStyle);
+                                layer.bringToFront();
+                            }
+                        } else if (selectionMode === 'REMOVE') {
+                            if (idx > -1) {
+                                discoveredRoads.splice(idx, 1);
+                                layer.setStyle(isDark ? unvisitedStyle : { color: "#bbb", weight: 3 });
+                            }
+                        }
+                    }
+                }
+            });
+
+            map.removeLayer(rect);
+            rect = null;
+            selectionMode = null;
+            map.dragging.enable();
+            guncelleArayuz();
+            kaydetCihaza(); // Hatırlatman üzerine: Veriyi cihazda (IndexedDB) depolar
+        }
+    });    
     async function yollariYukle() {
         discoveredRoads = await yukleCihazdan();
         const db = await initDB();
@@ -146,6 +259,7 @@
         totalRoads = geoData.elements.filter(e => e.type === "way").length;
         ciz(geoData);
     }
+    
     // YEDEK DOSYASINI CİHAZA YÜKLEME
 function yedekYukle(event) {
     const file = event.target.files[0];
@@ -258,6 +372,22 @@ function yedekYukle(event) {
         a.click();
         URL.revokeObjectURL(url);
     }
+
+    function bilgiAc() {
+            document.getElementById("infoModal").style.display = "block";
+        }
+
+        function bilgiKapat() {
+            document.getElementById("infoModal").style.display = "none";
+        }
+
+        // Modal dışına tıklandığında kapatma
+        window.onclick = function(event) {
+            const modal = document.getElementById("infoModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
     yollariYukle();
 </script>
