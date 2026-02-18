@@ -1,0 +1,2622 @@
+[
+  {
+    "id": "athletic-bilbao",
+    "name": "Athletic Bilbao",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "arsenal",
+    "name": "Arsenal",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "psv-eindhoven",
+    "name": "PSV Eindhoven",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Union Saint‑Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "1-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "6-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "1-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "union-saint-gilloise",
+    "name": "Union Saint‑Gilloise",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "0-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "0-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "juventus",
+    "name": "Juventus",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "4-4",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "2-5",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "borussia-dortmund",
+    "name": "Borussia Dortmund",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "4-4",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "2-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "real-madrid",
+    "name": "Real Madrid",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "0-5",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "3-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "6-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "4-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "marseille",
+    "name": "Marseille",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Union Saint-Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "benfica",
+    "name": "Benfica",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "4-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "qarabag",
+    "name": "qarabag",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "2-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "6-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "tottenham-hotspur",
+    "name": "Tottenham Hotspur",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "5-3",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "villarreal",
+    "name": "Villarreal",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "olympiacos",
+    "name": "Olympiacos",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "6-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "3-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "pafos",
+    "name": "Pafos",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "1-5",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "slavia-prague",
+    "name": "Slavia Prague",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "2-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "bodo-glimt",
+    "name": "Bodø/Glimt",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "ajax",
+    "name": "Ajax",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "5-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "2-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "inter-milan",
+    "name": "Inter Milan",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Union Saint-Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "0-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "1-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "bayern-munich",
+    "name": "Bayern Munich",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "1-5",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Union Saint-Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "chelsea",
+    "name": "Chelsea",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "5-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "liverpool",
+    "name": "Liverpool",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "1-5",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "1-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "6-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "atletico-madrid",
+    "name": "Atletico Madrid",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "5-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Union Saint-Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "paris-saint-germain",
+    "name": "Paris Saint-Germain",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "2-7",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "5-3",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "atalanta",
+    "name": "Atalanta",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Union Saint-Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "club-brugge",
+    "name": "Club Brugge",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "3-3",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "1-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "monaco",
+    "name": "Monaco",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "6-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "copenhagen",
+    "name": "Copenhagen",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "2-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "bayer-leverkusen",
+    "name": "Bayer Leverkusen",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Paris Saint‑Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "2-7",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "eintracht-frankfurt",
+    "name": "Eintracht Frankfurt",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "5-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "5-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "1-5",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "galatasaray",
+    "name": "Galatasaray",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "5-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Ajax",
+        "opponentId": "ajax",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Union Saint‑Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "5-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "manchester-city",
+    "name": "Manchester City",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Villarreal",
+        "opponentId": "villarreal",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "napoli",
+    "name": "Napoli",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "6-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "newcastle-united",
+    "name": "Newcastle United",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Union Saint-Gilloise",
+        "opponentId": "union-saint-gilloise",
+        "score": "0-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "PSV Eindhoven",
+        "opponentId": "psv-eindhoven",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "barcelona",
+    "name": "Barcelona",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "6-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "3-3",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Eintracht Frankfurt",
+        "opponentId": "eintracht-frankfurt",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Slavia Prague",
+        "opponentId": "slavia-prague",
+        "score": "2-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "sporting-cp",
+    "name": "Sporting CP",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Kairat",
+        "opponentId": "kairat",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Napoli",
+        "opponentId": "napoli",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Marseille",
+        "opponentId": "marseille",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Athletic Bilbao",
+        "opponentId": "athletic-bilbao",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "kairat",
+    "name": "Kairat",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "0-5",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Pafos",
+        "opponentId": "pafos",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Copenhagen",
+        "opponentId": "copenhagen",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "1-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  }
+]

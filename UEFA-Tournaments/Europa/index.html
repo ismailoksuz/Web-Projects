@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFA Europa League | Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tournament-switcher">
+        <a href="../index.html" class="switch-btn uel" title="Homepage">
+            <img src="https://upload.wikimedia.org/wikipedia/tr/b/b9/UEFA.png?20140205143620">
+        </a>
+        <a href="../Champions/index.html" class="switch-btn ucl" title="Champions League">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Logo_UEFA_Champions_League.png">
+        </a>
+        <a href="../Conference/index.html" class="switch-btn uecl" title="Conference League">
+            <img src="https://upload.wikimedia.org/wikipedia/tr/thumb/7/7b/Konferans_Ligi_logosu.svg/960px-Konferans_Ligi_logosu.svg.png">
+        </a>
+    </div>
+    <div class="ucl-navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UEFA_Europa_League_logo_%282024_version%29.svg/960px-UEFA_Europa_League_logo_%282024_version%29.svg.png" class="ucl-logo-img">
+        <div class="ucl-nav-text">
+            <h1>Europa League</h1>
+        </div>
+    </div>
+
+    <a href="../index.html" target="_blank" class="uefa-logo-link">
+        <img src="https://img.uefa.com/imgml/uefacom/elements/main-nav/uefa-logo.svg" class="uefa-footer-logo">
+    </a>
+    <a href="https://github.com/ismailoksuz" class="ismail-credit" target="_blank">Powered by ismailoksuz</a>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

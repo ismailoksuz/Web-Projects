@@ -1,0 +1,2558 @@
+[
+  {
+    "id": "midtjylland",
+    "name": "Midtjylland",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "3-3",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "sturm-graz",
+    "name": "Sturm Graz",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "paok",
+    "name": "PAOK",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "3-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "3-3",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "4-2",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "maccabi-tel-aviv",
+    "name": "Maccabi Tel Aviv",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "1-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "0-6",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "red-star-belgrade",
+    "name": "Red Star Belgrade",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "celtic",
+    "name": "Celtic",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "4-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "dinamo-zagreb",
+    "name": "Dinamo Zagreb",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "1-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "fenerbahce",
+    "name": "Fenerbahçe",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "0-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "malmo-ff",
+    "name": "Malmö FF",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "ludogorets-razgrad",
+    "name": "Ludogorets Razgrad",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "3-3",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "nice",
+    "name": "Nice",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "1-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "roma",
+    "name": "Roma",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "real-betis",
+    "name": "Real Betis",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "nottingham-forest",
+    "name": "Nottingham Forest",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "braga",
+    "name": "Braga",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "3-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "feyenoord",
+    "name": "Feyenoord",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "1-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "4-3",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "sc-freiburg",
+    "name": "SC Freiburg",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "basel",
+    "name": "Basel",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "go-ahead-eagles",
+    "name": "Go Ahead Eagles",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "0-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "fcsb",
+    "name": "FCSB",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "4-3",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "lille",
+    "name": "Lille",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "3-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "brann",
+    "name": "Brann",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "0-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "3-3",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "aston-villa",
+    "name": "Aston Villa",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "bologna",
+    "name": "Bologna",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "young-boys",
+    "name": "Young Boys",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "1-4",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "FCSB",
+        "opponentId": "fcsb",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "panathinaikos",
+    "name": "Panathinaikos",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "1-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "red-bull-salzburg",
+    "name": "Red Bull Salzburg",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "porto",
+    "name": "Porto",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "utrecht",
+    "name": "Utrecht",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "4-2",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "lyon",
+    "name": "Lyon",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "0-6",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "4-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "ferencvaros",
+    "name": "ferencvaros",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Red Bull Salzburg",
+        "opponentId": "red-bull-salzburg",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "viktoria-plzen",
+    "name": "Viktoria Plzeň",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "rangers",
+    "name": "Rangers",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Sturm Graz",
+        "opponentId": "sturm-graz",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Brann",
+        "opponentId": "brann",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "genk",
+    "name": "Genk",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Rangers",
+        "opponentId": "rangers",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "3-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Utrecht",
+        "opponentId": "utrecht",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Malmö FF",
+        "opponentId": "malmo-ff",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "vfb-stuttgart",
+    "name": "VfB Stuttgart",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Basel",
+        "opponentId": "basel",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Fenerbahçe",
+        "opponentId": "fenerbahce",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Feyenoord",
+        "opponentId": "feyenoord",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Go Ahead Eagles",
+        "opponentId": "go-ahead-eagles",
+        "score": "0-4",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Maccabi Tel Aviv",
+        "opponentId": "maccabi-tel-aviv",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Young Boys",
+        "opponentId": "young-boys",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "celta-vigo",
+    "name": "Celta Vigo",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "PAOK",
+        "opponentId": "paok",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Nice",
+        "opponentId": "nice",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,451 @@
+:root {
+    --ucl-blue: #00ff00;  /* Conference League Yeşili (Parlak) */
+    --ucl-dark: #05070a;  /* Çok koyu lacivert/siyah arka plan */
+    --ucl-gold: #ffffff;  /* Metinler için beyaz */
+    --win: #22c55e;
+    --loss: #ef4444;
+    --draw: #eab308;
+    --uecl-gradient: linear-gradient(135deg, #00ff00 0%, #008000 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--ucl-dark);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+    background: var(--ucl-dark);
+}
+
+.ucl-navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ucl-logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.ucl-nav-text {
+    color: var(--ucl-dark);
+}
+
+.ucl-nav-text h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+.uefa-footer-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 70px;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.ismail-credit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 11px;
+    text-decoration: none;
+    background: var(--ucl-blue);
+    color: #000; /* Yeşil buton üzerinde siyah yazı */
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.ismail-credit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ucl-card {
+    width: 300px !important;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #11151c; /* Koyu gri/siyah kart rengi */
+    border: 1px solid #2d3748;
+}
+
+.card-header {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+}
+
+.bg-flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) brightness(0.4);
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.team-logo-card {
+    position: relative;
+    z-index: 2;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.team-name {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-meta {
+    font-size: 9px;
+    color: #94a3b8;
+    margin: 8px 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.match-list {
+    max-height: 180px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.match-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.match-row:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(3px);
+}
+
+.res-badge {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 10px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.w {
+    background: var(--win);
+    color: white;
+}
+
+.l {
+    background: var(--loss);
+    color: white;
+}
+
+.d {
+    background: var(--draw);
+    color: #000;
+}
+
+.m-score {
+    color: var(--ucl-gold);
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.custom-team-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marker-logo-only {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.marker-logo-only img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    z-index: 2;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.marker-logo-only::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--ucl-blue);
+    border-radius: 50%;
+    z-index: 1;
+    animation: ucl-ring-pulse 1.5s infinite ease-out;
+    box-shadow: 0 0 15px var(--ucl-blue), inset 0 0 10px var(--ucl-blue);
+}
+
+@keyframes ucl-ring-pulse {
+    0% {
+        transform: scale(0.7);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Marker Pulse Efekti (Yeşil Parlama) */
+.marker-logo-only::after {
+    border: 3px solid var(--ucl-blue);
+    box-shadow: 0 0 15px var(--ucl-blue), inset 0 0 10px var(--ucl-blue);
+}
+
+/* Kümeleme Noktaları (Cluster) */
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+    background-color: rgba(0, 255, 0, 0.3); /* Transparan Yeşil */
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+    background-color: var(--ucl-blue);
+    color: #000; /* Yeşil üzerinde siyah rakamlar daha okunaklı olur */
+}
+
+/* Cluster ikonlarının içindeki pulse efektini devre dışı bırak */
+.marker-cluster div::after {
+    display: none !important;
+}
+
+/* Cluster ikonunun genel animasyon çakışmasını engelle */
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+    animation: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+    width: 300px !important;
+}
+
+.leaflet-popup-tip {
+    background: #11151c;
+}
+
+.uefa-logo-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1001;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.uefa-footer-logo {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.uefa-footer-logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.tournament-switcher {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%); /* Ortalar */
+    display: flex;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1001;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.switch-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid transparent;
+}
+
+.switch-btn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.switch-btn:hover {
+    transform: scale(1.2) translateY(-5px);
+    background: #fff;
+}
+
+/* Aktif olan turnuvaya göre parlama rengi */
+.switch-btn.ucl:hover { box-shadow: 0 0 15px #003399; border-color: #003399; }
+.switch-btn.uel:hover { box-shadow: 0 0 15px #f8971d; border-color: #f8971d; }
+.switch-btn.uecl:hover { box-shadow: 0 0 15px #00ff00; border-color: #00ff00; }
+
+/* --- MOBİL RESPONSIVE DÜZENLEMELER (768px ve Altı) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Navbar'ı Üst Ortaya Al ve Küçült */
+    .ucl-navbar {
+        top: 10px;
+        left: 50% !important;
+        transform: translateX(-50%); /* Tam ortalar */
+        width: auto;
+        min-width: 200px;
+        justify-content: center;
+        padding: 5px 12px;
+        white-space: nowrap; /* Yazının taşmasını engeller */
+    }
+
+    .ucl-logo-img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .ucl-nav-text h1 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    /* 2. Sol Alttaki UEFA Logosunu Gizle */
+    .uefa-logo-link {
+        display: none !important;
+    }
+
+    /* 3. Sağ Alttaki Credit (İsmail Öksüz) Yazısını Gizle */
+    .ismail-credit {
+        display: none !important;
+    }
+
+    /* 4. Takım Popup Kartını Mobil İçin Optimize Et */
+    .leaflet-popup-content {
+        width: 260px !important;
+        margin: 0 !important;
+    }
+
+    .ucl-card {
+        max-height: 380px; /* Küçük ekranlarda kart çok uzamasın */
+        overflow-y: auto;
+    }
+
+    /* 5. Alt Menü (Tournament Switcher) Hizalaması */
+    .tournament-switcher {
+        bottom: 15px;
+        gap: 10px;
+        padding: 8px 12px;
+    }
+
+    .switch-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    body.popup-open .ucl-navbar {
+        transform: translate(-50%, -150%); /* Ortalanmış hali koruyarak yukarı gizler */
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .ucl-navbar {
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Yumuşak geçiş efekti */
+    }
+}
+
+/* Çok küçük ekranlar için yazı iptali */
+@media (max-width: 480px) {
+    .ucl-nav-text h1 {
+        font-size: 12px;
+    }
+    
+    .ucl-navbar {
+        min-width: 150px;
+    }
+}

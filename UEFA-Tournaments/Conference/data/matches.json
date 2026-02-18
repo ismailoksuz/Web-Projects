@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "dynamo-kyiv",
+    "name": "Dynamo Kyiv",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "6-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "crystal-palace",
+    "name": "Crystal Palace",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Dynamo Kyiv",
+        "opponentId": "dynamo-kyiv",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Shelbourne",
+        "opponentId": "shelbourne",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "lausanne-sport",
+    "name": "Lausanne-Sport",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Breiðablik",
+        "opponentId": "breiðablik",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Hamrun Spartans",
+        "opponentId": "hamrun-spartans",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "breiðablik",
+    "name": "Breiðablik",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Shamrock Rovers",
+        "opponentId": "shamrock-rovers",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "noah",
+    "name": "Noah",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Universitatea Craiova",
+        "opponentId": "universitatea-craiova",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Aberdeen",
+        "opponentId": "aberdeen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Legia Warsaw",
+        "opponentId": "legia-warsaw",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Dynamo Kyiv",
+        "opponentId": "dynamo-kyiv",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "rijeka",
+    "name": "Rijeka",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Lincoln Red Imps",
+        "opponentId": "lincoln-red-imps",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "zrinjski-mostar",
+    "name": "Zrinjski Mostar",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Lincoln Red Imps",
+        "opponentId": "lincoln-red-imps",
+        "score": "5-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Dynamo Kyiv",
+        "opponentId": "dynamo-kyiv",
+        "score": "6-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "BK Häcken",
+        "opponentId": "bk-häcken",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Rapid Wien",
+        "opponentId": "rapid-wien",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "lincoln-red-imps",
+    "name": "Lincoln Red Imps",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "5-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Hamrun Spartans",
+        "opponentId": "hamrun-spartans",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Legia Warsaw",
+        "opponentId": "legia-warsaw",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "jagiellonia-białystok",
+    "name": "Jagiellonia Białystok",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Hamrun Spartans",
+        "opponentId": "hamrun-spartans",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "hamrun-spartans",
+    "name": "Hamrun Spartans",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Lincoln Red Imps",
+        "opponentId": "lincoln-red-imps",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Shamrock Rovers",
+        "opponentId": "shamrock-rovers",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "lech-poznań",
+    "name": "Lech Poznań",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Rapid Wien",
+        "opponentId": "rapid-wien",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Lincoln Red Imps",
+        "opponentId": "lincoln-red-imps",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "rapid-wien",
+    "name": "Rapid Wien",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Universitatea Craiova",
+        "opponentId": "universitatea-craiova",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "kups",
+    "name": "KuPS",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Breiðablik",
+        "opponentId": "breiðablik",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Slovan Bratislava",
+        "opponentId": "slovan-bratislava",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "drita",
+    "name": "Drita",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Shelbourne",
+        "opponentId": "shelbourne",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "omonia",
+    "name": "Omonia",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Dynamo Kyiv",
+        "opponentId": "dynamo-kyiv",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Rapid Wien",
+        "opponentId": "rapid-wien",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "mainz-05",
+    "name": "Mainz 05",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Universitatea Craiova",
+        "opponentId": "universitatea-craiova",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "rayo-vallecano",
+    "name": "Rayo Vallecano",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "BK Häcken",
+        "opponentId": "bk-häcken",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Slovan Bratislava",
+        "opponentId": "slovan-bratislava",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "shkëndija",
+    "name": "Shkëndija",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Shelbourne",
+        "opponentId": "shelbourne",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Slovan Bratislava",
+        "opponentId": "slovan-bratislava",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "aberdeen",
+    "name": "Aberdeen",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "6-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "shakhtar-donetsk",
+    "name": "Shakhtar Donetsk",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Aberdeen",
+        "opponentId": "aberdeen",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Legia Warsaw",
+        "opponentId": "legia-warsaw",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Breiðablik",
+        "opponentId": "breiðablik",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Shamrock Rovers",
+        "opponentId": "shamrock-rovers",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Hamrun Spartans",
+        "opponentId": "hamrun-spartans",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "sparta-prague",
+    "name": "Sparta Prague",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Shamrock Rovers",
+        "opponentId": "shamrock-rovers",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Legia Warsaw",
+        "opponentId": "legia-warsaw",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Universitatea Craiova",
+        "opponentId": "universitatea-craiova",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Aberdeen",
+        "opponentId": "aberdeen",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "shamrock-rovers",
+    "name": "Shamrock Rovers",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Breiðablik",
+        "opponentId": "breiðablik",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Hamrun Spartans",
+        "opponentId": "hamrun-spartans",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "fiorentina",
+    "name": "Fiorentina",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Rapid Wien",
+        "opponentId": "rapid-wien",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Dynamo Kyiv",
+        "opponentId": "dynamo-kyiv",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "sigma-olomouc",
+    "name": "Sigma Olomouc",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Lincoln Red Imps",
+        "opponentId": "lincoln-red-imps",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "aek-larnaca",
+    "name": "AEK Larnaca",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Aberdeen",
+        "opponentId": "aberdeen",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "BK Häcken",
+        "opponentId": "bk-häcken",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "az",
+    "name": "AZ",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Slovan Bratislava",
+        "opponentId": "slovan-bratislava",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Shelbourne",
+        "opponentId": "shelbourne",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "legia-warsaw",
+    "name": "Legia Warsaw",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Lincoln Red Imps",
+        "opponentId": "lincoln-red-imps",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "samsunspor",
+    "name": "Samsunspor",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Legia Warsaw",
+        "opponentId": "legia-warsaw",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Dynamo Kyiv",
+        "opponentId": "dynamo-kyiv",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Hamrun Spartans",
+        "opponentId": "hamrun-spartans",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Breiðablik",
+        "opponentId": "breiðablik",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "celje",
+    "name": "Celje",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Shamrock Rovers",
+        "opponentId": "shamrock-rovers",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Legia Warsaw",
+        "opponentId": "legia-warsaw",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Shelbourne",
+        "opponentId": "shelbourne",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "aek-athens",
+    "name": "AEK Athens",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Aberdeen",
+        "opponentId": "aberdeen",
+        "score": "6-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Shamrock Rovers",
+        "opponentId": "shamrock-rovers",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Universitatea Craiova",
+        "opponentId": "universitatea-craiova",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "raków-częstochowa",
+    "name": "Raków Częstochowa",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Universitatea Craiova",
+        "opponentId": "universitatea-craiova",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Rapid Wien",
+        "opponentId": "rapid-wien",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "universitatea-craiova",
+    "name": "Universitatea Craiova",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Rapid Wien",
+        "opponentId": "rapid-wien",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "shelbourne",
+    "name": "Shelbourne",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "BK Häcken",
+        "opponentId": "bk-häcken",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "bk-häcken",
+    "name": "BK Häcken",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Shelbourne",
+        "opponentId": "shelbourne",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 4,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 5,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 6,
+        "opponent": "Slovan Bratislava",
+        "opponentId": "slovan-bratislava",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      }
+    ]
+  },
+  {
+    "id": "slovan-bratislava",
+    "name": "Slovan Bratislava",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 2,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 3,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "3-1",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "BK Häcken",
+        "opponentId": "bk-häcken",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  },
+  {
+    "id": "strasbourg",
+    "name": "Strasbourg",
+    "logo_url": "",
+    "matches": [
+      {
+        "week": 1,
+        "opponent": "Slovan Bratislava",
+        "opponentId": "slovan-bratislava",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 2,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 3,
+        "opponent": "BK Häcken",
+        "opponentId": "bk-häcken",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 4,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 5,
+        "opponent": "Aberdeen",
+        "opponentId": "aberdeen",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 6,
+        "opponent": "Breiðablik",
+        "opponentId": "breiðablik",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
+      }
+    ]
+  }
+]
