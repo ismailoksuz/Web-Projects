@@ -47,8 +47,9 @@ function render() {
         });
         markers[team.id] = marker;
         marker.on('click', function(e) {
-            map.flyTo(e.latlng, 8, {
-                duration: 1.2
+            map.setView(e.latlng, map.getZoom(), {
+                animate: true,
+                duration: 0.5
             });
         });
 
