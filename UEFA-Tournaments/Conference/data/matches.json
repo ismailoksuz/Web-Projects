@@ -106,6 +106,14 @@
         "score": "2-2",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Zrinjski Mostar",
+        "opponentId": "zrinjski-mostar",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -161,6 +169,14 @@
         "score": "1-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -271,6 +287,14 @@
         "score": "2-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -378,6 +402,14 @@
         "week": 6,
         "opponent": "Rapid Wien",
         "opponentId": "rapid-wien",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
         "score": "1-1",
         "result": "D",
         "is_home": true
@@ -601,6 +633,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "KuPS",
+        "opponentId": "kups",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -711,6 +751,14 @@
         "score": "2-2",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1316,6 +1364,14 @@
         "score": "1-2",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Lausanne-Sport",
+        "opponentId": "lausanne-sport",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -1426,6 +1482,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Noah",
+        "opponentId": "noah",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },

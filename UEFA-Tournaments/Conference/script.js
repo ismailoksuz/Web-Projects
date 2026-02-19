@@ -47,8 +47,11 @@ function render() {
         });
         markers[team.id] = marker;
         marker.on('click', function(e) {
-            map.flyTo(e.latlng, 8, {
-                duration: 1.2
+            const currentZoom = map.getZoom();
+            const targetZoom = currentZoom < 8 ? 8 : currentZoom;
+            map.flyTo(e.latlng, targetZoom, {
+                duration: 1.2,
+                easeLinearity: 0.25
             });
         });
 
@@ -67,11 +70,15 @@ function createPopup(team) {
     const teamMatchObj = matchesData.find(m => m.id.toLowerCase() === team.id.toLowerCase());
     const matches = teamMatchObj ? [...teamMatchObj.matches].reverse() : [];
     const getStageName = (week) => {
-        if (week >= 1 && week <= 6) return "Group Stage";
-        if (week >= 7 && week <= 8) return "Play-Off";
-        if (week >= 9 && week <= 10) return "Round Of 16";
-        if (week >= 11 && week <= 12) return "Quarter Final";
-        if (week >= 13 && week <= 14) return "Semi Final";
+        if (week >= 1 && week <= 6) return `Group Stage Matchday ${week}`;
+        if (week == 7) return "Play-Off Leg 1";
+        if (week == 8) return "Play-Off Leg 2";
+        if (week == 9) return "Round Of 16 Leg 1";
+        if (week == 10) return "Round Of 16 Leg 2";
+        if (week == 11) return "Quarter Final Leg 1";
+        if (week == 12) return "Quarter Final Leg 2";
+        if (week == 13) return "Semi Final Leg 1";
+        if (week == 14) return "Semi Final Leg 2";
         if (week == 15) return "Final";
         return `W${week}`;
     };
