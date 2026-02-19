@@ -738,6 +738,14 @@
         "score": "6-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "1-6",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -951,6 +959,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1164,6 +1180,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "3-1",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1305,6 +1329,14 @@
         "opponentId": "borussia-dortmund",
         "score": "0-2",
         "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "3-1",
+        "result": "L",
         "is_home": false
       }
     ]
@@ -1590,6 +1622,14 @@
         "score": "1-2",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "3-3",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -1819,6 +1859,14 @@
         "score": "3-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "3-3",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -2040,6 +2088,14 @@
         "score": "3-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -2402,6 +2458,14 @@
         "opponentId": "paris-saint-germain",
         "score": "1-1",
         "result": "D",
+        "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "1-6",
+        "result": "W",
         "is_home": false
       }
     ]
