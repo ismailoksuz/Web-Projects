@@ -112,7 +112,12 @@ function createPopup(team) {
         </div>
     `;
 }
-
+window.addEventListener("load", function() {
+    const loader = document.getElementById("preloader");
+    setTimeout(() => {
+        loader.classList.add("loader-hidden");
+    }, 600);
+});
 window.jumpTo = function(id) {
     const target = teamsData.find(t => t.id.toLowerCase() === id.toLowerCase());
     if (target) {
