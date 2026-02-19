@@ -350,6 +350,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Omonia",
+        "opponentId": "omonia",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -523,6 +531,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "0-3",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -814,6 +830,14 @@
         "score": "3-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "2-3",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -866,6 +890,14 @@
         "week": 6,
         "opponent": "Raków Częstochowa",
         "opponentId": "raków-częstochowa",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
         "score": "0-1",
         "result": "L",
         "is_home": true
@@ -1034,6 +1066,14 @@
         "score": "1-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1308,6 +1348,14 @@
         "opponentId": "lausanne-sport",
         "score": "1-0",
         "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "0-3",
+        "result": "W",
         "is_home": false
       }
     ]
@@ -1600,6 +1648,14 @@
         "score": "2-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 7,
+        "opponent": "Shkëndija",
+        "opponentId": "shkëndija",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1655,6 +1711,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 7,
+        "opponent": "Drita",
+        "opponentId": "drita",
+        "score": "2-3",
+        "result": "W",
+        "is_home": false
       }
     ]
   },

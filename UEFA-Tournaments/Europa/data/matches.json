@@ -359,6 +359,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -429,6 +437,14 @@
         "opponentId": "utrecht",
         "score": "4-2",
         "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "1-4",
+        "result": "L",
         "is_home": true
       }
     ]
@@ -551,7 +567,7 @@
       },
       {
         "week": 5,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "1-1",
         "result": "D",
@@ -664,12 +680,12 @@
   },
   {
     "id": "ludogorets-razgrad",
-    "name": "Ludogorets Razgrad",
+    "name": "Ludogorets Razgrad",
     "logo_url": "",
     "matches": [
       {
         "week": 1,
-        "opponent": "Malmö FF",
+        "opponent": "Malmö FF",
         "opponentId": "malmo-ff",
         "score": "1-2",
         "result": "W",
@@ -693,7 +709,7 @@
       },
       {
         "week": 4,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "3-1",
         "result": "L",
@@ -728,6 +744,14 @@
         "opponent": "Nice",
         "opponentId": "nice",
         "score": "1-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Ferencvaros",
+        "opponentId": "ferencvaros",
+        "score": "2-1",
         "result": "W",
         "is_home": true
       }
@@ -1009,7 +1033,7 @@
       },
       {
         "week": 8,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "4-0",
         "result": "W",
@@ -1519,6 +1543,14 @@
         "score": "1-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1877,7 +1909,7 @@
       },
       {
         "week": 7,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "1-1",
         "result": "D",
@@ -1888,6 +1920,14 @@
         "opponent": "Roma",
         "opponentId": "roma",
         "score": "1-1",
+        "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "2-2",
         "result": "D",
         "is_home": true
       }
@@ -1916,7 +1956,7 @@
       },
       {
         "week": 3,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "2-3",
         "result": "L",
@@ -2179,7 +2219,7 @@
   },
   {
     "id": "ferencvaros",
-    "name": "ferencvaros",
+    "name": "Ferencvaros",
     "logo_url": "",
     "matches": [
       {
@@ -2245,6 +2285,14 @@
         "score": "4-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2255,7 +2303,7 @@
     "matches": [
       {
         "week": 1,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "1-1",
         "result": "D",
@@ -2316,6 +2364,14 @@
         "score": "0-1",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 9,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -2366,7 +2422,7 @@
       },
       {
         "week": 6,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "2-1",
         "result": "L",
@@ -2405,7 +2461,7 @@
       },
       {
         "week": 2,
-        "opponent": "ferencvaros",
+        "opponent": "Ferencvaros",
         "opponentId": "ferencvaros",
         "score": "0-1",
         "result": "L",
@@ -2537,6 +2593,14 @@
         "score": "3-2",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "1-4",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
