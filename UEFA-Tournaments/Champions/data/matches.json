@@ -746,6 +746,14 @@
         "score": "1-6",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -967,6 +975,14 @@
         "score": "0-2",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -1188,6 +1204,14 @@
         "score": "3-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Inter Milan",
+        "opponentId": "inter-milan",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1338,6 +1362,14 @@
         "score": "3-1",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -2112,6 +2144,14 @@
         "score": "0-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Olympiacos",
+        "opponentId": "olympiacos",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -2483,6 +2523,14 @@
         "score": "1-6",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Qarabağ",
+        "opponentId": "qarabag",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
