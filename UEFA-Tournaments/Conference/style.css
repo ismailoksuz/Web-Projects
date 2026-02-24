@@ -484,3 +484,17 @@ body {
         min-width: 150px;
     }
 }
+
+.marker-logo-only.eliminated img {
+    filter: grayscale(100%) brightness(0.6);
+    opacity: 0.8;
+}
+
+.marker-logo-only.eliminated::after {
+    animation: none !important; 
+    display: none !important;  
+}
+
+.marker-logo-only.eliminated {
+    border: none !important;
+}

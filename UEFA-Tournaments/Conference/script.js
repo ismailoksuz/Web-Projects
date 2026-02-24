@@ -31,10 +31,12 @@ async function init() {
 
 function render() {
     teamsData.forEach(team => {
+        const statusClass = team.isEliminated ? 'eliminated' : '';
+
         const icon = L.divIcon({
             className: 'custom-team-marker',
             html: `
-        <div class="marker-logo-only">
+        <div class="marker-logo-only ${statusClass}">
             <img src="${team.logo_url}" onerror="this.src='https://img.uefa.com/imgml/uefacom/elements/main-nav/uefa-logo.svg'">
         </div>
     `,
