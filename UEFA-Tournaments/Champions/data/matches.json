@@ -1630,6 +1630,14 @@
         "score": "3-3",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Club Brugge",
+        "opponentId": "club-brugge",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1867,6 +1875,14 @@
         "score": "3-3",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Atletico Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
