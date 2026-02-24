@@ -8,7 +8,34 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').add
 const clusterGroup = L.markerClusterGroup({
     showCoverageOnHover: false,
     maxClusterRadius: 45,
-    spiderfyOnMaxZoom: true
+    spiderfyOnMaxZoom: true,
+    iconCreateFunction: function (cluster) {
+        const markers = cluster.getAllChildMarkers();
+        // Küme içindeki TÜM takımların elenip elenmediğini kontrol et
+        const allEliminated = markers.every(m => {
+            // Marker oluştururken içine sakladığımız team verisine ulaşıyoruz
+            return m.options.teamData && m.options.teamData.isEliminated;
+        });
+
+        const childCount = cluster.getChildCount();
+        let c = ' marker-cluster-';
+        if (childCount < 10) {
+            c += 'small';
+        } else if (childCount < 100) {
+            c += 'medium';
+        } else {
+            c += 'large';
+        }
+
+        // Eğer hepsi elenmişse 'cluster-eliminated' sınıfını ekle
+        const eliminatedClass = allEliminated ? ' cluster-eliminated' : '';
+
+        return new L.DivIcon({ 
+            html: '<div><span>' + childCount + '</span></div>', 
+            className: 'marker-cluster' + c + eliminatedClass, 
+            iconSize: new L.Point(40, 40) 
+        });
+    }
 });
 
 let teamsData = [],
@@ -45,7 +72,8 @@ function render() {
         });
 
         const marker = L.marker(team.coords, {
-            icon
+            icon,
+            teamData: team // Bu satırı ekle ki cluster fonksiyonu buna bakabilsin
         });
         markers[team.id] = marker;
         marker.on('click', function(e) {
