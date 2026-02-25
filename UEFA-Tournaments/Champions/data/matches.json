@@ -438,6 +438,14 @@
         "score": "2-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "4-1",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1828,6 +1836,14 @@
         "score": "2-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Borussia Dortmund",
+        "opponentId": "borussia-dortmund",
+        "score": "4-1",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
