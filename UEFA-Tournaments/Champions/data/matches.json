@@ -525,6 +525,14 @@
         "score": "0-1",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Benfica",
+        "opponentId": "benfica",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -675,6 +683,14 @@
         "score": "0-1",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1757,6 +1773,14 @@
         "score": "2-3",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Monaco",
+        "opponentId": "monaco",
+        "score": "2-2",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -2010,6 +2034,14 @@
         "score": "2-3",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "2-2",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
