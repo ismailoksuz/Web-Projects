@@ -359,6 +359,14 @@
         "score": "2-5",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "3-2",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -2350,6 +2358,14 @@
         "score": "5-2",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Juventus",
+        "opponentId": "juventus",
+        "score": "3-2",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
