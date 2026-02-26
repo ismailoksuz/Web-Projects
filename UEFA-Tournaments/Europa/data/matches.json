@@ -367,6 +367,14 @@
         "score": "0-1",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1567,6 +1575,14 @@
         "score": "0-1",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Red Star Belgrade",
+        "opponentId": "red-star-belgrade",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1946,6 +1962,14 @@
         "score": "2-2",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Viktoria Plzeň",
+        "opponentId": "viktoria-plzen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -2396,6 +2420,14 @@
         "score": "2-2",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
       }
     ]
   },

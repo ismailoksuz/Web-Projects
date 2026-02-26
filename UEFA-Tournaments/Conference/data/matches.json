@@ -547,6 +547,14 @@
         "score": "0-3",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 8,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "2-4",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1389,6 +1397,14 @@
         "score": "0-3",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 8,
+        "opponent": "Jagiellonia Białystok",
+        "opponentId": "jagiellonia-białystok",
+        "score": "2-4",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
