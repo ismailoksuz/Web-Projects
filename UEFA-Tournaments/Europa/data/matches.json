@@ -549,6 +549,14 @@
         "score": "1-3",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "3-3",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -2618,6 +2626,14 @@
         "score": "1-3",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Dinamo Zagreb",
+        "opponentId": "dinamo-zagreb",
+        "score": "3-3",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
