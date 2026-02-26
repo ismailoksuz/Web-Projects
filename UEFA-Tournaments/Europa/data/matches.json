@@ -446,6 +446,14 @@
         "score": "1-4",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -754,6 +762,14 @@
         "score": "2-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Ferencváros",
+        "opponentId": "ferencvaros",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2293,6 +2309,14 @@
         "score": "2-1",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Ludogorets Razgrad",
+        "opponentId": "ludogorets-razgrad",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -2601,6 +2625,14 @@
         "score": "1-4",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Celtic",
+        "opponentId": "celtic",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
