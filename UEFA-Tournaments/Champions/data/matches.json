@@ -857,6 +857,14 @@
         "score": "0-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Atlético Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "5-2",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1473,6 +1481,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Atalanta",
+        "opponentId": "atalanta",
+        "score": "1-6",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1615,6 +1631,14 @@
         "score": "6-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Galatasaray",
+        "opponentId": "galatasaray",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1700,6 +1724,14 @@
         "opponent": "Club Brugge",
         "opponentId": "club-brugge",
         "score": "4-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Tottenham Hotspur",
+        "opponentId": "tottenham-hotspur",
+        "score": "5-2",
         "result": "W",
         "is_home": true
       }
@@ -1875,6 +1907,14 @@
         "opponentId": "borussia-dortmund",
         "score": "4-1",
         "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "1-6",
+        "result": "L",
         "is_home": true
       }
     ]
@@ -2366,6 +2406,14 @@
         "score": "3-2",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -2595,6 +2643,14 @@
         "score": "3-2",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -2666,6 +2722,14 @@
         "score": "4-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Newcastle United",
+        "opponentId": "newcastle-united",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
