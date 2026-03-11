@@ -138,6 +138,14 @@
         "score": "3-2",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Bayer Leverkusen",
+        "opponentId": "bayer-leverkusen",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -539,6 +547,14 @@
         "opponent": "Benfica",
         "opponentId": "benfica",
         "score": "2-1",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Manchester City",
+        "opponentId": "manchester-city",
+        "score": "3-0",
         "result": "W",
         "is_home": true
       }
@@ -1252,6 +1268,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "3-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1560,6 +1584,14 @@
         "score": "2-3",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "5-2",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1820,6 +1852,14 @@
         "opponentId": "monaco",
         "score": "2-2",
         "result": "D",
+        "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Chelsea",
+        "opponentId": "chelsea",
+        "score": "5-2",
+        "result": "W",
         "is_home": true
       }
     ]
@@ -2248,6 +2288,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -2485,6 +2533,14 @@
         "score": "2-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "3-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2800,6 +2856,14 @@
         "opponentId": "athletic-bilbao",
         "score": "2-3",
         "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Bodø/Glimt",
+        "opponentId": "bodo-glimt",
+        "score": "3-0",
+        "result": "L",
         "is_home": false
       }
     ]
