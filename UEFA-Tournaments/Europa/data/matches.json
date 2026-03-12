@@ -944,6 +944,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -1015,6 +1023,14 @@
         "score": "2-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "1-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1615,6 +1631,14 @@
         "score": "0-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1773,6 +1797,14 @@
         "score": "3-2",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1859,6 +1891,14 @@
         "opponentId": "brann",
         "score": "1-0",
         "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "1-1",
+        "result": "D",
         "is_home": true
       }
     ]
@@ -2018,6 +2058,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 11,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "1-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -2160,6 +2208,14 @@
         "score": "3-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -2719,6 +2775,14 @@
         "opponent": "Celtic",
         "opponentId": "celtic",
         "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 11,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "1-2",
         "result": "L",
         "is_home": true
       }

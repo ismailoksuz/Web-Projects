@@ -390,6 +390,14 @@
         "score": "3-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -712,6 +720,14 @@
         "opponentId": "kups",
         "score": "1-0",
         "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "1-3",
+        "result": "L",
         "is_home": true
       }
     ]
@@ -1091,6 +1107,14 @@
         "score": "3-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1272,6 +1296,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "1-3",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1327,6 +1359,14 @@
         "score": "3-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "2-1",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1650,6 +1690,14 @@
         "score": "4-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "2-1",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1775,6 +1823,14 @@
         "opponentId": "shkëndija",
         "score": "4-0",
         "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "1-3",
+        "result": "L",
         "is_home": true
       }
     ]
@@ -2232,6 +2288,14 @@
         "score": "3-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 9,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   }
