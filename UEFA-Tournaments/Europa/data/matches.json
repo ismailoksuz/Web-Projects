@@ -75,6 +75,14 @@
         "score": "0-1",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Nottingham Forest",
+        "opponentId": "nottingham-forest",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -960,6 +968,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Bologna",
+        "opponentId": "bologna",
+        "score": "3-4",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1039,6 +1055,14 @@
         "score": "1-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Panathinaikos",
+        "opponentId": "panathinaikos",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1134,6 +1158,14 @@
         "score": "0-1",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Midtjylland",
+        "opponentId": "midtjylland",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1213,6 +1245,14 @@
         "score": "2-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Ferencváros",
+        "opponentId": "ferencvaros",
+        "score": "4-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1363,6 +1403,14 @@
         "score": "1-0",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Genk",
+        "opponentId": "genk",
+        "score": "5-1",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1671,6 +1719,14 @@
         "score": "0-1",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Aston Villa",
+        "opponentId": "aston-villa",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1837,6 +1893,14 @@
         "score": "0-1",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Lille",
+        "opponentId": "lille",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1932,6 +1996,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Roma",
+        "opponentId": "roma",
+        "score": "3-4",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -2098,6 +2170,14 @@
         "score": "1-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Real Betis",
+        "opponentId": "real-betis",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2248,6 +2328,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "VfB Stuttgart",
+        "opponentId": "vfb-stuttgart",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -2398,6 +2486,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 12,
+        "opponent": "Celta Vigo",
+        "opponentId": "celta-vigo",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -2493,6 +2589,14 @@
         "score": "2-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Braga",
+        "opponentId": "braga",
+        "score": "4-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2746,6 +2850,14 @@
         "score": "1-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "SC Freiburg",
+        "opponentId": "sc-freiburg",
+        "score": "5-1",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2841,6 +2953,14 @@
         "score": "1-2",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Porto",
+        "opponentId": "porto",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -2936,6 +3056,14 @@
         "score": "1-1",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 12,
+        "opponent": "Lyon",
+        "opponentId": "lyon",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   }
