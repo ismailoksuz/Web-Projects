@@ -130,6 +130,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "AEK Larnaca",
+        "opponentId": "aek-larnaca",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -406,6 +414,14 @@
         "score": "1-2",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Strasbourg",
+        "opponentId": "strasbourg",
+        "score": "1-1",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
@@ -737,6 +753,14 @@
         "score": "1-3",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Shakhtar Donetsk",
+        "opponentId": "shakhtar-donetsk",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1068,6 +1092,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Sigma Olomouc",
+        "opponentId": "sigma-olomouc",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1131,6 +1163,14 @@
         "score": "1-3",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Samsunspor",
+        "opponentId": "samsunspor",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1320,6 +1360,14 @@
         "score": "1-3",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Lech Poznań",
+        "opponentId": "lech-poznań",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1383,6 +1431,14 @@
         "score": "2-1",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "AZ",
+        "opponentId": "az",
+        "score": "0-4",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1517,6 +1573,14 @@
         "score": "2-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Raków Częstochowa",
+        "opponentId": "raków-częstochowa",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1596,6 +1660,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Mainz 05",
+        "opponentId": "mainz-05",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
       }
     ]
   },
@@ -1659,6 +1731,14 @@
         "score": "0-0",
         "result": "D",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Crystal Palace",
+        "opponentId": "crystal-palace",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1738,6 +1818,14 @@
         "score": "2-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Sparta Prague",
+        "opponentId": "sparta-prague",
+        "score": "0-4",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1872,6 +1960,14 @@
         "score": "1-3",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "Rayo Vallecano",
+        "opponentId": "rayo-vallecano",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -1951,6 +2047,14 @@
         "score": "0-4",
         "result": "L",
         "is_home": true
+      },
+      {
+        "week": 10,
+        "opponent": "AEK Athens",
+        "opponentId": "aek-athens",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -2014,6 +2118,14 @@
         "score": "0-4",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Celje",
+        "opponentId": "celje",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -2077,6 +2189,14 @@
         "score": "2-1",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Fiorentina",
+        "opponentId": "fiorentina",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -2360,6 +2480,14 @@
         "score": "1-2",
         "result": "W",
         "is_home": false
+      },
+      {
+        "week": 10,
+        "opponent": "Rijeka",
+        "opponentId": "rijeka",
+        "score": "1-1",
+        "result": "D",
+        "is_home": true
       }
     ]
   }
