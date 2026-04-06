@@ -79,34 +79,18 @@ const TEAM_CODES = {
     'FIFA P/O 2 Winner': 'FIW',
 };
 const initialGroups = {
-    A: ['Mexico', 'S. Korea', 'S. Africa', 'UEFA Path D Winner'],
-    B: ['Canada', 'Switzerland', 'Qatar', 'UEFA Path A Winner'],
+    A: ['Mexico', 'S. Korea', 'S. Africa', 'Czechia'],      // Çekya buraya eklendi
+    B: ['Canada', 'Switzerland', 'Qatar', 'Bosnia & H.'],   // Bosna Hersek buraya eklendi
     C: ['Brazil', 'Morocco', 'Scotland', 'Haiti'],
-    D: ['USA', 'Australia', 'Paraguay', 'UEFA Path C Winner'],
+    D: ['USA', 'Australia', 'Paraguay', 'Turkey'],          // Türkiye buraya eklendi (Slovakya kaldırıldı)
     E: ['Germany', 'Ecuador', 'Ivory Coast', 'Curacao'],
-    F: ['Netherlands', 'Japan', 'Tunisia', 'UEFA Path B Winner'],
+    F: ['Netherlands', 'Japan', 'Tunisia', 'Sweden'],       // İsveç buraya eklendi
     G: ['Belgium', 'Iran', 'Egypt', 'N. Zealand'],
     H: ['Spain', 'Uruguay', 'Saudi Arabia', 'Cape Verde'],
-    I: ['France', 'Senegal', 'Norway', 'FIFA P/O 2 Winner'],
+    I: ['France', 'Senegal', 'Norway', 'Iraq'],             // Irak buraya eklendi
     J: ['Argentina', 'Austria', 'Algeria', 'Jordan'],
-    K: ['Portugal', 'Colombia', 'Uzbekistan', 'FIFA P/O 1 Winner'],
+    K: ['Portugal', 'Colombia', 'Uzbekistan', 'DR Congo'],  // Kongo buraya eklendi
     L: ['England', 'Croatia', 'Panama', 'Ghana']
-};
-const PATH_OPTIONS = {
-    'pathA_winner': ['Italy', 'Wales', 'Bosnia & H.', 'N. Ireland'],
-    'pathB_winner': ['Ukraine', 'Poland', 'Albania', 'Sweden'],
-    'pathC_winner': ['Turkey', 'Romania', 'Slovakia', 'Kosovo'],
-    'pathD_winner': ['Denmark', 'Czechia', 'Rep. of Ireland', 'N. Macedonia'],
-    'pathFIFA1_winner': ['Jamaica', 'DR Congo', 'N. Caledonia'],
-    'pathFIFA2_winner': ['Iraq', 'Bolivia', 'Suriname']
-};
-const PATH_MAPPING = {
-    'UEFA Path D Winner': 'pathD_winner',
-    'UEFA Path A Winner': 'pathA_winner',
-    'UEFA Path C Winner': 'pathC_winner',
-    'UEFA Path B Winner': 'pathB_winner',
-    'FIFA P/O 1 Winner': 'pathFIFA1_winner',
-    'FIFA P/O 2 Winner': 'pathFIFA2_winner',
 };
 const KNOCKOUT_SLOTS = [
     { id: 'M1', team1: 'A2', team2: 'B2', round: 'r32' },
@@ -155,8 +139,9 @@ function getTeamFlag(teamName) {
 function checkStaging() {
     const groupStageSection = document.getElementById('groupStageSection');
     const knockoutSection = document.getElementById('knockoutSection');
-    const pathSelects = document.querySelectorAll('.paths-selection select');
-    isPathsComplete = Array.from(pathSelects).every(s => s.value !== '');
+    
+    // KİLİDİ AÇAN SATIR: Seçim bekleme, doğrudan true yap.
+    isPathsComplete = true; 
 
     if (isPathsComplete) {
         groupStageSection.style.display = 'block';
@@ -166,15 +151,22 @@ function checkStaging() {
         isGroupStageComplete = false;
     }
 
+    // Grupları render et (Senin const içindeki takımları kullanır)
     if (currentMode === 'score') {
         let totalCompletedGroups = 0;
         const totalGroups = Object.keys(initialGroups).length;
+        
+        // Eğer gruplar henüz ekrana basılmadıysa bas
+        if (document.querySelectorAll('.group-box').length === 0) {
+            renderGroups(initialGroups);
+        }
+
         document.querySelectorAll('.group-box').forEach(groupBox => {
             let matchesEnteredInGroup = 0;
             groupBox.querySelectorAll('.match').forEach((matchDiv, index) => {
-                const score1Input = matchDiv.querySelector(`.score-input[data-match="${groupBox.dataset.group}-${index}-1"]`);
-                const score2Input = matchDiv.querySelector(`.score-input[data-match="${groupBox.dataset.group}-${index}-2"]`);
-                if (score1Input.value !== '' && score2Input.value !== '') {
+                const score1Input = matchDiv.querySelector('input[data-match$="-1"]');
+                const score2Input = matchDiv.querySelector('input[data-match$="-2"]');
+                if (score1Input && score2Input && score1Input.value !== '' && score2Input.value !== '') {
                     matchesEnteredInGroup++;
                 }
             });
@@ -184,6 +176,10 @@ function checkStaging() {
         });
         isGroupStageComplete = (totalCompletedGroups === totalGroups);
     } else {
+        // Ranking modundaysa ve ekran boşsa çiz
+        if (!document.getElementById('groupStage').innerHTML) {
+            renderRankingMode(initialGroups);
+        }
         isGroupStageComplete = window.rankingsConfirmed || false;
     }
 
@@ -194,39 +190,6 @@ function checkStaging() {
     }
 }
 
-function initializePathSelectors() {
-    for (const pathId in PATH_OPTIONS) {
-        const select = document.getElementById(pathId);
-        select.innerHTML = '<option value="">Select Winner</option>';
-        PATH_OPTIONS[pathId].forEach(team => {
-            select.innerHTML += `<option value="${team}">${getTeamFlag(team)} ${team}</option>`;
-        });
-    }
-}
-
-function updateGroupTeams() {
-    const winners = {};
-    document.querySelectorAll('.paths-selection select').forEach(select => {
-        winners[select.id] = select.value;
-    });
-    const updatedGroups = JSON.parse(JSON.stringify(initialGroups));
-    for (const groupKey in updatedGroups) {
-        updatedGroups[groupKey] = updatedGroups[groupKey].map(team => {
-            const pathId = PATH_MAPPING[team];
-            if (pathId && winners[pathId] && winners[pathId] !== '') {
-                return winners[pathId];
-            }
-            return team;
-        });
-    }
-    if (currentMode === 'score') {
-        renderGroups(updatedGroups);
-    } else {
-        renderRankingMode(updatedGroups);
-    }
-    updateKnockoutStage();
-    checkStaging();
-}
 
 function renderGroups(groupsData) {
     const groupStageDiv = document.getElementById('groupStage');
@@ -925,10 +888,14 @@ function fillRandomScores() {
         btn.style.backgroundColor = '#004d40';
     }, 1500);
 }
-
+function updateGroupTeams() {
+    // Bu fonksiyon score modunda tetiklenir
+    if (currentMode === 'score') {
+        renderGroups(initialGroups);
+    }
+    checkStaging();
+}
 document.addEventListener('DOMContentLoaded', () => {
-    initializePathSelectors();
-    updateGroupTeams();
     checkStaging();
 
     const fillBtn = document.getElementById('fillRandomBtn');
@@ -937,42 +904,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.getElementById('modeToggleBtn').addEventListener('click', () => {
-        KnockoutResults = {};
-        currentQualifiers = {};
-        isGroupStageComplete = false;
-        window.rankingsConfirmed = false;
+    // Stateleri sıfırla
+    window.rankingsConfirmed = false;
+    document.getElementById('knockoutSection').style.display = 'none';
+    document.getElementById('knockoutBracket').innerHTML = '';
+
+    // Modu değiştir
+    currentMode = currentMode === 'score' ? 'ranking' : 'score';
+    
+    const btn = document.getElementById('modeToggleBtn');
+    const fillBtn = document.getElementById('fillRandomBtn');
+
+    if (currentMode === 'ranking') {
+        btn.textContent = '🔢 Switch to Score Mode';
+        if (fillBtn) fillBtn.style.display = 'none';
         
-        document.getElementById('knockoutSection').style.display = 'none';
-        document.getElementById('knockoutBracket').innerHTML = '';
-    
-        currentMode = currentMode === 'score' ? 'ranking' : 'score';
-        const btn = document.getElementById('modeToggleBtn');
-        const fillBtn = document.getElementById('fillRandomBtn');
-    
-        if (currentMode === 'ranking') {
-            btn.textContent = '🔢 Switch to Score Mode';
-            fillBtn.style.display = 'none';
-            const winners = {};
-            document.querySelectorAll('.paths-selection select').forEach(select => {
-                winners[select.id] = select.value;
-            });
-            const updatedGroups = JSON.parse(JSON.stringify(initialGroups));
-            for (const groupKey in updatedGroups) {
-                updatedGroups[groupKey] = updatedGroups[groupKey].map(team => {
-                    const pathId = PATH_MAPPING[team];
-                    if (pathId && winners[pathId] && winners[pathId] !== '') {
-                        return winners[pathId];
-                    }
-                    return team;
-                });
-            }
-            renderRankingMode(updatedGroups);
-        } else {
-            btn.textContent = '🔄 Switch to Ranking Mode';
-            fillBtn.style.display = 'inline-block';
-            updateGroupTeams();
-        }
-    });
+        // Play-off hesaplamalarını sildik, direkt ham grupları render et
+        renderRankingMode(JSON.parse(JSON.stringify(initialGroups)));
+    } else {
+        btn.textContent = '🔄 Switch to Ranking Mode';
+        if (fillBtn) fillBtn.style.display = 'inline-block';
+        
+        // Score moduna geçerken grupları çiz
+        renderGroups(initialGroups);
+        checkStaging();
+    }
+});
 
     document.getElementById('fillRandomBtn').addEventListener('click', fillRandomScores);
 });
