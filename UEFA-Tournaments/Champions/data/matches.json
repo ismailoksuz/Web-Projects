@@ -154,6 +154,22 @@
         "score": "2-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 13,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "0-1",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 14,
+        "opponent": "Sporting CP",
+        "opponentId": "sporting-cp",
+        "score": "0-0",
+        "result": "D",
+        "is_home": true
       }
     ]
   },
@@ -572,6 +588,22 @@
         "opponentId": "manchester-city",
         "score": "1-2",
         "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 13,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 14,
+        "opponent": "Bayern Munich",
+        "opponentId": "bayern-munich",
+        "score": "4-3",
+        "result": "L",
         "is_home": false
       }
     ]
@@ -1553,6 +1585,22 @@
         "score": "4-1",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 13,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 14,
+        "opponent": "Real Madrid",
+        "opponentId": "real-madrid",
+        "score": "4-3",
+        "result": "W",
+        "is_home": true
       }
     ]
   },
@@ -1727,6 +1775,22 @@
         "score": "4-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 13,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "2-0",
+        "result": "L",
+        "is_home": false
+      },
+      {
+        "week": 14,
+        "opponent": "Paris Saint-Germain",
+        "opponentId": "paris-saint-germain",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1830,6 +1894,22 @@
         "score": "3-2",
         "result": "L",
         "is_home": false
+      },
+      {
+        "week": 13,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "0-2",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 14,
+        "opponent": "Barcelona",
+        "opponentId": "barcelona",
+        "score": "1-2",
+        "result": "L",
+        "is_home": true
       }
     ]
   },
@@ -1931,6 +2011,22 @@
         "opponent": "Chelsea",
         "opponentId": "chelsea",
         "score": "0-3",
+        "result": "W",
+        "is_home": false
+      },
+      {
+        "week": 13,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "2-0",
+        "result": "W",
+        "is_home": true
+      },
+      {
+        "week": 14,
+        "opponent": "Liverpool",
+        "opponentId": "liverpool",
+        "score": "0-2",
         "result": "W",
         "is_home": false
       }
@@ -2906,6 +3002,22 @@
         "score": "7-2",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 13,
+        "opponent": "Atlético Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "0-2",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 14,
+        "opponent": "Atlético Madrid",
+        "opponentId": "atletico-madrid",
+        "score": "1-2",
+        "result": "W",
+        "is_home": false
       }
     ]
   },
@@ -2993,6 +3105,22 @@
         "score": "5-0",
         "result": "W",
         "is_home": true
+      },
+      {
+        "week": 13,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "0-1",
+        "result": "L",
+        "is_home": true
+      },
+      {
+        "week": 14,
+        "opponent": "Arsenal",
+        "opponentId": "arsenal",
+        "score": "0-0",
+        "result": "D",
+        "is_home": false
       }
     ]
   },
