@@ -1,0 +1,606 @@
+CITY,COUNTRY,HAS_METRO,HAS_TRAIN,HAS_TRAM,HAS_LIGHT_RAIL,HAS_MONORAIL,HAS_MAGLEV,HAS_PEOPLE_MOVER,HAS_AIRPORT_SHUTTLE,HAS_AMUSEMENT_PARK,HAS_HERITAGE_TRAM,HAS_TRAM_TRAIN,HAS_INTERURBAN,HAS_SPECIAL,HAS_STREETCAR,TOTAL_LENGTH
+Adana,Turkey,True,False,False,False,False,False,False,False,False,False,False,False,False,False,13.5
+Agra,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,5.2
+Ahmedabad,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,62.8
+Algiers,Algeria,True,True,True,False,False,False,False,False,False,False,False,False,False,False,168.2
+Almaty,Kazakhstan,True,True,False,False,False,False,False,False,False,False,False,False,False,False,13.4
+Amsterdam,Netherlands,True,False,True,False,False,False,False,False,False,False,False,False,False,False,136.2
+Ankara,Turkey,True,True,False,False,False,False,False,False,False,False,False,False,False,False,104.4
+Athens,Greece,True,True,True,False,False,False,False,False,False,False,False,False,False,False,416.1
+Atlanta,United States,True,False,False,False,False,False,False,False,False,False,False,False,False,True,80.9
+Baku,Azerbaijan,True,True,False,False,False,False,False,False,False,False,False,False,False,False,131.7
+Baltimore,United States,True,False,False,True,False,False,False,False,False,False,False,False,False,False,73.2
+Bangkok,Thailand,True,True,False,False,True,False,False,False,False,False,False,False,False,False,961.03
+Barcelona,Spain,True,True,True,False,False,False,False,False,False,False,False,False,False,False,772.5
+Beijing,China,True,True,True,True,False,True,False,False,False,False,False,False,False,False,1274.4
+Belo Horizonte,Brazil,True,False,False,False,False,False,False,False,False,False,False,False,False,False,28.1
+Bengaluru,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,96.1
+Berlin,Germany,True,True,True,False,False,False,False,False,False,False,False,False,False,False,687.2
+Bilbao,Spain,True,True,True,False,False,False,False,False,False,False,False,False,False,False,150.0
+Boston,United States,True,True,False,True,False,False,False,False,False,True,False,False,False,False,752.0
+Brasília,Brazil,True,False,False,False,False,False,False,False,False,False,False,False,False,False,42.4
+Brescia,Italy,True,False,False,False,False,False,False,False,False,False,False,False,False,False,13.7
+Brussels,Belgium,True,True,True,False,False,False,False,False,False,False,False,False,False,False,537.0
+Bucharest,Romania,True,True,True,False,False,False,False,False,False,False,False,False,False,False,237.1
+Budapest,Hungary,True,True,True,False,False,False,False,False,False,False,False,False,False,False,298.6
+Buenos Aires,Argentina,True,True,False,True,False,False,False,False,False,True,False,False,False,False,896.6
+Bursa,Turkey,True,False,True,False,False,False,False,False,False,False,False,False,False,False,58.5
+Busan,South Korea,True,True,False,False,False,False,False,False,False,False,False,False,False,False,204.8
+Cairo,Egypt,True,True,False,False,False,False,False,False,False,False,False,False,False,False,176.8
+Caracas,Venezuela,True,True,False,False,False,False,False,False,False,False,False,False,False,False,108.6
+Catania,Italy,True,False,False,False,False,False,False,False,False,False,False,False,False,False,10.5
+Changchun,China,True,False,True,True,False,False,False,False,False,False,False,False,False,False,198.7
+Changsha,China,True,True,False,False,False,True,False,False,False,False,False,False,False,False,334.5
+Changzhou,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,54.0
+Chengdu,China,True,True,True,False,False,False,False,False,False,True,False,False,False,False,915.5
+Chennai,India,True,True,False,False,False,False,False,False,False,False,False,False,False,False,1228.31
+Chiba Prefecture,Japan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,16.2
+Chicago,United States,True,True,False,False,False,False,False,False,False,False,False,False,False,False,1090.4
+Chongqing,China,True,False,False,False,True,False,False,True,False,False,False,False,False,False,658.86
+Cleveland,United States,True,False,False,True,False,False,False,False,False,False,False,False,False,False,60.0
+Copenhagen,Denmark,True,True,False,True,False,False,False,False,False,False,False,False,False,False,226.4
+Daegu,South Korea,True,False,False,False,True,False,False,False,False,False,False,False,False,False,106.8
+Daejeon,South Korea,True,False,False,False,False,False,False,False,False,False,False,False,False,False,22.6
+Dalian,China,True,False,True,False,False,False,False,False,False,False,False,False,False,False,260.8
+Delhi,India,True,True,False,False,False,False,False,False,False,False,False,False,False,False,388.7
+Dhaka,Bangladesh,True,False,False,False,False,False,False,False,False,False,False,False,False,False,20.1
+Dnipro,Ukraine,True,False,True,False,False,False,False,False,False,False,False,False,False,False,89.8
+Doha,Qatar,True,False,False,False,False,False,False,False,False,False,False,False,False,False,76.0
+Dongguan,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,95.3
+Dubai,United Arab Emirates,True,False,True,False,True,False,False,False,False,False,False,False,False,False,105.35
+Fortaleza,Brazil,True,True,False,False,False,False,False,False,False,False,False,False,False,False,67.1
+Foshan,China,True,False,True,True,False,False,False,False,False,False,False,False,False,False,155.8
+Fukuoka,Japan,True,True,False,False,False,False,False,False,False,False,False,False,False,False,664.7
+Fuzhou,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,201.4
+Genoa,Italy,True,False,False,False,False,False,False,False,False,False,False,False,False,False,7.1
+Gimpo,South Korea,True,False,False,False,False,False,False,False,False,False,False,False,False,False,23.7
+Glasgow,United Kingdom,True,True,False,False,False,False,False,False,False,False,False,False,False,False,3042.4
+Guadalajara,Mexico,True,False,False,True,False,False,False,False,False,False,False,False,False,False,71.3
+Guangzhou,China,True,True,True,False,False,False,False,False,False,False,False,False,False,False,1169.43
+Guiyang,China,True,True,False,False,False,False,False,False,False,False,False,False,False,False,262.0
+Gurgaon,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,12.9
+Gwangju,South Korea,True,False,False,False,False,False,False,False,False,False,False,False,False,False,20.1
+Hamburg,Germany,True,True,False,False,False,False,False,False,False,False,False,False,False,False,250.0
+Hangzhou,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,516.2
+Hanoi,Vietnam,True,False,False,False,False,False,False,False,False,False,False,False,False,False,21.6
+Harbin,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,91.6
+Hefei,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,238.9
+Helsinki,Finland,True,True,True,True,False,False,False,False,False,False,False,False,False,False,389.5
+Hiroshima,Japan,True,True,True,False,False,False,False,False,False,False,False,False,False,False,301.3
+Ho Chi Minh City,Vietnam,True,False,False,False,False,False,False,False,False,False,False,False,False,False,19.7
+Hohhot,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,49.0
+Hong Kong,China,True,False,True,True,False,False,False,False,False,False,False,False,False,False,275.3
+Honolulu,United States,True,False,False,False,False,False,False,False,False,False,False,False,False,False,25.9
+Hyderabad,India,True,True,False,False,False,False,False,False,False,False,False,False,False,False,121.2
+Incheon,South Korea,True,False,False,False,False,True,False,False,False,False,False,False,False,False,86.6
+Indore,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,6.0
+Isfahan,Iran,True,False,False,False,False,False,False,False,False,False,False,False,False,False,20.2
+Istanbul,Turkey,True,True,True,False,False,False,False,False,False,True,False,False,False,False,368.8
+Jaipur,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,12.0
+Jakarta,Indonesia,True,True,False,False,False,False,False,False,False,False,False,False,False,False,583.2
+Jinan,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,96.3
+Jinhua,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,118.5
+Kanpur,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,16.0
+Kaohsiung,Taiwan,True,False,False,True,False,False,False,False,False,False,False,False,False,False,67.6
+Karaj,Iran,True,False,False,False,False,False,False,False,False,False,False,False,False,False,10.5
+Kazan,Russia,True,False,True,False,False,False,False,False,False,False,False,False,False,False,78.6
+Kharkiv,Ukraine,True,False,True,False,False,False,False,False,False,False,False,False,False,False,133.7
+Kobe,Japan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,53.2
+Kochi,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,28.1
+Kolkata,India,True,True,True,False,False,False,False,False,False,False,False,False,False,False,1593.6
+Kuala Lumpur,Malaysia,True,True,False,False,True,False,False,False,False,False,False,False,False,False,539.4
+Kunming,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,165.8
+Kyiv,Ukraine,True,True,True,False,False,False,False,False,False,False,False,False,False,False,215.7
+Kyoto,Japan,True,False,True,False,False,False,False,False,False,False,False,True,False,False,63.8
+Lagos,Nigeria,True,False,False,False,False,False,False,False,False,False,False,False,False,False,13.0
+Lahore,Pakistan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,27.1
+Lanzhou,China,True,True,False,False,False,False,False,False,False,False,False,False,False,False,96.0
+Lausanne,Switzerland,True,True,False,True,False,False,False,False,False,False,False,False,False,False,13.7
+Lille,France,True,True,True,False,False,False,False,False,False,False,False,False,False,False,62.5
+Lima,Peru,True,False,False,False,False,False,False,False,False,False,False,False,False,False,39.4
+Lisbon,Portugal,True,True,True,False,False,False,False,False,False,False,False,False,False,False,125.9
+London,United Kingdom,True,True,True,False,False,False,False,False,False,False,False,False,False,False,4063.2
+Los Angeles,United States,True,True,False,True,False,False,False,False,False,False,False,False,False,False,1056.3
+Lucknow,India,True,True,False,False,False,False,False,False,False,False,False,False,False,False,94.9
+Luoyang,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,43.6
+Lyon,France,True,False,True,False,False,False,False,False,False,False,True,False,False,False,140.1
+Macau,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,16.3
+Madrid,Spain,True,True,False,True,False,False,False,False,False,False,False,False,False,False,694.2
+Manila,Philippines,True,True,False,False,False,False,False,False,False,False,False,False,False,False,136.1
+Marseille,France,True,False,True,False,False,False,False,False,False,False,False,False,False,False,35.7
+Mashhad,Iran,True,False,False,False,False,False,False,False,False,False,False,False,False,False,43.3
+Mecca,Saudi Arabia,True,False,False,False,False,False,False,False,False,False,False,False,False,False,18.1
+Medellín,Colombia,True,False,False,False,False,False,False,False,False,False,False,False,True,False,35.6
+Mexico City,Mexico,True,True,False,True,False,False,False,False,False,False,False,False,False,False,298.4
+Miami,United States,True,True,False,False,False,False,False,False,False,False,False,False,False,False,153.4
+Milan,Italy,True,True,True,False,False,False,False,False,False,False,False,False,False,False,671.8
+Minsk,Belarus,True,False,True,False,False,False,False,False,False,False,False,False,False,False,75.9
+Monterrey,Mexico,True,False,False,False,False,False,False,False,False,False,False,False,False,False,40.2
+Montreal,Canada,True,True,False,False,False,False,False,False,False,False,False,False,False,False,343.8
+Moscow,Russia,True,True,True,False,False,False,False,False,False,False,False,False,False,False,3260.7
+Mumbai,India,True,True,False,False,True,False,False,False,False,False,False,False,False,False,564.94
+Munich,Germany,True,True,True,False,False,False,False,False,False,False,False,False,False,False,609.4
+Nagoya,Japan,True,True,False,False,False,True,False,False,False,False,False,False,False,False,1317.3
+Nagpur,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,38.2
+Nanchang,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,160.2
+Nanjing,China,True,False,True,False,False,False,False,False,False,False,False,False,False,False,573.9
+Nanning,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,132.0
+Nantong,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,60.0
+Naples,Italy,True,True,True,False,False,False,False,False,False,False,False,False,False,False,232.4
+Navi Mumbai,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,11.1
+New York City,United States,True,False,False,False,False,False,False,False,False,False,False,False,False,False,443.7
+Ningbo,China,True,True,False,False,False,False,False,False,False,False,False,False,False,False,310.7
+Nizhny Novgorod,Russia,True,True,True,False,False,False,False,False,False,False,False,False,False,False,169.5
+Noida,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,29.2
+Novosibirsk,Russia,True,False,True,False,False,False,False,False,False,False,False,False,False,False,79.9
+Nuremberg,Germany,True,True,True,False,False,False,False,False,False,False,False,False,False,False,396.8
+Osaka,Japan,True,True,True,False,True,False,False,False,False,False,False,False,False,False,2072.3
+Oslo,Norway,True,True,True,False,False,False,False,False,False,False,False,False,False,False,218.8
+Palembang,Indonesia,True,False,False,False,False,False,False,False,False,False,False,False,False,False,23.4
+Panama City,Panama,True,False,False,False,False,False,False,False,False,False,False,False,False,False,41.2
+Paris,France,True,True,True,False,False,False,False,False,False,False,False,False,False,False,2343.2
+Patna,India,True,False,False,False,False,False,False,False,False,False,False,False,False,False,4.3
+Philadelphia,United States,True,True,False,True,False,False,False,False,False,False,False,False,False,False,628.4
+Porto Alegre,Brazil,True,False,False,False,False,False,False,False,False,False,False,False,False,False,43.8
+Prague,Czech Republic,True,True,True,False,False,False,False,False,False,False,False,False,False,False,1141.1
+Pune,India,True,True,False,False,False,False,False,False,False,False,False,False,False,False,97.0
+Pyongyang,North Korea,True,False,True,False,False,False,False,False,False,False,False,False,False,False,76.0
+Qingdao,China,True,False,True,False,False,False,False,False,False,False,False,False,False,False,361.7
+Quito,Ecuador,True,False,False,False,False,False,False,False,False,False,False,False,False,False,22.6
+Recife,Brazil,True,False,False,False,False,False,False,False,False,False,False,False,False,False,39.5
+Rennes,France,True,False,False,False,False,False,False,False,False,False,False,False,False,False,22.4
+Rio de Janeiro,Brazil,True,True,False,True,False,False,False,False,False,True,False,False,False,False,362.0
+Riyadh,Saudi Arabia,True,False,False,False,False,False,False,False,False,False,False,False,False,False,176.0
+Rome,Italy,True,True,True,False,False,False,False,False,False,False,True,False,False,False,817.17
+Rotterdam,Netherlands,True,False,True,False,False,False,False,False,False,False,True,False,False,False,248.3
+Saint Petersburg,Russia,True,False,True,False,False,False,False,False,False,False,False,False,False,False,360.8
+Saitama Prefecture,Japan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,27.3
+Salvador,Brazil,True,False,False,False,False,False,False,False,False,False,False,False,False,False,34.0
+Samara,Russia,True,False,True,False,False,False,False,False,False,False,False,False,False,False,80.7
+San Francisco (Bay Area),United States,True,False,False,False,False,False,False,False,False,False,False,False,False,False,192.0
+San Juan,United States,True,False,False,False,False,False,False,False,False,False,False,False,False,False,17.2
+Santiago,Chile,True,True,False,False,False,False,False,False,False,False,False,False,False,False,282.8
+Santo Domingo,Dominican Republic,True,False,False,False,False,False,False,False,False,False,False,False,False,False,31.0
+Sapporo,Japan,True,True,True,False,False,False,False,False,False,False,False,False,False,False,225.6
+Sendai,Japan,True,True,False,False,False,False,False,False,False,False,False,False,False,False,287.8
+Seoul,South Korea,True,True,False,False,False,False,False,False,False,False,False,False,False,False,1128.2
+Shanghai,China,True,True,True,False,False,True,False,False,False,False,False,False,False,False,986.18
+Shaoxing,China,True,True,False,False,False,False,False,False,False,False,False,False,False,False,145.4
+Shenyang,China,True,False,True,False,False,False,False,False,False,False,False,False,False,False,300.2
+Shenzhen,China,True,False,True,False,False,False,False,False,False,False,False,False,False,False,629.8
+Shijiazhuang,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,76.5
+Shiraz,Iran,True,False,False,False,False,False,False,False,False,False,False,False,False,False,32.5
+Singapore,Singapore,True,False,False,False,False,False,True,False,False,False,False,False,False,False,244.7
+Sofia,Bulgaria,True,False,True,False,False,False,False,False,False,False,False,False,False,False,149.5
+Stockholm,Sweden,True,True,True,False,False,False,False,False,False,False,False,False,False,False,472.1
+Suzhou,China,True,False,True,False,False,False,False,False,False,False,False,False,False,False,364.8
+Sydney,Australia,True,True,False,True,False,False,False,False,False,False,False,False,False,False,901.7
+São Paulo,Brazil,True,True,False,False,True,False,False,False,False,False,False,False,False,False,397.0
+Tabriz,Iran,True,False,False,False,False,False,False,False,False,False,False,False,False,False,17.2
+Taichung,Taiwan,True,True,False,False,False,False,False,False,False,False,False,False,False,False,16.7
+Taipei,Taiwan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,152.9
+Taiyuan,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,52.4
+Taizhou,China,True,True,False,False,False,False,False,False,False,False,False,False,False,False,156.74
+Taoyuan,Taiwan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,53.1
+Tashkent,Uzbekistan,True,False,False,False,False,False,False,False,False,False,False,False,False,False,70.8
+Tbilisi,Georgia,True,False,False,False,False,False,False,False,False,False,False,False,False,False,27.3
+Tehran,Iran,True,True,False,False,False,False,False,False,False,False,False,False,False,False,266.1
+Thessaloniki,Greece,True,True,False,False,False,False,False,False,False,False,False,False,False,False,258.5
+Tianjin,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,355.0
+Tokyo,Japan,True,True,True,True,True,False,False,False,False,False,False,False,False,False,4106.5
+Toronto,Canada,True,True,False,False,False,False,False,False,False,False,False,False,False,True,702.8
+Toulouse,France,True,True,True,False,False,False,False,False,False,False,False,False,False,False,45.4
+Turin,Italy,True,True,True,False,False,False,False,False,False,False,False,False,False,False,103.1
+Valencia,Venezuela,True,False,False,False,False,False,False,False,False,False,False,False,False,False,6.2
+Vancouver,Canada,True,True,False,False,False,False,False,False,False,False,False,False,False,False,148.6
+Vienna,Austria,True,True,True,False,False,False,False,False,False,False,True,False,False,False,756.9
+Warsaw,Poland,True,True,True,False,False,False,False,False,False,False,False,False,False,False,1440.4
+"Washington, D.C.",United States,True,False,False,False,False,False,False,False,False,False,False,False,False,False,208.0
+Wenzhou,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,116.5
+Wuhan,China,True,False,True,False,False,False,True,False,False,False,False,False,False,False,581.8
+Wuhu,China,True,False,False,False,True,False,False,False,False,False,False,False,False,False,92.4
+Wuxi,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,145.2
+Xi'an,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,402.3
+Xiamen,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,98.4
+Xuzhou,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,95.5
+Yekaterinburg,Russia,True,True,True,False,False,False,False,False,False,False,False,False,False,False,164.6
+Yerevan,Armenia,True,False,False,False,False,False,False,False,False,False,False,False,False,False,12.1
+Yokohama,Japan,True,False,False,False,True,False,False,False,False,False,False,False,False,False,74.7
+Zhengzhou,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,449.8
+Ürümqi,China,True,False,False,False,False,False,False,False,False,False,False,False,False,False,32.9
+İzmir,Turkey,True,True,True,False,False,False,False,False,False,False,False,False,False,False,196.6
+Córdoba,Argentina,False,True,False,False,False,False,False,False,False,False,False,False,False,False,150.8
+La Plata,Argentina,False,True,False,False,False,False,False,False,False,False,False,False,False,False,4.6
+Neuquén,Argentina,False,True,False,False,False,False,False,False,False,False,False,False,False,False,21.0
+Posadas,Argentina,False,True,False,False,False,False,False,False,False,False,False,False,False,False,8.0
+Salta,Argentina,False,True,False,False,False,False,False,False,False,False,False,False,False,False,87.0
+Santiago del Estero,Argentina,False,True,False,False,False,False,False,False,False,False,False,False,False,False,8.0
+Adelaide,Australia,False,True,True,False,False,False,False,False,False,False,False,False,False,False,147.0
+Brisbane,Australia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,689.0
+Melbourne,Australia,False,True,True,False,False,False,False,False,False,False,False,False,False,False,1292.0
+Perth,Australia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,253.0
+Graz,Austria,False,True,True,False,False,False,False,False,False,False,False,False,False,False,520.3
+Innsbruck,Austria,False,True,True,False,False,False,False,False,False,False,False,False,False,False,315.0
+Klagenfurt,Austria,False,True,False,False,False,False,False,False,False,False,False,False,False,False,325.0
+Linz,Austria,False,True,True,False,False,False,False,False,False,True,False,False,False,False,206.5
+Salzburg,Austria,False,True,False,False,False,False,False,False,False,False,False,False,False,False,130.0
+Vorarlberg,Austria,False,True,False,False,False,False,False,False,False,False,False,False,False,False,80.0
+Antwerp,Belgium,False,True,True,False,False,False,False,False,False,False,False,False,False,False,88.4
+Charleroi,Belgium,False,True,False,True,False,False,False,False,False,False,False,False,False,False,25.0
+Ghent,Belgium,False,True,True,False,False,False,False,False,False,False,False,False,False,False,32.0
+Liège,Belgium,False,True,True,False,False,False,False,False,False,False,False,False,False,False,11.7
+Gaborone,Botswana,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Crato,Brazil,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+João Pessoa,Brazil,False,True,False,False,False,False,False,False,False,False,False,False,False,False,30.0
+Maceió,Brazil,False,True,False,False,False,False,False,False,False,False,False,False,False,False,34.3
+Natal,Brazil,False,True,False,False,False,False,False,False,False,False,False,False,False,False,56.0
+Sobral,Brazil,False,True,False,False,False,False,False,False,False,False,False,False,False,False,13.9
+Teresina,Brazil,False,True,False,False,False,False,False,False,False,False,False,False,False,False,13.5
+Concepción,Chile,False,True,False,False,False,False,False,False,False,False,False,False,False,False,135.3
+Talca,Chile,False,True,False,False,False,False,False,False,False,False,False,False,False,False,88.0
+Valparaíso,Chile,False,True,False,False,False,False,False,False,False,False,False,False,False,False,43.0
+Victoria,Chile,False,True,False,False,False,False,False,False,False,False,False,False,False,False,65.0
+Haikou,China,False,True,False,False,False,False,False,False,False,False,False,False,False,False,51.4
+San José,Costa Rica,False,True,False,False,False,False,False,False,False,False,False,False,False,False,72.0
+Split,Croatia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,17.8
+Zagreb,Croatia,False,True,True,False,False,False,False,False,False,False,False,False,False,False,105.0
+Havana,Cuba,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Ostrava,Czech Republic,False,True,True,False,False,False,False,False,False,False,False,False,False,False,65.7
+Aalborg,Denmark,False,True,False,False,False,False,False,False,False,False,False,False,False,False,27.0
+Tallinn,Estonia,False,True,True,False,False,False,False,False,False,False,False,False,False,False,151.7
+Tampere,Finland,False,True,False,True,False,False,False,False,False,False,False,False,False,False,24.0
+Bremen,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,384.6
+Cologne,Germany,False,True,False,True,False,False,False,False,False,False,False,False,False,False,870.6
+Dresden,Germany,False,True,True,False,False,False,True,False,False,False,False,False,False,False,300.57
+Frankfurt,Germany,False,True,True,True,False,False,False,False,False,False,False,False,False,False,454.9
+Freiburg,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,226.7
+Hanover,Germany,False,True,False,True,False,False,False,False,False,False,False,False,False,False,508.0
+Leipzig,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,982.5
+Magdeburg,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,197.2
+Mannheim,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,540.4
+Rostock,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,126.3
+Stuttgart,Germany,False,True,False,True,False,False,False,False,False,False,False,False,False,False,348.3
+Ulm,Germany,False,True,True,False,False,False,False,False,False,False,False,False,False,False,407.1
+Villingen-Schwenningen,Germany,False,True,False,False,False,False,False,False,False,False,False,False,False,False,194.0
+Patras,Greece,False,True,False,False,False,False,False,False,False,False,False,False,False,False,29.0
+Hong Kong,Hong Kong,False,True,False,False,False,False,False,False,False,False,False,False,False,False,119.7
+Bandung,Indonesia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,42.0
+Medan,Indonesia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,61.0
+Padang,Indonesia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,23.0
+Semarang,Indonesia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,60.0
+Surabaya,Indonesia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Yogyakarta,Indonesia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,142.9
+Cork,Ireland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Dublin,Ireland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,95.1
+Galway,Ireland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Limerick,Ireland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Tel Aviv,Israel,False,True,False,True,False,False,False,False,False,False,False,False,False,False,1245.0
+Bari,Italy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Bologna,Italy,False,True,False,False,False,False,True,False,False,False,False,False,False,False,355.1
+Palermo,Italy,False,True,True,False,False,False,False,False,False,False,False,False,False,False,57.3
+Salerno,Italy,False,True,False,False,False,False,False,False,False,False,False,False,False,False,6.0
+Fukui,Japan,False,True,False,False,False,False,False,False,False,False,True,False,False,False,74.4
+Kanazawa,Japan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,20.6
+Matsuyama,Japan,False,True,True,False,False,False,False,False,False,False,False,False,False,False,43.4
+Nagano,Japan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,33.2
+Niigata,Japan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,177.9
+Okayama,Japan,False,True,True,False,False,False,False,False,False,False,False,False,False,False,433.4
+Shizuoka,Japan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,268.4
+Takamatsu,Japan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,60.0
+Toyama,Japan,False,True,True,True,False,False,False,False,False,False,False,False,False,False,108.1
+Nairobi,Kenya,False,True,False,False,False,False,False,False,False,False,False,False,False,False,160.0
+Riga,Latvia,False,True,True,False,False,False,False,False,False,False,False,False,False,False,372.5
+Kaunas,Lithuania,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Vilnius,Lithuania,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Kota Kinabalu,Malaysia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,134.0
+Penang,Malaysia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,272.0
+Casablanca,Morocco,False,True,True,False,False,False,False,False,False,False,False,False,False,False,106.0
+Yangon,Myanmar,False,True,False,False,False,False,False,False,False,False,False,False,False,False,45.9
+Auckland,New Zealand,False,True,False,False,False,False,False,False,False,True,False,False,False,False,270.69
+Wellington,New Zealand,False,True,False,False,False,False,False,False,False,False,False,False,False,False,290.0
+Bergen,Norway,False,True,False,True,False,False,False,False,False,False,False,False,False,False,163.4
+Stavanger,Norway,False,True,False,False,False,False,False,False,False,False,False,False,False,False,75.0
+Trondheim,Norway,False,True,True,False,False,False,False,False,False,False,False,False,False,False,298.8
+Naga,Philippines,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Bydgoszcz,Poland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,40.8
+Gdańsk,Poland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,79.4
+Katowice,Poland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,207.4
+Kraków,Poland,False,True,True,True,False,False,False,False,False,False,False,False,False,False,107.8
+Poznań,Poland,False,True,True,True,False,False,False,False,False,False,False,False,False,False,74.8
+Wrocław,Poland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,85.5
+Łódź,Poland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,124.1
+Coimbra,Portugal,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Porto,Portugal,False,True,False,True,False,False,False,False,False,True,False,False,False,False,94.0
+Dakar,Senegal,False,True,False,False,False,False,False,False,False,False,False,False,False,False,55.0
+Belgrade,Serbia,False,True,True,False,False,False,False,False,False,False,False,False,False,False,76.6
+Cape Town,South Africa,False,True,False,False,False,False,False,False,False,False,False,False,False,False,423.0
+Durban,South Africa,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+East London,South Africa,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Johannesburg,South Africa,False,True,False,False,False,False,False,False,False,False,False,False,False,False,80.0
+Port Elizabeth,South Africa,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Alicante,Spain,False,True,True,False,False,False,False,False,False,False,False,False,False,False,300.0
+Cartagena,Spain,False,True,False,False,False,False,False,False,False,False,False,False,False,False,186.1
+Cádiz,Spain,False,True,True,False,False,False,False,False,False,False,False,False,False,False,85.0
+Málaga,Spain,False,True,False,True,False,False,False,False,False,False,False,False,False,False,83.6
+Oviedo,Spain,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Palma de Mallorca,Spain,False,True,False,False,False,False,False,False,False,False,False,False,False,False,85.0
+San Sebastián,Spain,False,True,False,False,False,False,False,False,False,False,False,False,False,False,80.5
+Santander,Spain,False,True,False,False,False,False,False,False,False,False,False,False,False,False,92.0
+Seville,Spain,False,True,True,False,False,False,False,False,False,False,False,False,False,False,253.2
+Valencia,Spain,False,True,True,False,False,False,False,False,False,False,False,False,False,False,416.0
+Zaragoza,Spain,False,True,True,False,False,False,True,False,False,False,False,False,False,False,30.0
+Colombo,Sri Lanka,False,True,False,False,False,False,False,False,False,False,False,False,False,False,1436.0
+Gothenburg,Sweden,False,True,True,False,False,False,False,False,False,False,False,False,False,False,199.0
+Linköping,Sweden,False,True,False,False,False,False,False,False,False,False,False,False,False,False,115.0
+Malmö,Sweden,False,True,False,False,False,False,False,False,False,True,False,False,False,False,390.0
+Aarau,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Basel,Switzerland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,336.3
+Bern,Switzerland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,27.5
+Chur,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,53.0
+Fribourg,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Geneva,Switzerland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,268.1
+Lucerne,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Schaffhausen,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+St. Gallen,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Zug,Switzerland,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Zurich,Switzerland,False,True,True,False,False,False,False,False,False,False,False,False,False,False,456.0
+Greater Taipei,Taiwan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Tainan,Taiwan,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Dar es Salaam,Tanzania,False,True,False,False,False,False,False,False,False,False,False,False,False,False,45.0
+Sousse,Tunisia,False,True,False,False,False,False,False,False,False,False,False,False,False,False,73.0
+Tunis,Tunisia,False,True,False,True,False,False,False,False,False,False,False,False,False,False,105.3
+Adapazarı,Turkey,False,True,False,False,False,False,False,False,False,False,False,False,False,False,8.4
+Gaziantep,Turkey,False,True,False,True,False,False,False,False,False,False,False,False,False,False,60.5
+Belfast,United Kingdom,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Birmingham,United Kingdom,False,True,True,False,False,False,False,False,False,False,False,False,False,False,888.9
+Bristol,United Kingdom,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Cardiff,United Kingdom,False,True,False,False,False,False,False,False,False,False,False,False,False,False,169.0
+Edinburgh,United Kingdom,False,True,True,False,False,False,False,False,False,False,False,False,False,False,14.0
+Leeds,United Kingdom,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0.0
+Liverpool,United Kingdom,False,True,False,False,False,False,False,False,False,False,False,False,False,False,120.7
+Manchester,United Kingdom,False,True,True,False,False,False,False,False,False,False,False,False,False,False,330.0
+Albuquerque,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,False,156.0
+Austin,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,False,51.0
+Dallas,United States,False,True,False,True,False,False,False,False,False,True,False,False,False,True,377.44
+Denver,United States,False,True,False,True,False,False,False,False,False,False,False,False,False,False,181.99
+Minneapolis,United States,False,True,False,True,False,False,False,False,False,False,False,False,False,False,98.0
+Nashville,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,False,51.5
+New Haven,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,False,194.5
+New York,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,False,3897.0
+Orlando,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,False,78.7
+Portland,United States,False,True,False,True,False,False,False,False,False,False,False,False,False,True,131.4
+Salt Lake City,United States,False,True,False,True,False,False,False,False,False,False,False,False,False,True,217.3
+San Diego,United States,False,True,False,True,False,False,False,False,False,False,False,False,False,False,171.0
+San Francisco,United States,False,True,False,True,False,False,False,False,False,True,False,False,True,False,389.2
+Seattle,United States,False,True,False,True,True,False,False,False,False,False,False,False,False,True,189.94
+Washington,United States,False,True,False,False,False,False,False,False,False,False,False,False,False,True,449.9
+Montevideo,Uruguay,False,True,False,False,False,False,False,False,False,False,False,False,False,False,80.0
+Constantine,Algeria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.2
+Mostaganem,Algeria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,14.0
+Oran,Algeria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.7
+Ouargla,Algeria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,9.7
+Sétif,Algeria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,22.4
+Sidi Bel Abbès,Algeria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.7
+Alexandria,Egypt,False,False,True,False,False,False,False,False,False,False,False,False,False,False,32.0
+Rabat,Morocco,False,False,True,False,False,False,False,False,False,False,False,False,False,False,26.0
+Huai'an,China,False,False,True,False,False,False,False,False,False,False,False,False,False,False,20.0
+Huangshi,China,False,False,True,False,False,False,False,False,False,False,False,False,False,False,26.9
+Jiaxing,China,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.2
+Mengzi,China,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.0
+Qiubei,China,False,False,True,False,False,False,False,False,False,False,False,False,False,False,14.0
+Sanya,China,False,False,True,False,False,False,False,False,False,False,False,False,False,False,8.4
+Hakodate,Japan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,10.9
+Kagoshima,Japan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.1
+Kōchi,Japan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,25.3
+Nagasaki,Japan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.5
+Takaoka,Japan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,12.8
+Toyohashi,Japan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,5.4
+Oskemen,Kazakhstan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.5
+Pavlodar,Kazakhstan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,86.0
+Temirtau,Kazakhstan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,10.9
+Chongjin,North Korea,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.0
+Al Rayyan,Qatar,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.5
+Mushayrib,Qatar,False,False,True,False,False,False,False,False,False,False,False,False,False,False,2.12
+Eskişehir,Turkey,False,False,True,False,False,False,False,False,False,False,False,False,False,False,55.0
+Samarkand,Uzbekistan,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.4
+Gmunden,Austria,False,False,True,False,False,False,False,False,False,False,False,False,False,False,17.7
+Mazyr,Belarus,False,False,True,False,False,False,False,False,False,False,False,False,False,False,19.6
+Novopolotsk,Belarus,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.0
+Vitebsk,Belarus,False,False,True,False,False,False,False,False,False,False,False,False,False,False,26.0
+Sarajevo,Bosnia and Herzegovina,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.1
+Osijek,Croatia,False,False,True,False,False,False,False,False,False,False,False,False,False,False,12.0
+Brno,Czech Republic,False,False,True,False,False,False,False,False,False,False,False,False,False,False,70.2
+Liberec,Czech Republic,False,False,True,False,False,False,False,False,False,False,False,False,False,False,21.5
+Most,Czech Republic,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.6
+Olomouc,Czech Republic,False,False,True,False,False,False,False,False,False,False,False,False,False,False,15.0
+Plzeň,Czech Republic,False,False,True,False,False,False,False,False,False,False,False,False,False,False,21.7
+Angers,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,22.4
+Aubagne,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,2.8
+Avignon,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,5.2
+Besançon,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,14.5
+Bordeaux,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,79.0
+Brest,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,14.3
+Caen,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.2
+Dijon,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,19.0
+Grenoble,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,43.7
+Le Havre,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.0
+Le Mans,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.8
+Montpellier,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,60.5
+Mulhouse,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.2
+Nantes,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,44.3
+Nice,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,24.2
+Orléans,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,29.3
+Reims,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.2
+Rouen,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,15.1
+Saint-Étienne,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.3
+Strasbourg,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,219.1
+Tours,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,14.8
+Valenciennes,France,False,False,True,False,False,False,False,False,False,False,False,False,False,False,33.8
+Augsburg,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,49.8
+Bad Schandau,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,7.9
+Bochum,Germany,False,False,True,True,False,False,False,False,False,False,False,False,False,False,101.3
+Bonn,Germany,False,False,True,True,False,False,False,False,False,False,False,False,False,False,125.3
+Brandenburg,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,17.6
+Braunschweig,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,35.0
+Chemnitz,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,34.0
+Cottbus,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,20.1
+Darmstadt,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,42.0
+Dessau,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,12.5
+Duisburg,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,60.7
+Düsseldorf,Germany,False,False,True,True,False,False,False,True,False,False,False,False,False,False,150.8
+Erfurt,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,45.2
+Essen,Germany,False,False,True,True,False,False,False,False,False,False,False,False,False,False,74.0
+Gera,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.5
+Görlitz,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.8
+Gotha,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,27.0
+Halberstadt,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.7
+Halle,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,87.6
+Heidelberg,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,30.9
+Jena,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,23.5
+Karlsruhe,Germany,False,False,True,True,False,False,False,False,False,False,False,False,False,False,342.3
+Kassel,Germany,False,False,True,False,False,False,False,False,False,False,True,False,False,False,237.0
+Krefeld,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,37.7
+Mainz,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,29.7
+Mülheim,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,37.5
+Nordhausen,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.0
+Plauen,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.0
+Potsdam,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,29.9
+Schwerin,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,21.0
+Strausberg,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,6.2
+Würzburg,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,19.7
+Zwickau,Germany,False,False,True,False,False,False,False,False,False,False,False,False,False,False,19.6
+Debrecen,Hungary,False,False,True,False,False,False,False,False,False,False,False,False,False,False,8.8
+Miskolc,Hungary,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.5
+Szeged,Hungary,False,False,True,False,False,False,False,False,False,False,False,False,False,False,17.0
+Florence,Italy,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.5
+Messina,Italy,False,False,True,False,False,False,False,False,False,False,False,False,False,False,7.7
+Daugavpils,Latvia,False,False,True,False,False,False,False,False,False,False,False,False,False,False,29.1
+Liepāja,Latvia,False,False,True,False,False,False,False,False,False,False,False,False,False,False,7.9
+Luxembourg,Luxembourg,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.0
+The Hague,Netherlands,False,False,True,False,False,False,False,False,False,False,False,False,False,False,105.0
+Częstochowa,Poland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,14.7
+Elbląg,Poland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,16.9
+Gorzów,Poland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.0
+Grudziądz,Poland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,9.0
+Olsztyn,Poland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,17.0
+Szczecin,Poland,False,False,True,True,False,False,False,False,False,False,False,False,False,False,56.5
+Toruń,Poland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,22.0
+Arad,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,48.0
+Brăila,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,22.3
+Cluj,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,11.7
+Craiova,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.0
+Galați,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,20.0
+Iași,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,35.0
+Oradea,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,22.8
+Ploiești,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,10.0
+Reșița,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,10.0
+Timișoara,Romania,False,False,True,False,False,False,False,False,False,False,False,False,False,False,38.0
+Bratislava,Slovakia,False,False,True,False,False,False,False,False,False,False,False,False,False,False,42.0
+Košice,Slovakia,False,False,True,False,False,False,False,False,False,False,False,False,False,False,33.7
+Murcia,Spain,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.0
+Parla,Spain,False,False,True,False,False,False,False,False,False,False,False,False,False,False,8.3
+Santa Cruz,Spain,False,False,True,False,False,False,False,False,False,False,False,False,False,False,15.1
+Vitoria,Spain,False,False,True,False,False,False,False,False,False,False,False,False,False,False,13.5
+Lund,Sweden,False,False,True,False,False,False,False,False,False,False,False,False,False,False,5.5
+Norrköping,Sweden,False,False,True,False,False,False,False,False,False,False,False,False,False,False,18.7
+Neuchâtel,Switzerland,False,False,True,False,False,False,False,False,False,False,False,False,False,False,8.85
+Blackpool,United Kingdom,False,False,True,False,False,False,False,False,False,False,False,False,False,False,17.7
+Nottingham,United Kingdom,False,False,True,False,False,False,False,False,False,False,False,False,False,False,32.0
+Sheffield,United Kingdom,False,False,True,False,False,False,False,False,False,False,False,False,False,False,34.6
+Mendoza,Argentina,False,False,True,False,False,False,False,False,False,False,False,False,False,False,17.0
+Cuenca,Ecuador,False,False,True,False,False,False,False,False,False,False,False,False,False,False,10.7
+Addis Ababa,Ethiopia,False,False,False,True,False,False,False,False,False,False,False,False,False,False,31.6
+Port Louis,Mauritius,False,False,False,True,False,False,False,False,False,False,False,False,False,False,30.0
+Nanping,China,False,False,False,True,False,False,False,False,False,False,False,False,False,False,26.2
+Tianshui,China,False,False,False,True,False,False,False,False,False,False,False,False,False,False,12.9
+Jerusalem,Israel,False,False,False,True,False,False,False,False,False,False,False,False,False,False,13.8
+Kumamoto,Japan,False,False,False,True,False,False,False,False,False,False,False,False,False,False,12.2
+Utsunomiya,Japan,False,False,False,True,False,False,False,False,False,False,False,False,False,False,14.6
+Lusail,Qatar,False,False,False,True,False,False,False,False,False,False,False,False,False,False,15.9
+New Taipei,Taiwan,False,False,False,True,False,False,False,False,False,False,False,False,False,False,9.5
+Antalya,Turkey,False,False,False,True,False,False,False,False,False,True,False,False,False,False,51.7
+İzmit,Turkey,False,False,False,True,False,False,False,False,False,False,False,False,False,False,16.2
+Kayseri,Turkey,False,False,False,True,False,False,False,False,False,False,False,False,False,False,46.0
+Konya,Turkey,False,False,False,True,False,False,False,False,False,False,False,False,False,False,27.5
+Samsun,Turkey,False,False,False,True,False,False,False,False,False,False,False,False,False,False,36.5
+Odense,Denmark,False,False,False,True,False,False,False,False,False,False,False,False,False,False,14.5
+Bielefeld,Germany,False,False,False,True,False,False,False,False,False,False,False,False,False,False,38.0
+Dortmund,Germany,False,False,False,True,False,False,True,False,False,False,False,False,False,False,80.16
+Saarbrücken,Germany,False,False,False,True,False,False,False,False,False,False,False,False,False,False,44.0
+Bergamo,Italy,False,False,False,True,False,False,False,False,False,False,False,False,False,False,12.5
+Cagliari,Italy,False,False,False,True,False,False,False,False,False,False,False,False,False,False,12.3
+Utrecht,Netherlands,False,False,False,True,False,False,False,False,False,False,False,False,False,False,28.7
+Almada,Portugal,False,False,False,True,False,False,False,False,False,False,False,False,False,False,13.5
+Granada,Spain,False,False,False,True,False,False,False,False,False,False,False,False,False,False,15.9
+Newcastle,United Kingdom,False,False,False,True,False,False,False,False,False,False,False,False,False,False,77.5
+Calgary,Canada,False,False,False,True,False,False,False,False,False,False,False,False,False,False,59.9
+Edmonton,Canada,False,False,False,True,False,False,False,False,False,False,False,False,False,False,37.4
+Kitchener,Canada,False,False,False,True,False,False,False,False,False,False,False,False,False,False,19.0
+Ottawa,Canada,False,False,False,True,False,False,False,False,False,False,False,False,False,False,35.5
+Buffalo,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,10.3
+Camden,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,55.0
+Charlotte,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,True,37.5
+Houston,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,36.5
+Hudson County,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,26.4
+Newark,United States,False,False,False,True,False,False,False,True,False,False,False,False,False,False,14.8
+Norfolk,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,11.9
+Oceanside,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,35.0
+Phoenix,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,True,66.8
+Pittsburgh,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,42.2
+Sacramento,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,69.0
+St. Louis,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,74.0
+San Jose,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,67.9
+Tacoma,United States,False,False,False,True,False,False,False,False,False,False,False,False,False,False,6.4
+Canberra,Australia,False,False,False,True,False,False,False,False,False,False,False,False,False,False,12.0
+Gold Coast,Australia,False,False,False,True,False,False,False,False,False,False,False,False,False,False,20.0
+Newcastle,Australia,False,False,False,True,False,False,False,False,False,False,False,False,False,False,2.7
+Cochabamba,Bolivia,False,False,False,True,False,False,False,False,False,False,False,False,False,False,40.7
+Santos,Brazil,False,False,False,True,False,False,False,False,False,False,False,False,False,False,11.5
+Yinchuan,China,False,False,False,False,True,False,False,False,False,False,False,False,False,False,5.67
+Wuppertal,Germany,False,False,False,False,True,False,False,False,False,False,False,False,False,False,13.3
+Naha,Japan,False,False,False,False,True,False,False,False,False,False,False,False,False,False,17.0
+Chiba,Japan,False,False,False,False,True,False,False,False,False,False,False,False,False,False,15.2
+Kitakyushu,Japan,False,False,False,False,True,False,False,False,False,False,False,True,False,False,29.8
+Las Vegas,United States,False,False,False,False,True,False,False,False,False,False,False,False,False,False,6.3
+Jacksonville,United States,False,False,False,False,True,False,False,False,False,False,False,False,False,False,4.0
+Fenghuang,China,False,False,False,False,False,True,False,False,False,False,False,False,False,False,9.12
+Wolmido,South Korea,False,False,False,False,False,False,True,False,False,False,False,False,False,False,6.1
+Ashgabat,Turkmenistan,False,False,False,False,False,False,True,False,False,False,False,False,False,False,5.2
+Aiea,United States,False,False,False,False,False,False,True,False,False,False,False,False,False,False,0.3
+Rust,Germany,False,False,False,False,False,False,False,False,True,False,False,False,False,False,2.5
+Urayasu,Japan,False,False,False,False,False,False,False,False,True,False,False,False,False,False,5.0
+Alton,United Kingdom,False,False,False,False,False,False,False,False,True,False,False,False,False,False,1.4
+Bay Lake,United States,False,False,False,False,False,False,False,False,True,False,False,False,False,False,23.66
+Anaheim,United States,False,False,False,False,False,False,False,False,True,False,False,False,False,False,4.0
+Kimberley,South Africa,False,False,False,False,False,False,False,False,False,True,False,False,False,False,1.4
+Ringsted,Denmark,False,False,False,False,False,False,False,False,False,True,False,False,False,False,1.8
+Naumburg,Germany,False,False,False,False,False,False,False,False,False,True,False,False,False,False,2.9
+Ritten,Italy,False,False,False,False,False,False,False,False,False,True,False,False,False,False,6.6
+Mrozy,Poland,False,False,False,False,False,False,False,False,False,True,False,False,False,False,1.75
+Sintra,Portugal,False,False,False,False,False,False,False,False,False,True,False,False,False,False,12.7
+Trenčín,Slovakia,False,False,False,False,False,False,False,False,False,True,False,False,False,False,5.9
+Sóller,Spain,False,False,False,False,False,False,False,False,False,True,False,False,False,False,5.0
+Malmköping,Sweden,False,False,False,False,False,False,False,False,False,True,False,False,False,False,2.6
+Seaton,United Kingdom,False,False,False,False,False,False,False,False,False,True,False,False,False,False,4.8
+Wirral,United Kingdom,False,False,False,False,False,False,False,False,False,True,False,False,False,False,0.7
+El Paso,United States,False,False,False,False,False,False,False,False,False,True,False,False,False,False,7.7
+Little Rock,United States,False,False,False,False,False,False,False,False,False,True,False,False,False,False,5.5
+Memphis,United States,False,False,False,False,False,False,False,False,False,True,False,False,False,False,4.0
+New Orleans,United States,False,False,False,False,False,False,False,False,False,True,False,False,False,False,25.6
+Tampa,United States,False,False,False,False,False,False,False,False,False,True,False,False,False,False,4.4
+Oranjestad,Aruba,False,False,False,False,False,False,False,False,False,True,False,False,False,False,1.9
+Aarhus,Denmark,False,False,False,False,False,False,False,False,False,False,True,False,False,False,110.0
+Hódmezővásárhely,Hungary,False,False,False,False,False,False,False,False,False,False,True,False,False,False,3.5
+Sassari,Italy,False,False,False,False,False,False,False,False,False,False,True,False,False,False,4.3
+Kamakura,Japan,False,False,False,False,False,False,False,False,False,False,False,True,False,False,10.0
+Ostend,Belgium,False,False,False,False,False,False,False,False,False,False,False,True,False,False,68.0
+Clermont-Ferrand,France,False,False,False,False,False,False,False,False,False,False,False,False,True,False,15.7
+Mestre,Italy,False,False,False,False,False,False,False,False,False,False,False,False,True,False,6.3
+Padua,Italy,False,False,False,False,False,False,False,False,False,False,False,False,True,False,10.4
+Trieste,Italy,False,False,False,False,False,False,False,False,False,False,False,False,True,False,5.2
+Cincinnati,United States,False,False,False,False,False,False,False,False,False,False,False,False,False,True,5.8
+Detroit,United States,False,False,False,False,False,False,False,False,False,False,False,False,False,True,5.3
+Kansas City,United States,False,False,False,False,False,False,False,False,False,False,False,False,False,True,3.5
+Milwaukee,United States,False,False,False,False,False,False,False,False,False,False,False,False,False,True,4.0
+Oklahoma City,United States,False,False,False,False,False,False,False,False,False,False,False,False,False,True,7.7
+Tucson,United States,False,False,False,False,False,False,False,False,False,False,False,False,False,True,6.3

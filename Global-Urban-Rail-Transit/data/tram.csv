@@ -1,0 +1,253 @@
+CITY,COUNTRY,STATIONS,LINES,LENGTH
+Algiers,Algeria,38,1,23.2
+Constantine,Algeria,21,1,18.2
+Mostaganem,Algeria,24,2,14.0
+Oran,Algeria,32,1,18.7
+Ouargla,Algeria,16,1,9.7
+Sétif,Algeria,26,2,22.4
+Sidi Bel Abbès,Algeria,22,1,13.7
+Alexandria,Egypt,140,20,32.0
+Casablanca,Morocco,110,4,74.0
+Rabat,Morocco,43,2,26.0
+Beijing,China,14,1,11.9
+Changchun,China,25,2,13.0
+Chengdu,China,35,2,39.3
+Dalian,China,37,2,23.1
+Foshan,China,10,1,6.6
+Guangzhou,China,11,1,7.7
+Guangzhou,China,19,1,14.3
+Huai'an,China,23,1,20.0
+Huangshi,China,30,1,26.9
+Jiaxing,China,12,1,11.2
+Mengzi,China,15,1,13.0
+Nanjing,China,26,2,17.2
+Qingdao,China,12,1,9.0
+Qiubei,China,11,2,14.0
+Sanya,China,15,1,8.4
+Shanghai,China,42,2,31.0
+Shenyang,China,71,6,97.5
+Shenzhen,China,21,2,11.7
+Shenzhen,China,11,1,8.5
+Suzhou,China,41,2,18.0
+Wuhan,China,67,3,53.2
+Hong Kong,China,120,6,30.0
+Kolkata,India,53,3,19.5
+Hakodate,Japan,26,4,10.9
+Hiroshima,Japan,78,9,35.1
+Kagoshima,Japan,37,2,13.1
+Kōchi,Japan,76,3,25.3
+Kyoto,Japan,22,2,11.0
+Matsuyama,Japan,27,5,9.5
+Nagasaki,Japan,37,5,11.5
+Okayama,Japan,16,2,4.7
+Osaka,Japan,41,2,18.4
+Sapporo,Japan,24,4,8.9
+Takaoka,Japan,24,2,12.8
+Tokyo,Japan,30,1,12.2
+Toyama,Japan,23,6,7.3
+Toyohashi,Japan,14,2,5.4
+Oskemen,Kazakhstan,31,4,16.5
+Pavlodar,Kazakhstan,83,9,86.0
+Temirtau,Kazakhstan,0,1,10.9
+Chongjin,North Korea,3,1,13.0
+Pyongyang,North Korea,12,3,53.5
+Al Rayyan,Qatar,24,3,11.5
+Mushayrib,Qatar,9,1,2.12
+Bursa,Turkey,36,3,18.5
+Eskişehir,Turkey,61,7,55.0
+Istanbul,Turkey,75,4,44.7
+İzmir,Turkey,47,3,33.6
+Dubai,United Arab Emirates,11,1,10.6
+Samarkand,Uzbekistan,26,2,11.4
+Gmunden,Austria,8,1,17.7
+Graz,Austria,165,6,70.3
+Innsbruck,Austria,40,6,44.0
+Linz,Austria,59,4,30.4
+Vienna,Austria,1146,28,171.4
+Mazyr,Belarus,19,1,19.6
+Minsk,Belarus,54,6,31.0
+Novopolotsk,Belarus,14,1,11.0
+Vitebsk,Belarus,115,7,26.0
+Antwerp,Belgium,175,14,88.4
+Brussels,Belgium,291,18,147.1
+Ghent,Belgium,0,3,32.0
+Liège,Belgium,23,1,11.7
+Sarajevo,Bosnia and Herzegovina,28,6,11.1
+Sofia,Bulgaria,165,15,97.5
+Osijek,Croatia,41,2,12.0
+Zagreb,Croatia,256,19,58.0
+Brno,Czech Republic,147,11,70.2
+Liberec,Czech Republic,40,1,21.5
+Most,Czech Republic,28,4,18.6
+Olomouc,Czech Republic,32,7,15.0
+Ostrava,Czech Republic,100,16,65.7
+Plzeň,Czech Republic,54,3,21.7
+Prague,Czech Republic,629,35,142.7
+Tallinn,Estonia,41,5,19.7
+Helsinki,Finland,310,12,85.5
+Angers,France,42,3,22.4
+Aubagne,France,7,1,2.8
+Avignon,France,10,1,5.2
+Besançon,France,31,2,14.5
+Bordeaux,France,135,4,79.0
+Brest,France,28,1,14.3
+Caen,France,37,3,16.2
+Dijon,France,35,2,19.0
+Grenoble,France,82,5,43.7
+Le Havre,France,23,2,13.0
+Le Mans,France,35,2,18.8
+Lille,France,36,2,17.5
+Lyon,France,80,7,83.7
+Marseille,France,32,3,13.0
+Montpellier,France,84,4,60.5
+Mulhouse,France,29,4,16.2
+Nantes,France,83,3,44.3
+Nice,France,46,3,24.2
+Orléans,France,51,2,29.3
+Paris,France,283,15,196.6
+Reims,France,24,2,11.2
+Rouen,France,31,1,15.1
+Saint-Étienne,France,39,3,16.3
+Strasbourg,France,87,6,49.1
+Toulouse,France,25,2,17.2
+Tours,France,29,1,14.8
+Valenciennes,France,48,2,33.8
+Augsburg,Germany,103,5,49.8
+Bad Schandau,Germany,13,1,7.9
+Berlin,Germany,800,22,196.4
+Bochum,Germany,208,10,86.0
+Bonn,Germany,0,3,29.5
+Brandenburg,Germany,0,2,17.6
+Braunschweig,Germany,83,6,35.0
+Bremen,Germany,0,8,114.6
+Chemnitz,Germany,0,9,34.0
+Cottbus,Germany,0,4,20.1
+Darmstadt,Germany,76,10,42.0
+Dessau,Germany,0,2,12.5
+Dresden,Germany,154,12,134.3
+Duisburg,Germany,76,2,60.7
+Düsseldorf,Germany,178,7,79.8
+Erfurt,Germany,0,6,45.2
+Essen,Germany,0,7,52.5
+Frankfurt,Germany,136,10,67.5
+Frankfurt,Germany,73,5,19.5
+Freiburg,Germany,64,5,36.7
+Gera,Germany,0,3,18.5
+Görlitz,Germany,0,2,11.8
+Gotha,Germany,30,5,27.0
+Halberstadt,Germany,0,2,11.7
+Halle,Germany,0,12,87.6
+Heidelberg,Germany,0,6,30.9
+Jena,Germany,48,5,23.5
+Karlsruhe,Germany,0,8,79.9
+Kassel,Germany,127,7,53.0
+Krefeld,Germany,0,4,37.7
+Leipzig,Germany,510,15,143.5
+Magdeburg,Germany,131,10,67.2
+Mainz,Germany,42,5,29.7
+Mannheim,Germany,0,14,103.4
+Mülheim,Germany,0,0,37.5
+Munich,Germany,165,13,80.4
+Nordhausen,Germany,0,3,18.0
+Nuremberg,Germany,74,7,38.4
+Plauen,Germany,40,6,16.0
+Potsdam,Germany,127,7,29.9
+Rostock,Germany,64,6,35.6
+Schwerin,Germany,37,4,21.0
+Strausberg,Germany,10,1,6.2
+Ulm,Germany,23,2,19.1
+Würzburg,Germany,46,5,19.7
+Zwickau,Germany,40,4,19.6
+Athens,Greece,61,2,32.4
+Budapest,Hungary,630,36,158.4
+Debrecen,Hungary,25,2,8.8
+Miskolc,Hungary,22,2,13.5
+Szeged,Hungary,49,4,17.0
+Dublin,Ireland,54,2,42.1
+Florence,Italy,14,2,16.5
+Messina,Italy,18,1,7.7
+Milan,Italy,654,17,157.0
+Naples,Italy,0,3,11.8
+Palermo,Italy,44,4,18.3
+Rome,Italy,192,6,39.0
+Turin,Italy,211,10,88.0
+Daugavpils,Latvia,42,5,29.1
+Liepāja,Latvia,14,1,7.9
+Riga,Latvia,227,6,124.0
+Luxembourg,Luxembourg,24,1,16.0
+Amsterdam,Netherlands,500,15,95.0
+Rotterdam,Netherlands,322,9,75.0
+The Hague,Netherlands,204,12,105.0
+Oslo,Norway,99,6,41.8
+Trondheim,Norway,21,1,8.8
+Bydgoszcz,Poland,61,11,40.8
+Częstochowa,Poland,32,3,14.7
+Elbląg,Poland,35,5,16.9
+Gdańsk,Poland,211,11,59.9
+Gorzów,Poland,28,4,13.0
+Grudziądz,Poland,20,1,9.0
+Katowice,Poland,323,27,178.4
+Kraków,Poland,358,22,93.8
+Łódź,Poland,230,24,124.1
+Olsztyn,Poland,32,5,17.0
+Poznań,Poland,0,18,66.7
+Szczecin,Poland,95,12,52.5
+Toruń,Poland,44,7,22.0
+Warsaw,Poland,543,24,133.2
+Wrocław,Poland,382,23,85.5
+Lisbon,Portugal,84,6,27.7
+Arad,Romania,64,0,48.0
+Brăila,Romania,36,0,22.3
+Bucharest,Romania,785,0,137.0
+Cluj,Romania,19,3,11.7
+Craiova,Romania,19,3,18.0
+Galați,Romania,37,0,20.0
+Iași,Romania,56,9,35.0
+Oradea,Romania,37,0,22.8
+Ploiești,Romania,25,2,10.0
+Reșița,Romania,0,1,10.0
+Timișoara,Romania,85,0,38.0
+Moscow,Russia,0,0,208.5
+Kazan,Russia,0,0,61.8
+Nizhny Novgorod,Russia,0,0,76.5
+Novosibirsk,Russia,0,10,64.0
+Saint Petersburg,Russia,0,0,231.2
+Samara,Russia,0,0,68.0
+Yekaterinburg,Russia,0,0,81.9
+Belgrade,Serbia,135,12,45.3
+Bratislava,Slovakia,152,5,42.0
+Košice,Slovakia,48,16,33.7
+Alicante,Spain,52,6,98.0
+Barcelona,Spain,61,7,29.2
+Bilbao,Spain,14,1,4.9
+Cádiz,Spain,21,1,24.0
+Murcia,Spain,28,2,18.0
+Parla,Spain,15,1,8.3
+Santa Cruz,Spain,27,2,15.1
+Seville,Spain,7,1,2.2
+Valencia,Spain,147,10,164.0
+Vitoria,Spain,23,2,13.5
+Zaragoza,Spain,11,1,12.8
+Gothenburg,Sweden,131,12,95.0
+Lund,Sweden,9,1,5.5
+Norrköping,Sweden,47,2,18.7
+Stockholm,Sweden,59,5,40.1
+Basel,Switzerland,0,12,86.3
+Bern,Switzerland,71,5,27.5
+Geneva,Switzerland,76,5,38.1
+Neuchâtel,Switzerland,12,1,8.85
+Zurich,Switzerland,0,16,76.0
+Dnipro,Ukraine,0,14,82.0
+Kharkiv,Ukraine,0,0,95.0
+Kyiv,Ukraine,0,21,98.0
+Birmingham,United Kingdom,33,1,21.5
+Blackpool,United Kingdom,29,1,17.7
+Edinburgh,United Kingdom,23,1,14.0
+London,United Kingdom,39,3,28.0
+Manchester,United Kingdom,99,8,101.0
+Nottingham,United Kingdom,51,2,32.0
+Sheffield,United Kingdom,50,4,34.6
+Adelaide,Australia,33,2,15.0
+Melbourne,Australia,1763,24,245.0
+Mendoza,Argentina,26,1,17.0
+Cuenca,Ecuador,27,1,10.7

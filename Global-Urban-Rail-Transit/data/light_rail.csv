@@ -1,0 +1,99 @@
+CITY,COUNTRY,STATIONS,LINES,LENGTH
+Addis Ababa,Ethiopia,39,2,31.6
+Port Louis,Mauritius,21,2,30.0
+Tunis,Tunisia,80,6,45.2
+Beijing,China,6,1,8.8
+Changchun,China,66,3,68.4
+Foshan,China,15,1,14.3
+Nanping,China,10,1,26.2
+Tianshui,China,12,1,12.9
+Hong Kong,China,68,15,36.2
+Jerusalem,Israel,23,1,13.8
+Tel Aviv,Israel,34,1,24.0
+Kumamoto,Japan,35,2,12.2
+Tokyo,Japan,10,1,5.0
+Toyama,Japan,13,1,7.6
+Utsunomiya,Japan,19,1,14.6
+Lusail,Qatar,21,3,15.9
+Kaohsiung,Taiwan,38,1,22.1
+New Taipei,Taiwan,37,3,9.5
+Antalya,Turkey,58,4,47.0
+Gaziantep,Turkey,46,3,35.0
+İzmit,Turkey,16,2,16.2
+Kayseri,Turkey,75,4,46.0
+Konya,Turkey,42,2,27.5
+Samsun,Turkey,43,3,36.5
+Charleroi,Belgium,48,4,25.0
+Copenhagen,Denmark,12,1,13.1
+Odense,Denmark,26,1,14.5
+Helsinki,Finland,34,1,25.0
+Tampere,Finland,33,2,24.0
+Bielefeld,Germany,62,4,38.0
+Bochum,Germany,21,1,15.3
+Bonn,Germany,81,6,95.8
+Cologne,Germany,235,12,194.6
+Dortmund,Germany,125,8,77.0
+Düsseldorf,Germany,99,10,68.5
+Essen,Germany,0,3,21.5
+Frankfurt,Germany,86,9,64.9
+Hanover,Germany,196,15,123.0
+Karlsruhe,Germany,190,17,262.4
+Saarbrücken,Germany,34,1,44.0
+Stuttgart,Germany,200,15,133.3
+Bergamo,Italy,16,1,12.5
+Cagliari,Italy,9,2,12.3
+Utrecht,Netherlands,25,3,28.7
+Bergen,Norway,35,2,28.4
+Kraków,Poland,0,3,0.0
+Poznań,Poland,8,4,8.1
+Szczecin,Poland,4,3,4.0
+Almada,Portugal,19,3,13.5
+Porto,Portugal,81,6,80.0
+Granada,Spain,26,1,15.9
+Madrid,Spain,36,3,27.8
+Málaga,Spain,19,2,13.6
+Lausanne,Switzerland,15,1,7.8
+Newcastle,United Kingdom,60,2,77.5
+Calgary,Canada,45,2,59.9
+Edmonton,Canada,29,3,37.4
+Kitchener,Canada,19,1,19.0
+Ottawa,Canada,25,3,35.5
+Guadalajara,Mexico,30,2,24.8
+Mexico City,Mexico,18,1,12.8
+Baltimore,United States,33,3,48.3
+Boston,United States,70,4,43.0
+Buffalo,United States,13,1,10.3
+Camden,United States,21,1,55.0
+Charlotte,United States,26,1,31.1
+Cleveland,United States,29,3,29.0
+Dallas,United States,73,5,192.0
+Denver,United States,57,6,96.7
+Houston,United States,39,3,36.5
+Hudson County,United States,24,3,26.4
+Los Angeles,United States,93,4,169.3
+Minneapolis,United States,37,2,34.0
+Newark,United States,17,2,10.0
+Norfolk,United States,11,1,11.9
+Oceanside,United States,15,1,35.0
+Philadelphia,United States,305,3,96.4
+Phoenix,United States,50,2,62.0
+Pittsburgh,United States,53,3,42.2
+Portland,United States,94,5,96.1
+Sacramento,United States,53,3,69.0
+St. Louis,United States,38,2,74.0
+Salt Lake City,United States,51,3,72.1
+San Diego,United States,62,3,105.0
+San Francisco,United States,117,7,62.6
+San Jose,United States,60,3,67.9
+Seattle,United States,27,2,50.3
+Tacoma,United States,12,1,6.4
+Canberra,Australia,14,1,12.0
+Gold Coast,Australia,19,1,20.0
+Newcastle,Australia,6,1,2.7
+Sydney,Australia,16,1,12.0
+Sydney,Australia,42,3,24.7
+Buenos Aires,Argentina,17,1,7.4
+Buenos Aires,Argentina,11,1,15.5
+Cochabamba,Bolivia,41,3,40.7
+Rio de Janeiro,Brazil,28,3,28.0
+Santos,Brazil,15,1,11.5
