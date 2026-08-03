@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Evliya: İlçe Keşif Atlası">
+    <meta property="og:description" content="Türkiye'yi keşfet, rütbeni yükselt ve paylaş!">
+    <meta property="og:image" content="https://ismailoksuz.github.io/evliya/assets/preview-card.png"> 
+    <meta property="og:url" content="https://ismailoksuz.github.io/evliya/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Evliya: İlçe Keşif Atlası</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+        
+        :root { --accent: #FFD700; --dark: #0A0A0A; --glass: rgba(255, 255, 255, 0.05); }
+        body, html { margin: 0; padding: 0; height: 100%; background: var(--dark); font-family: 'Plus Jakarta Sans', sans-serif; color: #fff; overflow: hidden; }
+        
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            box-sizing: border-box; /* Taşmaları önleyen kritik ayar */
+        }
+
+        .header { 
+            height: 65px; background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(10px);
+            display: flex; align-items: center; justify-content: space-between; 
+            padding: 0 25px; border-bottom: 1px solid rgba(255,215,0,0.2); z-index: 1001; position: relative;
+        }
+        .header a { color: var(--accent); text-decoration: none; font-size: 11px; opacity: 0.6; transition: 0.3s; }
+        #map { height: calc(100vh - 65px); width: 100%; background: #000; outline: none;}
+
+        /* Mobilde İlçe İsmi Göstergesi */
+        #district-toast {
+            position: fixed; 
+            top: 85px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            background: rgba(255, 215, 0, 0.95); 
+            color: #000; 
+            padding: 12px 20px;
+            border-radius: 50px; 
+            font-weight: 800; 
+            font-size: 14px; 
+            z-index: 2005;
+            display: none; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); 
+            pointer-events: none;
+            align-items: center;
+            gap: 10px; /* İkon ve metin arası boşluk */
+            white-space: nowrap;
+        }
+
+        .action-btns { position: absolute; bottom: 40px; right: 25px; z-index: 1000; }
+        .btn-round { 
+            width: 65px; height: 65px; border-radius: 20px; background: var(--accent); color: #000;
+            border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+            font-size: 26px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
+        .popup { 
+            background: #111; padding: 30px; border-radius: 30px; max-width: 400px; width: 100%; 
+            text-align: center; border: 1px solid rgba(255,215,0,0.3);
+        }
+        
+        /* İsim Alanı Düzeltmesi */
+        .popup input { 
+            width: 100%; padding: 18px; margin: 20px 0; border-radius: 15px; border: 1px solid #333; 
+            background: #000; color: #fff; text-align: center; font-size: 16px; outline: none;
+        }
+        .popup input:focus { border-color: var(--accent); }
+
+        .btn-main { background: var(--accent); color: #000; border: none; padding: 18px; border-radius: 15px; font-weight: 800; width: 100%; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+
+        #share-card { 
+            position: absolute; left: -9999px; width: 1080px; height: 1350px; top: 0;
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%); color: #fff;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            border: 20px solid #FFD700; text-align: center;
+        }
+        #preview-img { width: 100%; border-radius: 20px; margin: 20px 0; border: 2px solid var(--accent); display: none; }
+        #counter { text-align: right; }
+        #counter b { color: var(--accent); font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+<div id="district-toast">MİHALIÇÇIK</div>
+
+<div class="header">
+    <div><b>EVLİYA</b> <a href="https://github.com/ismailoksuz" target="_blank">by İsmail ÖKSÜZ</a></div>
+    <div id="counter">Yükleniyor...</div>
+</div>
+
+<div id="map"></div>
+
+<div class="action-btns">
+    <button class="btn-round" onclick="openShare()" style="background:#fff"><i class="fa-solid fa-share-nodes"></i></button>
+</div>
+
+<div id="share-modal" class="overlay">
+    <div class="popup">
+        <h2 style="color:var(--accent); margin-top:0">KEŞİF KARTINI OLUŞTUR</h2>
+        <p style="color:#888; font-size:13px">Başarılarını dünyaya kanıtlamaya hazır mısın?</p>
+        
+        <input type="text" id="username" placeholder="Haritadaki İsminiz" maxlength="20">
+        
+        <img id="preview-img" alt="Önizleme">
+        
+        <div id="share-actions" style="display:none">
+            <button class="btn-main" onclick="directShare()" style="background:#2ecc71; color:#fff; margin-bottom:12px">
+                <i class="fa-solid fa-paper-plane"></i> SİSTEMDE PAYLAŞ
+            </button>
+            <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 15px;">
+                <a id="tw-link" href="#" target="_blank" style="color: #fff; font-size: 28px;"><i class="fa-brands fa-x-twitter"></i></a>
+                <a id="wa-link" href="#" target="_blank" style="color: #25D366; font-size: 28px;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a id="fb-link" href="#" target="_blank" style="color: #1877F2; font-size: 28px;"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <button class="btn-main" onclick="downloadCard()" style="background:none; border:1px solid #444; color:#888; font-size: 12px; padding: 10px;">
+                <i class="fa-solid fa-download"></i> GALERİYE KAYDET
+            </button>
+        </div>
+        
+        <button id="gen-btn" class="btn-main" onclick="generateCard()">GÖRSELİ HAZIRLA</button>
+        <button class="btn-main" onclick="closeShare()" style="background:none; color:#666; margin-top:10px; font-size:12px">VAZGEÇ</button>
+    </div>
+</div>
+
+<div id="share-card">
+    <div id="badge-container"><i class="fa-solid fa-award" style="font-size: 200px; color: #FFD700; margin-bottom: 30px;"></i></div>
+    <h3 style="font-size:40px; color:#888; margin:0; text-transform: uppercase;">Keşif Sertifikası</h3>
+    <h1 style="font-size:100px; color:#FFD700; margin:10px 0" id="card-name">İSİMSİZ GEZGİN</h1>
+    <h2 style="font-size:60px; margin:20px 0; background:rgba(255,215,0,0.1); padding:20px 50px; border-radius:100px" id="card-rank">ÇIRAK GEZGİN</h2>
+    <p style="font-size:45px; max-width: 800px;">Türkiye'nin <b>973</b> ilçesinden <span id="card-count" style="color:#FFD700">0</span> tanesini ayak izleriyle mühürledi.</p>
+    <div style="margin-top:100px; font-size:30px; color:#444; letter-spacing: 5px;">ismailoksuz.github.io/evliya</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map', {zoomControl: false}).setView([39.1, 35.3], 6);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {crossOrigin: 'anonymous'}).addTo(map);
+
+    let explored = JSON.parse(localStorage.getItem('kesif_atlas_data')) || [];
+    const totalDistricts = 973;
+
+    function getRank(count) {
+        if (count < 50) return { title: "ACEMİ SEYYAH", icon: "fa-leaf" };
+        if (count < 100) return { title: "YOL ARKADAŞI", icon: "fa-compass" };
+        if (count < 200) return { title: "DENEYİMLİ GEZGİN", icon: "fa-map-location-dot" };
+        if (count < 350) return { title: "YOL ERERİ", icon: "fa-route" };
+        if (count < 500) return { title: "DİYAR KEŞŞAFI", icon: "fa-mountain-sun" };
+        if (count < 650) return { title: "DURMAZ GEZER", icon: "fa-shoe-prints" };
+        if (count < 800) return { title: "EVLİYA ÇELEBİ", icon: "fa-spaghetti-monster-flying" };
+        if (count < 950) return { title: "MEMLEKET MÜHRÜ", icon: "fa-shrine-pyramid" };
+        if (count < 973) return { title: "CİHANŞÜMUL", icon: "fa-crown" };
+        return { title: "ATLAS FATİHİ", icon: "fa-earth-africa" };
+    }
+
+    function showDistrictName(name, isAdded) {
+        const toast = document.getElementById('district-toast');
+        const icon = isAdded ? '<i class="fa-solid fa-check-circle"></i>' : '<i class="fa-solid fa-times-circle"></i>';
+        
+        toast.innerHTML = `${icon} ${name.toUpperCase()}`;
+        toast.style.display = 'flex'; // Block yerine Flex yaparak ikonla hizalıyoruz
+        
+        // Eğer kalktıysa rengi hafif kırmızımtırak veya gri yapabilirsin (opsiyonel)
+        toast.style.background = isAdded ? 'rgba(255, 215, 0, 0.95)' : 'rgba(200, 200, 200, 0.95)';
+
+        // Önceki timeout'u temizlemek için (hızlı tıklamalarda çakışmasın)
+        if (window.toastTimeout) clearTimeout(window.toastTimeout);
+        window.toastTimeout = setTimeout(() => { toast.style.display = 'none'; }, 2000);
+    }
+
+    function updateCounter() {
+        const count = explored.length;
+        const rank = getRank(count);
+        document.getElementById('counter').innerHTML = `<b>${count}</b> / ${totalDistricts} <small>(%${((count/totalDistricts)*100).toFixed(1)})</small><br><small>${rank.title}</small>`;
+    }
+
+    fetch('yeni.json').then(r => r.json()).then(data => {
+        L.geoJSON(data, {
+            style: (f) => ({
+                fillColor: explored.includes(f.properties.IlAdi1) ? '#FFD700' : 'transparent',
+                fillOpacity: 0.5, color: '#222', weight: 0.5
+            }),
+            onEachFeature: (f, l) => {
+                const name = f.properties.IlAdi1;
+                l.on('click', function() {
+                    let isAdded = false;
+                    if (explored.includes(name)) {
+                        explored = explored.filter(i => i !== name);
+                        this.setStyle({fillColor: 'transparent'});
+                        isAdded = false; // Çıkarıldı
+                    } else {
+                        explored.push(name);
+                        this.setStyle({fillColor: '#FFD700'});
+                        isAdded = true; // Eklendi
+                    }
+                    
+                    showDistrictName(name, isAdded); // Fonksiyonu burada çağırıyoruz
+                    localStorage.setItem('kesif_atlas_data', JSON.stringify(explored));
+                    updateCounter();
+                });
+            }
+        }).addTo(map);
+        updateCounter();
+    });
+
+    function openShare() { document.getElementById('share-modal').style.display = 'flex'; }
+    function closeShare() { 
+        document.getElementById('share-modal').style.display = 'none';
+        // Reset modal state
+        document.getElementById('gen-btn').style.display = "block";
+        document.getElementById('share-actions').style.display = "none";
+        document.getElementById('preview-img').style.display = "none";
+    }
+
+    let sharedBlob = null;
+
+    async function generateCard() {
+        const nameInput = document.getElementById('username');
+        const name = nameInput.value.toUpperCase() || "GEZGİN";
+        const rankData = getRank(explored.length);
+        
+        document.getElementById('card-name').innerText = name;
+        document.getElementById('card-rank').innerText = rankData.title;
+        document.getElementById('card-count').innerText = explored.length;
+        document.querySelector('#badge-container i').className = `fa-solid ${rankData.icon}`;
+        
+        const genBtn = document.getElementById('gen-btn');
+        genBtn.innerText = "HAZIRLANIYOR...";
+
+        const canvas = await html2canvas(document.getElementById('share-card'), {
+            useCORS: true, scale: 1.5, logging: false
+        });
+        
+        canvas.toBlob(blob => { 
+            sharedBlob = blob;
+            const dataUrl = canvas.toDataURL("image/png");
+            const preview = document.getElementById('preview-img');
+            preview.src = dataUrl;
+            preview.style.display = "block";
+            nameInput.style.display = "none";
+            genBtn.style.display = "none";
+            document.getElementById('share-actions').style.display = "block";
+        });
+
+        const siteUrl = "https://ismailoksuz.github.io/evliya/";
+        const text = `Evliya Atlası'nda ${explored.length} ilçe keşfettim! Rütbem: ${rankData.title}.`;
+        document.getElementById('tw-link').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(siteUrl)}`;
+        document.getElementById('wa-link').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + " " + siteUrl)}`;
+        document.getElementById('fb-link').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}`;
+    }
+
+    function downloadCard() {
+        if(!sharedBlob) return;
+        const link = document.createElement('a');
+        link.download = 'evliya-kesif-sertifikasi.png';
+        link.href = URL.createObjectURL(sharedBlob);
+        link.click();
+    }
+
+    async function directShare() {
+        const siteUrl = "https://ismailoksuz.github.io/evliya/";
+        const text = `Evliya Atlası'nda ${explored.length} ilçe keşfettim!`;
+        if (navigator.share && sharedBlob) {
+            const file = new File([sharedBlob], 'kesif.png', { type: 'image/png' });
+            try {
+                await navigator.share({ files: [file], title: 'Evliya Keşif Atlası', text: text + " " + siteUrl });
+            } catch (err) { console.error(err); }
+        }
+    }
+</script>
+</body>
+</html>
