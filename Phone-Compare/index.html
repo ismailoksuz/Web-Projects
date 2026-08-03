@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhoneCompare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geomanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <h1>PhoneCompare</h1>
+        <div class="stats" id="stats">
+            <h3>13289 Phones - 125 Brands</h3>
+        </div>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search brand or model..." />
+        <button onclick="searchPhones()">Search</button>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </header>
+
+    <div class="main-layout">
+      <div class="filter-sidebar">
+        <h3>Filters</h3>
+        <label>Brand</label>
+        <select id="brandFilter">
+          <option value="">All Brands</option>
+        </select>
+
+        <label>RAM</label>
+        <select id="ramFilter">
+          <option value="">Any</option>
+          <option value="4">4GB+</option>
+          <option value="6">6GB+</option>
+          <option value="8">8GB+</option>
+          <option value="12">12GB+</option>
+          <option value="16">16GB+</option>
+        </select>
+
+        <label>Storage</label>
+        <select id="storageFilter">
+          <option value="">Any</option>
+          <option value="64">64GB+</option>
+          <option value="128">128GB+</option>
+          <option value="256">256GB+</option>
+          <option value="512">512GB+</option>
+        </select>
+
+        <label>Battery (mAh)</label>
+        <input type="range" id="batteryRange" min="2000" max="7000" value="4000" oninput="document.getElementById('batteryValue').textContent = this.value + ' mAh'" />
+        <span id="batteryValue">4000 mAh</span>
+
+        <label>Screen Size (inches)</label>
+        <input type="range" id="screenRange" min="4" max="8" step="0.1" value="6.5" oninput="document.getElementById('screenValue').textContent = this.value + '&quot;'" />
+        <span id="screenValue">6.5"</span>
+
+        <label>Features</label>
+        <div class="feature-filters">
+          <label><input type="checkbox" id="feature5G"> 5G</label>
+          <label><input type="checkbox" id="featureNFC"> NFC</label>
+          <label><input type="checkbox" id="featureHeadphone"> Headphone Jack</label>
+        </div>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+      </div>
+
+      <div class="content-area">
+        <div id="phoneResults">
+          <h2>Phones</h2>
+          <div class="phone-grid" id="phoneGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="phoneModal" onclick="event.target.id === 'phoneModal' && closeModal()">
+    <div class="modal-content">
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="Phone" />
+      </div>
+      <div class="modal-title" id="modalTitle"></div>
+      <div class="specs-grid" id="modalSpecs"></div>
+    </div>
+  </div>
+  <div class="modal" id="compareModal" onclick="event.target.id === 'compareModal' && closeCompareModal()">
+    <div class="modal-content compare-modal-content">
+      <div class="compare-section">
+        <h3>Selected Phone</h3>
+        <div id="compare-left-phone"></div>
+      </div>
+      <div class="compare-divider"></div>
+      <div class="compare-section">
+        <h3>Search to Compare</h3>
+        <div class="compare-search-box">
+          <input type="text" id="compareSearchInput" placeholder="Search phone..." />
+          <button onclick="searchForCompare()">Search</button>
+        </div>
+        <div class="compare-results" id="compareResults"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-footer">
+    Created by <a href="https://github.com/ismailoksuz" target="_blank">İsmail Oksuz</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
