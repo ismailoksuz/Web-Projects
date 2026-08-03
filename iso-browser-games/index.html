@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İSO'S BROWSER GAMES - MENU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ps5-container">
+        <div class="header-container">
+            <h1 class="neon-text">İSO'S BROWSER GAMES</h1>
+        </div>
+        <div id="hero-background" style="background-image: url('https://via.placeholder.com/1400x700/0000FF/FFFFFF?text=XOX+Game+BG');"></div>
+        <div id="game-list-wrapper" class="overflow-visible absolute w-full" style="height: 250px; bottom: 100px;">
+            <div id="game-list" class="game-list">
+                <a href="games/Neon-Brain-Pong/index.html" class="game-card"
+                    data-title="Neon Brain Pong"
+                    data-subtitle="Speed & Math">
+                    <img src="src/neonbrainpong.png" alt="Neon Brain Pong Cover">
+                </a>
+                <a href="games/Sudoku/index.html" class="game-card"
+                    data-title="Sudoku"
+                    data-subtitle="Time For Brainstorm...">
+                    <img src="src/sudoku.png" alt="Sudoku Cover">
+                </a>
+                <a href="games/Neon-Snake/index.html" class="game-card"
+                    data-title="Neon Snake"
+                    data-subtitle="How Long Can You Last?">
+                    <img src="src/neonsnake.png" alt="Neon Snake Cover">
+                </a>
+                <a href="games/2048/index.html" class="game-card"
+                    data-title="2048"
+                    data-subtitle="Reach 2048!">
+                    <img src="src/2048.png" alt="2048 Cover">
+                </a>
+                <a href="games/Breakout/index.html" class="game-card"
+                    data-title="Breakout"
+                    data-subtitle="Brick The Blocks!">
+                    <img src="src/breakout.png" alt="Breakout Cover">
+                </a>
+                <a href="games/Pixel-Dodge/index.html" class="game-card"
+                    data-title="Pixel Dodge"
+                    data-subtitle="Dodge The Obstacles!">
+                    <img src="src/pixeldodge.png" alt="Pixel Dodge Cover">
+                </a>
+                <a href="games/XOX-Game/index.html" class="game-card"
+                    data-title="XOX Game"
+                    data-subtitle="Classic Tic Tac Toe">
+                    <img src="src/xox.png" alt="XOX Game Cover">
+                </a>
+            </div>
+        </div>
+        <div id="focused-info" class="absolute left-50% top-4/5 z-50 transition-opacity duration-300">
+            <h2 id="focused-title" class="text-6xl font-black text-white mb-2" style="text-shadow: 0 0 10px rgba(0,0,0,0.8);">XOX Game</h2>
+            <p id="focused-subtitle" class="text-2xl text-gray-300">Klasik 3x3 Zeka Oyunu</p>
+        </div>
+        <div class="footer-info text-right text-xs">
+            <p>CREATED BY <a href="https://www.github.com/ismailoksuz" target="_blank" class="link-text">ISMAILOKSUZ</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
